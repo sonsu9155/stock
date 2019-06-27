@@ -1,0 +1,305 @@
+/* dede58.com 做最好的织梦模板 */
+.banner-box {
+	width:100%;
+	height:505px;
+	position:relative;
+}
+.bd {
+	height:505px;
+	text-align:center;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow:hidden
+}
+.banner-btn .hd {
+	display:none
+}
+.banner-btn {
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	width: 80%;
+	margin-left: 10%;
+}
+.banner-btn .prev {
+	float:left;
+	width:44px;
+	height:75px;
+}
+.banner-btn .next {
+	float:right;
+	width:44px;
+	height:75px;
+}
+.xinwen {
+	width:1000px;
+	height:63px;
+	line-height:63px;
+	background-color:#FFF;
+	position:absolute;
+	top:415px;
+	margin-left:401px;
+	margin-right:401px;
+	overflow:hidden
+}
+.xinwen span {
+	padding-left:20px;
+	font-size:14px;
+	float:left;
+}
+.left {
+	width:88px;
+	height:63px;
+	float:left;
+	background-color:#b7061c;
+}
+.left img {
+	padding:5px 30px;
+}
+.right {
+	width:88px;
+	height:63px;
+	float:left;
+	background-color:#6b040f;
+}
+.right img {
+	padding:5px 30px;
+}
+.sousuo {
+	width:255px;
+	height:34px;
+	float:right;
+	margin:15px 25px;
+}
+.sousuo input {
+	float:left;
+	width:220px;
+	height:36px;
+	background-color:#d6d6d6;
+	border:0;
+	margin-top:1px;
+}
+.sousuo img {
+	float:right;
+}
+.chanpin {
+	width:100%;
+	height:479px;
+	background:url("../images/main_bj1.jpg.gif") no-repeat;
+	background-size:100% 100%
+}
+.zhanshi {
+	width:1100px;
+	height:479px;
+	margin:0 auto;
+	text-transform: uppercase;
+}
+.bt {
+	height:190px;
+	text-align:center;
+	background:url("../images/zhanshi.gif") no-repeat 385px 131px;
+}
+.bt1 {
+	font-size:34px;
+	color:#b7061c;
+	padding-top:68px;
+}
+.bt2 {
+	font-size:26px;
+	color:#a70526;
+}
+.bt3 {
+	padding-top:10px;
+}
+.Products {
+	width:346px;
+	height:250px;
+	border:1px solid #e5e5e5;
+	background:#FFF;
+	float:left;
+	margin:16px 0;
+}
+.touzi {
+	width:307px;
+	height:34px;
+	line-height:30px;
+	font-size:22px;
+	text-align:center;
+	background-color:#b7061c;
+	margin-left:18px;
+}
+.touzi a {
+	color:#FFF;
+}
+.neirong {
+	width:307px;
+	font-size:14px;
+	margin-left:18px;
+	margin-top:19px;
+}
+.qiye {
+	width:100%;
+	overflow:hidden
+}
+.zhanshi2 {
+	width:1100px;
+	overflow:hidden;
+	margin:0px auto 20px;
+	text-transform: uppercase;
+}
+.bt_a {
+	height:220px;
+	text-align:center;
+	background:url("../images/zhanshi2.gif") no-repeat 385px 131px;
+}
+.qi_bottom {
+	width:1135px;
+}
+.gongsi {
+	width:340px;
+	height:600px;
+	border:1px solid #e5e5e5;
+	margin-bottom:20px;
+	float:left;
+	margin-right:36px;
+	overflow:hidden;
+}
+.gongsi img {
+	padding-top:10px;
+	padding-left:11px;
+}
+.jianjie {
+	width:317px;
+	height:310px;
+	margin-top:44px;
+	margin-left:11px;
+	background-color:#f2f2f2;
+}
+.jianjie h3 {
+	font-size:18px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	padding-top:25px;
+}
+.jianjie p {
+	width:266px;
+	padding-left:26px;
+	line-height:20px;
+	font-size:14px;
+}
+.yuedu {
+	width:114px;
+	height:28px;
+	border:1px solid #999;
+	background-color:#FFF;
+	margin:90px auto;
+	text-align:center;
+	font-size:14px;
+	padding-top:5px;
+}
+.licai {
+	width:100%;
+	height:371px;
+	background:url("../images/zhaocai.jpg") no-repeat;
+	background-position:center;
+	background-size: 100% 100%;
+}
+.jieshao {
+	width:1100px;
+	height:371px;
+	margin:0 auto;
+}
+.licai .jieshao h2 {
+	font-size:28px;
+	font-weight:400;
+	padding-top:40px;
+}
+.licai .jieshao p {
+	width:685px;
+	font-size:16px;
+	color:#FFF;
+	padding-top:80px;
+	line-height:30px;
+}
+.licai .jieshao div {
+	width:132px;
+	height:35px;
+	border:1px solid #FFF;
+	margin-top:40px;
+	text-align:center;
+	padding-top:8px;
+	border-radius:5px;
+}
+.licai .jieshao div a {
+	font-size:18px;
+	color:#FFF;
+}
+.zhonghong {
+	width:100%;
+	height:917px;
+	background:url("../images/zhong.gif") no-repeat;
+	background-position:center;
+	background-size: 100% 100%;
+}
+.zhong_bottom {
+	width:1135px;
+}
+.shiye {
+	width:1100px;
+	height:575px;
+	margin:0 auto;
+	text-transform: uppercase;
+}
+.fangfa {
+	width:343px;
+	height:355px;
+	margin-top:30px;
+	float:left;
+	margin-right:35px;
+	overflow:hidden;
+}
+.fangfa h2 {
+	font-size:24px;
+	font-weight:400;
+	color:#333;
+}
+.fangfa ul {
+	margin-top:10px;
+}
+.fangfa ul li {
+	width:343px;
+	height:46px;
+	background-color:#f2f2f2;
+	margin-top:2px;
+	line-height:46px;
+}
+.fangfa ul li img {
+	float:left;
+	margin:19px 7px;
+}
+.huoban {
+	width:1100px;
+	height:357px;
+	margin:0 auto;
+	overflow:hidden
+}
+.hezuo {
+	width:1100px;
+	height:112px;
+	border-bottom:1px solid #e5e5e5;
+}
+.hezuo p {
+	font-size:26px;
+	color:#a70526;
+	text-align:center;
+	padding-top:55px;
+}
+.huoban ul {
+	width:1140px;
+}
+.huoban ul li {
+	float:left;
+	margin-top:30px;
+	margin-right:28px;
+}

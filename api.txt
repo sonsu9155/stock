@@ -1,0 +1,121 @@
+api 
+
+1.login
+    post    url: server_url/api/dologin
+
+            res: success
+                 error
+
+            test_data: name:test1
+                       password:123456
+2.wapindex
+    get     url:server_url/api/wapindex
+
+            res: user_name, useable_amount
+3.wapinfo
+    get     url:server_url/api/wapinfo
+
+            res:    user_name,
+                    protection_money,
+                    usable_protection_money,
+                    buy_fee,
+                    sell_fee,
+                    save_fee,
+                    save_day,
+                    phone_num,
+                    date,
+4.wapxiaoxi
+    get     url:server_url/api/wapxiaoxi
+
+            res:    {
+                    from,
+                    title,
+                    content,
+                    date,
+                    status
+                    }          
+    if message's count is 3, then res is repeated 3 times.
+
+5.wapindex2
+    get     url:server_url/api/wapindex2
+
+            res:    sh,
+                    sz,
+                    cy,
+                    
+                    { contents, date }
+6.imageurl
+    http://image2.sinajs.cn/newchart/min/sz000001
+    http://image2.sinajs.cn/newchart/min/sh600001
+7.waporder
+    get     url:server_url/api/waporder
+            res:    available_money,
+                    buy_fee,
+8.buystock
+    post    url:server_url/api/buystock
+            req:    code,
+                    cn_name,
+                    buy_num,
+                    buys_price,
+                    buy_type
+            testdata:   000001,
+                        平安银行,
+                        1,
+                        11.5,
+                        1
+            res:    success,
+                    content
+9.waptrade
+    get     url:server_url/api/waptrade
+            res:    buy_fee,
+                    sell_fee,
+                    save_fee,
+                    total_gain,
+                    total_cost,
+
+                    {gain, cost, cur_price}
+10.sale_buy
+    get    url:server_url/api/sale_buy
+            req_param:    id,
+            res:    cn_name,
+                    buy_code,
+                    created_at,
+                    buy_amount,
+                    buy_price,
+                    cur_price,
+11.sell_act
+    post    url:server_url/api/sell_act
+            req:    id,
+                    cur_price,
+                    num
+            test_data:  3,  11.5,  1
+            res:    success(error),
+                    content,
+
+12.wapmingxi
+    get     url:/server_url/api/wapmingxi
+            res:    buy_fee,
+                    sell_fee,
+                    save_fee,
+                    available_money,
+                    total_gain,
+
+                    { id,
+                      cn_name,
+                      created_at,
+                      method,
+                      sell_cost,
+                      sell_amount,
+                      gain
+                    }    
+13.message_create
+    get     url:server_url/api/message_create
+            res:    user_name
+14.message_store
+    post    url:server_url/api/message_store
+            req:    subject,
+                    message,
+            testdata: 123, qq
+           res:    success    
+                    content   
+                   

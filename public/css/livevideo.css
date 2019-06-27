@@ -1,0 +1,237 @@
+.dropdown-menu{
+	min-width: 100px;
+	}
+		body{
+		font:14px/1.4 'STHeiti', 'Microsoft YaHei', 'arial' , 'STHeiti', 'Microsoft YaHei', 'arial';
+	}
+	.dot-top{
+			border-color:#fff7ec;
+			border-left-color: transparent;
+    		border-right-color: transparent;
+	}
+	.chat-message-new .chat-body{
+			background-color:#fff7ec;
+	}
+	.page-container,a{color:#fff;}
+	.chat_icon_def{
+		background-image: url("/images/livevideo/UtHkZxlvJjExgfjLLgsGRlnsp.png");
+	}
+	.alpha-bg-title{
+		background-color: rgba(0,0,0,0.6);
+	}
+	.line-menu ul>li {
+		background-color: rgba(0,0,0,0.6);
+	}
+			.alpha-bg-body{
+		background-color: rgba(0,0,0,0.4);
+	}
+	.line-menu ul>li.active {
+		background-color: rgba(0,0,0,0.4);
+	}
+	.main-room-info .tab-content{top:0;}.main-room-info:hover .tab-header{display:block;} .main-room-info .tab-header{display:none;}
+	.main-video{width:65%;} .main-center{width:35%;}
+	.jw-controlbar-left-group span,.jw-controlbar-right-group span,.jw-controlbar-center-group{opacity: 0;visibility:hidden;}
+	.page-container.theme-background-0{background-image: url("/images/livevideo/PbPexsTwIPVyEKwBqeyNaBuiy.jpg");}
+	.background-0{background-image: url("/images/livevideo/PbPexsTwIPVyEKwBqeyNaBuiy.jpg");}
+	.page-container.theme-background-1{background-image: url("/images/livevideo/LrTInSeiahIzJEqPJKRZQnpNK.jpg");}
+		.background-1{background-image: url("/images/livevideo/LrTInSeiahIzJEqPJKRZQnpNK.jpg");}
+									.page-container.theme-background-2{background-image: url("/images/livevideo/cKgSDqiPmmIUEomwwsaLOGdtZ.jpg");}
+		.background-2{background-image: url("/images/livevideo/cKgSDqiPmmIUEomwwsaLOGdtZ.jpg");}
+									.page-container.theme-background-3{background-image: url("/images/livevideo/xBffnHJamTgACpqWXMfmxZuLv.jpg");}
+		.background-3{background-image: url("/images/livevideo/xBffnHJamTgACpqWXMfmxZuLv.jpg");}
+									.page-container.theme-background-4{background-image: url("/images/livevideo/TltBSGpEIRARBPJQewmItGuqs.jpg");}
+		.background-4{background-image: url("/images/livevideo/TltBSGpEIRARBPJQewmItGuqs.jpg");}
+									.page-container.theme-background-5{background-image: url("/images/livevideo/6.jpg");}
+		.background-5{background-image: url("/images/livevideo/bgv2/6.jpg");}
+								.chat-role-1{
+			background-image: url("/images/livevideo/vNzFunvQOGPFWOUeFUpLLkVvr.png");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-1 {
+			display: inline-block;
+			background-image: url("/images/livevideo/vNzFunvQOGPFWOUeFUpLLkVvr.png") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-2{
+			background-image: url("/images/livevideo/lQAoFpEynxPSlqNzNsnIaEzEu.gif");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-2 {
+			display: inline-block;
+			background-image: url("/images/livevideo/lQAoFpEynxPSlqNzNsnIaEzEu.gif") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-4{
+			background-image: url("/images/livevideo/IXxcaqTeBuecvEElpdmIeaani.gif");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-4 {
+			display: inline-block;
+			background-image: url("/images/livevideo/IXxcaqTeBuecvEElpdmIeaani.gif") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-5{
+			background-image: url("/images/livevideo/FGNzumSHEWLweKLbEpgQKBefc.gif");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-5 {
+			display: inline-block;
+			background-image: url("/images/livevideo/FGNzumSHEWLweKLbEpgQKBefc.gif") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-7{
+			background-image: url("/images/livevideo/zVBupAbXxiuyZpFtKUkCUHHjs.gif");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-7 {
+			display: inline-block;
+			background-image: url("/images/livevideo/zVBupAbXxiuyZpFtKUkCUHHjs.gif") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-100{
+			background-image: url("/images/livevideo/PMOFljcaROsuGPNhiPvTJdIjx.png");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-100 {
+			display: inline-block;
+			background-image: url("/images/livevideo/PMOFljcaROsuGPNhiPvTJdIjx.png") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-301{
+			background-image: url("/images/livevideo/iwpgFuJpKEeTuYGwaqejgFQot.png");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-301 {
+			display: inline-block;
+			background-image: url("/images/livevideo/iwpgFuJpKEeTuYGwaqejgFQot.png") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-400{
+			background-image: url("/images/livevideo/ryjBZeMmvwpFCLZGXbmXhWgwh.png");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-400 {
+			display: inline-block;
+			background-image: url("/images/livevideo/ryjBZeMmvwpFCLZGXbmXhWgwh.png") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-500{
+			background-image: url("/images/livevideo/KFbdaysCzFNrPlAlnMkXWgTPJ.png");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-500 {
+			display: inline-block;
+			background-image: url("/images/livevideo/KFbdaysCzFNrPlAlnMkXWgTPJ.png") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+			.chat-role-1000{
+			background-image: url("/images/livevideo/uZvxpHrMRjEQDWlCqFZIUcyqg.png");
+			background-size: 100% 100%;
+			line-height: 20px;
+		    padding: 0 17.916666666667px;
+		    height: 20px;
+		    display: inline-block;
+	        vertical-align: middle;
+		}
+		.user-list .user-item .icon-1000 {
+			display: inline-block;
+			background-image: url("/images/livevideo/uZvxpHrMRjEQDWlCqFZIUcyqg.png") !important;
+					    width: 35.833333333333px;
+		    			background-repeat: no-repeat;
+		}
+        
+      
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        

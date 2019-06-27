@@ -1,0 +1,285 @@
+*{padding: 0;margin: 0;}
+body{font-size: 14px;font-family: Microsoft yahei ;background-color: #f5f5f5;}
+li{list-style: none;}
+a{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+img{
+    border: none; 
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    padding-top: 0;
+    padding-bottom: 0;
+    border:none; 
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.fl{
+    float:left;
+}
+
+.fr{
+    float:right;
+}
+
+.clearfix:after{
+    content: "";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+/*清除浮动*/
+.clearfix{zoom:1; } 
+.clearfix:after,clearfix:before{content:"";display:block;height:0;clear:both;overflow:hidden;}
+.center{width: 1200px; margin: 0 auto;}
+
+/********************************************************头部顶部样式**********************************************************/
+.top{
+    height: 40px;
+    background-color: #000;
+}
+.top .top-left{
+    font-size: 12px;
+    line-height: 40px;
+    color: #fff;
+}
+.top .top-left span{
+        color: #ff3344;
+}
+.top .top-right a{
+    float: right;
+    color: #fff;
+    line-height: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-right: 1px solid #f2f2f2;
+    margin-top: 15px;
+}
+
+/********************************************************头部导航样式**********************************************************/
+.nav-box{
+    height: 84px;
+    background: #fff;
+    box-shadow: 0 0 11px rgba(0,0,0,.22);
+    border-top: 2px solid #e20009;
+}
+.nav-box .nav-left img{
+    margin-top: 14px;
+    width: 200px;
+}
+.nav-box .nav-right li{
+    float:right;
+}
+.nav-box .nav-right a{
+    font-size: 16px;
+    color: #000;
+    margin-left: 30px;
+    line-height: 84px;
+}
+.nav-box .nav-right a:hover{
+    color: red;
+}
+/********************************************************轮播图样式**********************************************************/
+#banner{
+	position: relative;
+}
+#banner ul{
+	position: absolute;
+	bottom: 25px;
+	left: 1280px;
+}
+#img_box img{
+	height: 350px;
+	margin: 0 auto;
+	display: none;
+}
+#circle li{
+	width: 15px;
+	height: 15px;
+	background-color:#fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	margin-left: 6px;
+	float: left;
+}
+
+/**************************************底部展示***************************************************/
+
+.yejiao{
+    background: #333;
+    height: 220px;
+    border-top: 1px solid #e20009;
+}
+.yejiao .yj-left{
+    width: 300px;
+    text-align: right;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: right center; 
+    padding-right: 20px;
+}
+.yejiao .yj-left h2{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-top: 30px;
+}
+.yejiao .yj-left h1{
+    font-size: 30px;
+    line-height: 32px;
+    margin-top: 10px;
+    padding-left: 30px;
+    background-image: url("../imgs/dianhua04.png");
+    background-repeat: no-repeat;
+    background-position: 40px center;
+    color: red;
+}
+.yejiao .yj-left  .time{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #999;
+}
+.saoma{
+    padding-left: 80px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-position: right center; 
+}
+.sm-box{
+    margin-top: 40px;
+padding-right: 60px;
+}
+.sm-box img{
+    width: 120px;
+}
+.saoma{
+    display: flex;
+}
+.sm-box span{
+    display: block;
+    width: 120px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.text-left{
+    display:flex;
+}
+.guanyu{
+    width: 120px;
+    text-align: right;
+
+}
+.guanyu p{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.guanyu a{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+}
+.guanyu a:hover{
+    color: red;
+}
+.yj-bottom{
+    background: #000;
+    color: #b3b3b3;
+    text-align: center;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.yj-center{
+    width: 680px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.yj-bottom a{
+    float: left;
+    margin-right: 6px;
+}
+.yj-bottom img{
+    width: 124px;
+    height: 46px;
+}
+
+
+/*右侧组件 B*/
+.fw01:hover .fuwu01{
+     display: block;
+}
+.fw02:hover .fuwu02{
+    display: block;
+}
+.right-nav{
+    position: fixed;
+    right: 6px;top: 30%;
+}
+.right-nav .r-box{
+    position: relative;
+    margin-bottom: 6px;
+}
+.right-nav .r-box .fuwu-left{
+    width: 68px;
+    height: 74px;
+    text-align: center;
+    background-color: #ff5722;
+    cursor: pointer;
+}
+
+.right-nav .r-box .fuwu-left:hover{
+    background-color: #fb4047;
+}
+
+.right-nav .r-box  .fuwu{
+    margin-top: 10px;
+}
+.right-nav .r-box span{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+}
+.r-box .fuwu-right{
+    width: 133px;
+    padding: 10px;
+    background: #e7282f;
+    display: none;
+}
+.r-box .fuwu-right a{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    background-image: url("../imgs/kefu02.gif");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.r-box .fuwu-right{
+    position: absolute;
+    top: -40px;
+    right: 70px;
+}
+
+ .r-box01:hover .fuwu01{
+     display: block;
+}
+.r-box02:hover .fuwu02{
+    display: block;
+}

@@ -1,0 +1,37 @@
+{
+    "name": "spatie/laravel-tail",
+    "description": "Easily tail the application log in Laravel applications",
+    "keywords": [
+        "laravel",
+        "tail",
+        "log",
+        "laravel-tail"
+    ],
+    "homepage": "https://github.com/spatie/laravel-tail",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://murze.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6.0",
+        "illuminate/support": "~5.4",
+        "illuminate/console": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Tail\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\Tail\\TailServiceProvider"
+            ]
+        }
+    }
+}

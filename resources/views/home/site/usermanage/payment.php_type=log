@@ -1,0 +1,561 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link  rel="stylesheet"  type="text/css" href="css/layout.css">	
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<title>存款记录</title>
+    
+</head>
+<body>
+
+
+<div id="main_content" class="full">
+		<div class="breadcrumbs">
+			<span class="breadcrumbs_left breadcrumbs_radius"></span>
+			<span class="breadcrumbs_right breadcrumbs_radius"></span>
+			<div class="title user public_bg"></div>
+			<div class="currbread">
+				<span class="breadico public_bg"></span>
+				<a href="javascript:;">您当前的位置：</a>&gt;
+				<a href="user.php">我的帐户</a>&gt;
+				<a href="javascript:;">存款记录</a>
+			</div> 
+		</div>
+		<div class="page_content">
+			<div class="page_top">
+				<div class="page_menu">
+				<ul>
+					<li><a href="user.php">基本信息</a>|</li>
+					<li><a href="pwd.php">修改密码</a>|</li>
+					<li><a href="payment.php">在线入金</a>|</li>
+                    <li><a href="payment.php?type=log" class="public_bg">存款记录</a>|</li>
+                    <li><a href="atm.php">申请提款</a>|</li>
+                    <li><a href="atm.php?type=log">提款记录</a>|</li>
+                    <li><a href="message.php" >收件箱</a></li>
+                    
+				</ul>
+			</div>			<div class="page_search">
+
+			</div>
+			<div class="clear"></div>
+			</div>
+			<div class="page_table relative page_height page_table_padding page_users">
+	
+               
+                  <table width="99%"  border="0"  cellpadding="3" cellspacing="1" class="table table-type1 table_padding table_nborder table_tleft tcolor">
+                           <tr> 
+                            <th colspan="7">充值历史记录</th> 
+                          </tr> 
+                          <tr class="even" > 
+                            <td width="21%">日期</td> 
+                            <td width="15%">订单号</td> 
+                            <td width="8%">类型</td> 
+                         
+                            <td width="10%">金额</td> 
+                            <td width="10%" >状态</td> 
+                          <td>备注</td>
+                          </tr> 
+                          <tr > 
+                            <td>2019-03-31 04:00:42</td> 
+                            <td>20190331040042174</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥3000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-31 03:42:16</td> 
+                            <td>20190331034216178</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-31 03:39:10</td> 
+                            <td>20190331033910123</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-31 03:36:48</td> 
+                            <td>20190331033648147</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥2000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-31 03:36:39</td> 
+                            <td>20190331033639142</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥2000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-31 02:57:56</td> 
+                            <td>20190331025756199</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥2000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-31 02:57:41</td> 
+                            <td>20190331025741115</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥2000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-31 02:57:25</td> 
+                            <td>20190331025725183</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥2000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-31 02:56:52</td> 
+                            <td>20190331025652149</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥2000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-30 15:04:08</td> 
+                            <td>20190330150408164</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-25 22:57:34</td> 
+                            <td>20190325225734162</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-24 23:51:02</td> 
+                            <td>20190324235102134</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-24 23:50:55</td> 
+                            <td>20190324235055191</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-24 00:11:56</td> 
+                            <td>20190324001156107</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-21 19:47:47</td> 
+                            <td>20190321194747188</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥5000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-20 11:36:57</td> 
+                            <td>20190320113657110</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-19 16:43:38</td> 
+                            <td>20190319164338125</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-19 16:34:56</td> 
+                            <td>20190319163456168</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-19 16:34:43</td> 
+                            <td>20190319163443125</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-17 14:19:32</td> 
+                            <td>20190317141932143</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥3000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-17 14:19:26</td> 
+                            <td>20190317141926194</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥3000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-11 17:07:38</td> 
+                            <td>20190311170738194</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-08 15:07:52</td> 
+                            <td>20190308150752137</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥15000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-08 15:07:46</td> 
+                            <td>20190308150746118</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥15000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-07 14:47:08</td> 
+                            <td>20190307144708104</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥3000000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-03-06 19:33:32</td> 
+                            <td>20190306193332141</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-03-01 01:32:06</td> 
+                            <td>20190301013206187</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥3000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-28 15:25:48</td> 
+                            <td>20190228152548124</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥20000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-25 00:18:24</td> 
+                            <td>20190225001824100</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-25 00:18:20</td> 
+                            <td>20190225001820153</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-25 00:18:16</td> 
+                            <td>20190225001816193</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-23 13:24:38</td> 
+                            <td>20190223132438114</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-23 13:24:38</td> 
+                            <td>20190223132438196</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-23 13:24:38</td> 
+                            <td>20190223132438176</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-23 13:24:38</td> 
+                            <td>20190223132438135</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-23 13:24:38</td> 
+                            <td>20190223132438135</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-23 13:24:37</td> 
+                            <td>20190223132437125</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-23 13:24:37</td> 
+                            <td>20190223132437159</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-23 13:24:37</td> 
+                            <td>20190223132437115</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-23 13:24:37</td> 
+                            <td>20190223132437180</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-20 11:14:28</td> 
+                            <td>20190220111428188</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-02-19 11:51:03</td> 
+                            <td>20190219115103106</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-02-19 11:50:53</td> 
+                            <td>20190219115053190</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥100000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-01-30 10:59:52</td> 
+                            <td>20190130105952155</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-01-11 15:39:22</td> 
+                            <td>20190111153922157</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2019-01-11 15:39:03</td> 
+                            <td>20190111153903163</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥15000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2019-01-11 15:38:30</td> 
+                            <td>20190111153830102</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-12-23 19:08:48</td> 
+                            <td>20181223190848125</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥2&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2018-12-20 14:25:41</td> 
+                            <td>20181220142541170</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-12-14 15:53:13</td> 
+                            <td>20181214155313115</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥30000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2018-12-07 23:09:12</td> 
+                            <td>20181207230912157</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-12-07 23:09:09</td> 
+                            <td>20181207230909148</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2018-12-07 16:39:13</td> 
+                            <td>20181207163913186</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥3000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-12-03 10:47:40</td> 
+                            <td>20181203104740147</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2018-12-03 10:47:36</td> 
+                            <td>20181203104736139</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-12-03 10:47:32</td> 
+                            <td>20181203104732130</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2018-12-03 10:47:21</td> 
+                            <td>20181203104721150</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥100&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-11-12 20:08:46</td> 
+                            <td>20181112200846132</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥1000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr><tr > 
+                            <td>2018-11-12 20:08:34</td> 
+                            <td>20181112200834100</td> 
+                            <td>支付</td> 
+                         
+                            <td>￥15000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td> 
+                          <td>-</td>
+                          </tr><tr   class="even"> 
+                            <td>2018-11-12 20:07:39</td> 
+                            <td>20181112200739138</td> 
+                            <td>支付</td> 
+                           
+                            <td>￥3000&nbsp;</td> 
+                            <td ><font color="gray">等待付款</font></td>  
+                          <td>-</td>
+                          </tr>
+                  </table>
+           
+    
+    
+    
+    
+				<div class="verify_content verify_padding">
+ 					<div class="clear"></div>
+				</div><div class="page_info">
+	
+		
+		<div class="clear"></div>
+	</div>
+</div>				
+			</div> <!--page_table end-->
+
+		</div> <!--page_content end-->
+	</div>
+
+
+</body>
+</html>

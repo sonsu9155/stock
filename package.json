@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "ioredis": "^4.9.1",
+    "redis": "^0.12.1",
+    "socket.io": "^2.2.0"
+  }
+}

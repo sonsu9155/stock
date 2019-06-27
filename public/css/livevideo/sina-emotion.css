@@ -1,0 +1,122 @@
+.sina-emo{
+	z-index: 999;
+	width: 373px;
+	padding: 10px;
+	display: none;
+	font-size: 12px;
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+	border: 1px solid #E8E8E8;
+	-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+			box-sizing: content-box;
+	min-height: 250px;
+}
+
+.sina-emo .right{
+	float: right;
+}
+
+.sina-emo .prev,
+.sina-emo .next{
+	float: left;
+	color: #555;
+	width: 22px;
+	height: 22px;
+	font-size: 20px;
+	margin-left: 5px;
+	line-height: 22px;
+	text-align: center;
+	background: #f8f8f8;
+	text-decoration: none;
+}
+
+.sina-emo .item{
+	float: left;
+	list-style: none;
+}
+
+.sina-emo .categories,
+.sina-emo .faces,
+.sina-emo .pages{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	_zoom: 1;
+}
+
+.sina-emo .category{
+	float: left;
+	color: #0a8cd2;
+	cursor: pointer;
+	padding: 0 8px;
+	line-height: 22px;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+
+.sina-emo .category:hover{
+	text-decoration: underline;
+}
+
+.sina-emo .categories .current,
+.sina-emo .categories .current:hover{
+	color: #333;
+	cursor: default;
+	background: #e6e6e6;
+	text-decoration: none;
+}
+
+.sina-emo .faces{
+	width: 372px;
+	padding: 11px 0 0 1px;
+}
+
+.sina-emo .face{
+	z-index: 1;
+	float: left;
+	width: 31px;
+	height: 32px;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 4px 2px;
+	position: relative;
+	text-align: center;
+	margin: -1px 0 0 -1px;
+	border: 1px solid #e8e8e8;
+	_display: inline;
+}
+
+.sina-emo .face:hover{
+	z-index: 2;
+	border: 1px solid #0095cd;
+}
+
+.sina-emo .pages{
+	float: right;
+	margin-top: 8px;
+}
+
+.sina-emo .page{
+	float: left;
+	height: 22px;
+	padding: 0 8px;
+	color: #0a8cd2;
+	margin-left: 5px;
+	line-height: 22px;
+	border-radius: 1px;
+	background: #f2f2f2;
+	text-decoration: none;
+}
+
+.sina-emo .pages .current{
+	color: #333;
+	cursor: default;
+	background: #fff;
+}
+
+.sina-emotion{
+	border: 0;
+	vertical-align: text-bottom;
+}

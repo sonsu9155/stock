@@ -1,0 +1,436 @@
+/*登录 B*/
+.denglu{
+	width: 1920px;
+	height: 606px;
+	background:url("../imgs/login-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	
+}
+.denglu .c-dl{
+	height: 530px;
+	text-align: center;
+	padding-top: 86px;
+
+}
+.denglu .c-dl .dl-box{
+	width: 660px;
+	height: 432px;
+	background: #fff;
+	text-align: center;
+	margin-left: 270px;
+	border-radius: 10px;
+}
+.denglu .c-dl ul{
+	border-bottom: 1px solid #e5e5e5;
+
+}
+.denglu .c-dl .yonghu{
+	font-size: 22px;
+	color: red;
+	padding-left: 10px;
+	line-height: 60px;
+	margin-left: 20px;
+}
+.denglu .name{
+	margin-top: 32px;
+}
+.denglu .name span{
+	font-size: 14px;
+	color:#666666;
+}
+.denglu .name input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+	outline: none;
+}
+.denglu .mima{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.denglu .mima span{
+	font-size: 14px;
+	color:#666666;
+}
+.denglu .mima input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.denglu .yzma{
+	margin-top: 30px;
+	height: 40px;
+	vertical-align: middle;
+	position: relative;
+}
+.denglu .yzma span{
+	font-size: 14px;
+	color:#666666;
+}
+.denglu .yzma input{
+	width: 178px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.denglu .yzma img{
+width: 150px;
+height: 40px;
+position: absolute; bottom: 0px;right: 132px;
+cursor: pointer;
+}
+.denglu .yzma .gengxin{
+	padding-left: 170px;
+}
+.denglu .yzma a{
+	text-decoration: none;
+	color: #333;
+}
+.denglu .dl-zhuce{
+	margin-top: 30px;
+}
+ .denglu .dl-zhuce a{
+	text-decoration: none;
+	color: #4c4c4c;
+	font-size: 14px;
+}
+.denglu .dl-zhuce .f-mima:hover{
+	color: red;
+}
+.denglu .dl-zhuce .z-left {
+  margin-left: 96px;
+}
+.denglu .dl-zhuce .z-right {
+  margin-right: 96px;
+}
+.denglu .dl-btn{
+	margin-top: 30px;
+}
+.denglu .dl-btn input{
+	width: 404px;
+	height: 46px;
+	color: #fff;
+	background: #fb3d51;
+	font-size: 16px;
+	outline: none;
+	border-radius: 6px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+.denglu .dl-btn input:hover{
+	background: #ff6373;
+}
+/*登录 E*/
+/*注册 B*/
+.zhuce{
+	width: 1920px;
+	height: 900px;
+	background: url("../imgs/reg-bg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.zhuce .c-zhuce{
+	height: 690px;
+	text-align: center;
+	padding-top: 30px;
+
+}
+.zhuce .c-zhuce .zhuce-box{
+	width: 660px;
+	background: #fff;
+	text-align: center;
+	margin-left: 10px;
+	border-radius: 10px;
+	padding-bottom: 30px;
+}
+.zhuce .c-zhuce ul{
+	border-bottom: 1px solid #e5e5e5;
+
+}
+.zhuce .c-zhuce .zc{
+	font-size: 22px;
+	color: red;
+	padding-left: 10px;
+	line-height: 60px;
+	margin-left: 20px;
+}
+.zhuce .zc-name{
+	margin-top: 32px;
+}
+.zhuce .zc-name span{
+	font-size: 14px;
+	color:#666666;
+}
+.zhuce .zc-name input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+
+.zhuce .zc-yzma{
+	margin-top: 30px;
+	height: 40px;
+	vertical-align: middle;
+	position: relative;
+}
+.zhuce .zc-yzma span{
+	font-size: 14px;
+	color:#666666;
+}
+.zhuce .zc-yzma input{
+	width: 166px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.zhuce .zc-yzma img{
+width: 150px;
+height: 40px;
+position: absolute; bottom: 0px;
+cursor: pointer;
+}
+.zhuce .zc-yzma .next{
+	padding-left: 170px;
+}
+.zhuce .zc-yzma a{
+	text-decoration: none;
+	color: #333;
+}
+.zhuce .zc-mima{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.mleft{
+	margin-left: 5px;
+}
+.zhuce .zc-mima span{
+	font-size: 14px;
+	color:#666666;
+}
+.zhuce .zc-mima input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.zhuce .qr-mima{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.zhuce .qr-mima span{
+	font-size: 14px;
+	color:#666666;
+}
+.zhuce .qr-mima input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+
+.zhuce .tuijian{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.zhuce .tuijian span{
+	font-size: 14px;
+	color:#666666;
+}
+.zhuce .tuijian input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.zhuce .xieyi ul{
+	margin-left: 86px;
+	margin-right: 88px;
+}
+.zhuce .xieyi input{
+	margin-right: 6px;
+	width: 14px;
+	height: 14px;
+    color:#666;
+    vertical-align: middle;
+}
+.zhuce .xieyi input{
+	margin-right: 6px;
+	width: 14px;
+	height: 14px;
+    color:#666;
+    vertical-align: middle;
+}
+.zhuce .xieyi a{
+	text-decoration: none;
+	color:#333;
+}
+.zhuce .zc-btn{
+	margin-top: 20px;
+}
+.zhuce .zc-btn input{
+	width: 404px;
+	height: 46px;
+	color: #fff;
+	background: #fb3d51;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 6px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.zhuce .zc-btn input:hover{
+	background: #ff6373;
+}
+
+.fasong-btn{
+	margin-left: 36px;
+	
+}
+.fasong-btn input{
+	outline: none;
+	cursor: pointer;
+	background-color: #fd5b54;
+	color: #fff;
+	border-radius: 6px;
+	border: none;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+/*注册 E*/
+/*改密码 B*/
+.gaimima{
+	width: 1920px;
+	height: 640px;
+	background: url("../imgs/login-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.gaimima .c-gaimima{
+	text-align: center;
+	padding-top: 40px;
+
+}
+.gaimima .c-gaimima .gm-box{
+	width: 660px;
+	padding-bottom: 30px;
+	background: #fff;
+	text-align: center;
+	margin-left: 270px;
+	border-radius: 10px;
+}
+.gaimima .c-gaimima ul{
+	border-bottom: 1px solid #e5e5e5;
+}
+.gaimima .c-gaimima .zc{
+	font-size: 22px;
+	color: red;
+	padding-left: 10px;
+	line-height: 60px;
+	margin-left: 20px;
+}
+.gaimima .gm-name{
+	margin-top: 32px;
+	position: relative;
+}
+.gaimima .gm-name span{
+	font-size: 14px;
+	color:#666666;
+}
+.gaimima .gm-name input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background: url("http://pvp.asrp.top/imgs/sj.png") no-repeat center left;
+	background-position: 10px ;
+	padding-left: 36px;
+	
+}
+.gaimima .gm-name .gm-btn {
+	color: #fff;
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	background-color: #fb3d51;
+	right: 82px;
+	top: -5px;
+	border: none;
+	margin-top: 6px;
+}
+.gaimima .gm-yzm{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.gaimima .gm-yzm span{
+	font-size: 14px;
+	color:#666666;
+}
+.gaimima .gm-yzm input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.gaimima .gm-mima{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.gaimima .gm-mima span{
+	font-size: 14px;
+	color:#666666;
+}
+.gaimima .gm-mima input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.gaimima .gm-mima02{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.gaimima .gm-mima02 span{
+	font-size: 14px;
+	color:#666666;
+}
+.gaimima .gm-mima02 input{
+	width: 374px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	background-position: 10px ;
+	padding-left: 36px;
+}
+.gaimima .gm-btn{
+	margin-top: 20px;
+}
+.gaimima .gm-btn input{
+	width: 404px;
+	height: 46px;
+	color: #fff;
+	background: #fb3d51;
+	font-size: 16px;
+	border-radius: 6px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.gaimima .gm-btn input:hover{
+	background: #ff6373;
+}
+/*改密码 E*/
