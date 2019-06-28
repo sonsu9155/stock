@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="过滤法" fldname="T过滤法" titleclr="245,147,0"/>
+					<textcol title="密度梯度离心法" fldname="T密度梯度离心法" titleclr="245,147,0"/>
+					<textcol title="阳性富集法一免疫磁珠分离" fldname="T阳性富集法一免疫磁珠分离" titleclr="245,147,0"/>
+					<textcol title="阳性富集法一微流体" fldname="T阳性富集法一微流体" titleclr="245,147,0"/>
+					<textcol title="阴性捕获法" fldname="T阴性捕获法" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="140"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="航天科技" fldname="T航天科技" titleclr="245,147,0"/>
+					<textcol title="航天科工" fldname="T航天科工" titleclr="245,147,0"/>
+					<textcol title="中航工业" fldname="T中航工业" titleclr="245,147,0"/>
+					<textcol title="中国航发" fldname="T中国航发" titleclr="245,147,0"/>
+					<textcol title="中国电科" fldname="T中国电科" titleclr="245,147,0"/>
+					<textcol title="中船重工" fldname="T中船重工" titleclr="245,147,0"/>
+					<textcol title="中船集团" fldname="T中船集团" titleclr="245,147,0"/>
+					<textcol title="兵工集团" fldname="T兵工集团" titleclr="245,147,0"/>
+					<textcol title="兵装集团" fldname="T兵装集团" titleclr="245,147,0"/>
+					<textcol title="中核集团" fldname="T中核集团" titleclr="245,147,0"/>
+					<textcol title="中国核建" fldname="T中国核建" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="2"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

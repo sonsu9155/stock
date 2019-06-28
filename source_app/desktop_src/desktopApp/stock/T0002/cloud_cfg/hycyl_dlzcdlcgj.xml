@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="组成及原理" fldname="T组成及原理" titleclr="245,147,0"/>
+					<textcol title="产品特点" fldname="T产品特点" titleclr="245,147,0"/>
+					<textcol title="技术性能" fldname="T技术性能" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="117"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

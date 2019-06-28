@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="201403" fldname="T201403" titleclr="245,147,0"/>
+					<textcol title="201503" fldname="T201503" titleclr="245,147,0"/>
+					<textcol title="201504" fldname="T201504" titleclr="245,147,0"/>
+					<textcol title="20150510" fldname="T20150510" titleclr="245,147,0"/>
+					<textcol title="20150729" fldname="T20150729" titleclr="245,147,0"/>
+					<textcol title="20150731" fldname="T20150731术" titleclr="245,147,0"/>
+					<textcol title="20160308" fldname="T20160308" titleclr="245,147,0"/>
+					<textcol title="201603" fldname="T201603" titleclr="245,147,0"/>
+					<textcol title="20160305" fldname="T20160305" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="142"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

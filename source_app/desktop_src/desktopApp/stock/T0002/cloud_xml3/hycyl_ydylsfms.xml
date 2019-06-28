@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="盈利依赖药企的模式" fldname="T盈利依赖药企的模式" titleclr="245,147,0"/>
+					<textcol title="盈利依赖医院的模式" fldname="T盈利依赖医院的模式" titleclr="245,147,0"/>
+					<textcol title="盈利依赖医生的模式" fldname="T盈利依赖医生的模式" titleclr="245,147,0"/>
+					<textcol title="盈利依赖患者的模式" fldname="T盈利依赖患者的模式" titleclr="245,147,0"/>
+					<textcol title="盈利依赖险企的模式" fldname="T盈利依赖险企的模式" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="187"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

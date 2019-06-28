@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="清华大学颜永年团队" fldname="T清华大学颜永年团队" titleclr="245,147,0"/>
+					<textcol title="北航王华明团队" fldname="T北航王华明团队" titleclr="245,147,0"/>
+					<textcol title="华中科大卢秉恒团队" fldname="T华中科大卢秉恒团队" titleclr="245,147,0"/>
+					<textcol title="西安交大史玉升团队" fldname="T西安交大史玉升团队" titleclr="245,147,0"/>
+					<textcol title="西北工大黄卫东团队" fldname="T西北工大黄卫东团队" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="90"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="2" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="入口分布器" fldname="T入口分布器" titleclr="245,147,0"/>
+					<textcol title="分配盘" fldname="T分配盘" titleclr="245,147,0"/>	
+					<textcol title="积垢篮" fldname="T积垢篮" titleclr="245,147,0"/>	
+					<textcol title="冷氢管" fldname="T冷氢管" titleclr="245,147,0"/>	
+					<textcol title="冷氢箱" fldname="T冷氢箱" titleclr="245,147,0"/>	
+					<textcol title="催化剂支撑盘" fldname="T催化剂支撑盘" titleclr="245,147,0"/>	
+					<textcol title="催化剂卸料管" fldname="T催化剂卸料管" titleclr="245,147,0"/>	
+					<textcol title="出口收集器" fldname="T出口收集器" titleclr="245,147,0"/>	
+					<textcol title="热电偶" fldname="T热电偶" titleclr="245,147,0"/>	
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="89"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

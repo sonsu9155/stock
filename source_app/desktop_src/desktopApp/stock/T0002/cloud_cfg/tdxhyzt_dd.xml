@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+			    <component caption="大豆进口分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="我国大豆进口数量" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DDJKL" caption="月进口量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JKLDYTB" caption="当月同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="1"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="6" name="tabpanel">
+									<tabpanel>
+										<component caption="我国大豆进口金额" id="99" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DDJKJE" caption="月进口金额(万美元)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JKEDYTB" caption="当月同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="1"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="10" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="11" name="tabpanel">
+									<tabpanel>
+										<component caption="我国大豆进口市场情况：美国" id="7" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="MGJKL" caption="从美国累计进口数量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="MGJKLTB" caption="同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="2"></datasource>
+											</chartctrl>
+										</component>
+									    <component caption="我国大豆进口市场情况：巴西" id="7" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="BXJKL" caption="从巴西累计进口数量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="BXJKLTB" caption="同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="2"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国大豆进口市场情况：阿根廷" id="7" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AGTJKL" caption="从阿根廷累计进口数量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="AGTJKLTB" caption="同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="2"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="13" name="tabpanel">
+									<tabpanel>
+										<component caption="大豆进口港口分销价" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T002" caption="大连港(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T003" caption="天津港(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="T004" caption="青岛港(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="T011" caption="连云港(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="10"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="大豆供需分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="全球大豆库存分析" id="25" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QQQMKC" caption="全球期末库存(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="ZGQMKC" caption="中国期末库存" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="MGQMKC" caption="美国期末库存" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXQMKC" caption="巴西期末库存" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="5" name="AGTQMKC" caption="阿根廷期末库存" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="3"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="6" name="tabpanel">
+									<tabpanel>
+										<component caption="全球大豆进口分析" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QQJKL" caption="全球进口量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="ZGJKL" caption="中国进口量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="MGJKL" caption="美国进口量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXJKL" caption="巴西进口量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="5" name="AGTJKL" caption="阿根廷进口量" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="3"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="全球大豆出口分析" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QQCKL" caption="全球出口量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="ZGCKL" caption="中国出口量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="MGCKL" caption="美国出口量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXCKL" caption="巴西出口量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="5" name="AGTCKL" caption="阿根廷出口量" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="3"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="10" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="11" name="tabpanel">
+									<tabpanel>
+									   <component caption="全球大豆压榨量分析" id="28" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QQYZL" caption="全球压榨量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="ZGYZL" caption="中国压榨量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="MGYZL" caption="美国压榨量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXYZL" caption="巴西压榨量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="5" name="AGTYZL" caption="阿根廷压榨量" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="3"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="13" name="tabpanel">
+									<tabpanel>
+										 <component caption="全球大豆产量分析" id="27" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QQCL" caption="全球产量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="ZGCL" caption="中国产量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="MGCL" caption="美国产量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXCL" caption="巴西产量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="5" name="AGTCL" caption="阿根廷产量" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="3"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="全球大豆销费量分析" id="27" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QQXFL" caption="全球销费量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="ZGXFL" caption="中国销费量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="MGXFL" caption="美国销费量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXXFL" caption="巴西销费量" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="5" name="AGTXFL" caption="阿根廷销费量" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="3"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="大豆价格持仓分析" id="15" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="16" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="17" name="tabpanel">
+									<tabpanel>
+										<component caption="大连黄豆期货价格" id="18" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="黄大豆1号收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,A"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="大连油豆期货价格" id="19" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="黄大豆2号收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,B"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+									<tabpanel>
+										<component caption="大连黄豆期货仓单" id="21" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="2" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="8"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="23" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="24" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场大豆期货价格" id="31" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T004" caption="CBOT大豆期货价格(美分/蒲式耳)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="4"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="国际市场大豆现货价格" id="31" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DDXH" caption="阿根廷大豆现货价(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="30" name="tabpanel">
+									<tabpanel>
+										<component caption="大豆CFTC持仓" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZCC" caption="CFTC大豆总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FSYCC" caption="CFTC大豆非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="FBGTC" caption="CFTC大豆非报告头寸(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="9"></datasource>
+											</chartctrl>
+										</component>
+										
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="下游豆粕分析" id="56" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="33" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="34" name="tabpanel">
+									<tabpanel>
+										<component caption="大连豆粕期货价格" id="35" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="豆粕期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,M"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国22个省市豆粕均价" id="41" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T005" caption="我国22个省市豆粕均价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="14"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="36" name="tabpanel">
+									<tabpanel>
+										<component caption="大连豆粕期货仓单" id="37" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="2" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="5"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="38" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="39" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场豆粕期货价格" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T005" caption="CBOT豆粕期货价格(美元/美吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="4"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="国际市场豆粕现货价格" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DPXJ" caption="豆粕现货价格(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="42" name="tabpanel">
+									<tabpanel>
+										<component caption="我国豆粕出口数量" id="43" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKSL" caption="出口数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKSLTB" caption="出口数量同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="6"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国豆粕出口金额" id="98" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKJE" caption="出口金额(万美元)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKJETB" caption="出口金额同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="下游豆油分析" id="44" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="45" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="46" name="tabpanel">
+									<tabpanel>
+										<component caption="大连豆油期货价格" id="47" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="豆油期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,Y"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国桶装豆油零售价" id="53" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T004" caption="我国桶装豆油零售价(元/升)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="15"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="48" name="tabpanel">
+									<tabpanel>
+										<component caption="大连豆油期货仓单" id="49" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="7"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="50" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="51" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场豆油期货价格" id="52" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T006" caption="CBOT豆油期货价(美元/磅)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="4"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="国际市场豆油现货价格" id="52" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYXJ" caption="豆油(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="54" name="tabpanel">
+									<tabpanel>
+										<component caption="我国豆油进口数量" id="55" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JKSL" caption="进口数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JKSLTB" caption="进口数量同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="13"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国豆油进口金额" id="97" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JKJE" caption="进口金额(万美元)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JKJETB" caption="进口金额同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="13"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="宏观经济分析" id="61" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="62" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="63" name="tabpanel">
+									<tabpanel>
+										<component caption="国内生产总值" id="64" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GDP" caption="国内生产总值GDP累计(万亿)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GDPZZ" caption="GDP累计增长率(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="农业总产值" id="69" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="NYCZ" caption="农业总值累计(亿元)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="NYLJTB" caption="累计增长率(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="19"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="65" name="tabpanel">
+									<tabpanel>
+										<component caption="居民消费价格指数" id="66" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QGCPI" caption="全国CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CSCPI" caption="城市CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="NCCPI" caption="农村CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="16"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="67" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="68" name="tabpanel">
+									<tabpanel>
+										<component caption="联合国粮农组织油和油脂价格指数" id="69" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T012" caption="油和油脂(实际)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T006" caption="油和油脂(名义)" style="1" defsel="1" baseline="0.0"></prop>									
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="17"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="食用农产品价格指数" id="72" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="NCPZSHB" caption="食用农产品价格指数环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="18"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="71" name="tabpanel">
+									<tabpanel>
+										<component caption="农产品集贸市场大豆价格指数" id="32" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYTB" caption="大豆价格指数当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DYHB" caption="大豆价格指数当月环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="12"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>	
+						</table>						
+					</splitpanel>	
+				</component>	
+			</tabpanel>
+		</table>
+	</table>
+</root>

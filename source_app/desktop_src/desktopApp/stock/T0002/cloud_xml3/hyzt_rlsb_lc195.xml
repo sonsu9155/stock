@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="图像采集" fldname="T图像采集" titleclr="245,147,0"/>
+					<textcol title="人脸检测" fldname="T人脸检测" titleclr="245,147,0"/>
+					<textcol title="人脸图像预处理" fldname="T人脸图像预处理" titleclr="245,147,0"/>
+					<textcol title="人脸图像特征点提取" fldname="T人脸图像特征点提取" titleclr="245,147,0"/>
+					<textcol title="人脸图像匹配与识别" fldname="T人脸图像匹配与识别" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="195"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

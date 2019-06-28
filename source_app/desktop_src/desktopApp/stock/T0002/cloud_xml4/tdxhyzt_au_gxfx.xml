@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="供给分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金储量分布" id="26" name="splitpanel" >
+											<splitpanel hdirection="false" >
+												<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="27" name="gridctrl">	
+													<gridctrl>
+														<gridcols fixednum="1" rowchgmsg="false" postslave="true" ingcode="true" >
+															<gridcol name="DQ" caption="地区"  visible="true"   headalign="L" align="L" width="115" datatype="S"  ></gridcol>
+															<gridcol name="CAL" caption="产量(吨)" visible="true" align="R" width="62" datatype="F" digital="0"></gridcol>
+															<gridcol name="CUL" caption="储量(吨)"  visible="true" align="R" width="62" datatype="F" digital="0"></gridcol>
+															<gridcol name="KCNX" caption="可开采年限"  visible="true" align="R" width="90" datatype="F" digital="2"></gridcol>
+														</gridcols>
+														<datasource   reqformat="0"  name="cfg_hycyl_au" body="1"></datasource>
+													</gridctrl>
+												</table>
+												<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="28" name="branchpanel">
+													<branchpanel>
+														<table X="0" Y="0" width="1" height="20" isleaf="true" hdirection="true" id="1" name="notepanel">
+															<notepanel>
+																<properties hoffset="10" voffset="10" frameline="0" >
+																	<prop rowhead="true" note="2016年全球黄金储量分布图" clrtype=""/>
+																</properties>
+																<datasource   reqformat="0" name="cfg_hycyl_au" body="1"></datasource>
+															</notepanel>
+														</table>
+														<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="2" name="piepanel">
+															<piepanel>
+																<properties top="" othercol="false" textcol="DQ" datacol="CUL" >
+																</properties>
+																<datasource  masterid="" reqformat="0" name="cfg_hycyl_au" body="2"></datasource>
+															</piepanel>
+														</table>
+													</branchpanel>	
+												</table>		
+											</splitpanel>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="7" name="tabpanel">
+									<tabpanel>
+										<component caption="中国黄金产量走势" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CAL" caption="我国黄金产量(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="CUL" caption="我国黄金储量(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="3"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="9" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="10" name="tabpanel">
+									<tabpanel>
+										<component caption="中国黄金储备" id="13" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HJCB" caption="黄金储备数值(万盎司)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CBTB" caption="黄金储备同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="4"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="12" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金供给分析" id="16" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T015" caption="黄金供应总量(吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T016" caption="金矿产量(吨)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="3" name="T020" caption="黄金回收(吨)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="4" name="T017" caption="生产商对冲(吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="需求分析" id="29" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="30" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="39" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金需求量" id="38" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T002" caption="需求合计(吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="43" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金需求量(分行业)" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T003" caption="金饰(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T004" caption="科技(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="T008" caption="投资(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="38" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="31" name="tabpanel">
+									<tabpanel>
+										<component caption="金银珠宝类零售额" id="33" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYLSE" caption="当月值(亿元)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="DYTB" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="10"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="34" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金投资需求" id="35" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T008" caption="投资需求合计(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="T009" caption="金条金币需求(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="3" name="T013" caption="ETF及类似产品需求(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>
+  

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="低合金钢" fldname="T低合金钢" titleclr="245,147,0"/>
+					<textcol title="合金结构钢" fldname="T合金结构钢" titleclr="245,147,0"/>
+					<textcol title="耐热钢和不锈钢" fldname="T耐热钢和不锈钢" titleclr="245,147,0"/>
+					<textcol title="电工钢" fldname="T电工钢" titleclr="245,147,0"/>
+					<textcol title="工模具和耐磨钢" fldname="T工模具和耐磨钢" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="56"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

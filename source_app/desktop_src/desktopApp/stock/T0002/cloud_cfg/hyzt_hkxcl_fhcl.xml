@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="碳纤维复合材料" fldname="T碳纤维复合材料" titleclr="245,147,0"/>
+					<textcol title="玻璃纤维复合材料" fldname="T玻璃纤维复合材料" titleclr="245,147,0"/>
+					<textcol title="陶瓷基复合材料" fldname="T陶瓷基复合材料" titleclr="245,147,0"/>
+					<textcol title="碳一碳复合材料" fldname="T碳一碳复合材料" titleclr="245,147,0"/>
+					<textcol title="多孔金属箔复合材料" fldname="T多孔金属箔复合材料" titleclr="245,147,0"/>
+					<textcol title="铝基复合材料" fldname="T铝基复合材料" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="131"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

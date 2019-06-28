@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="上游分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="甘蔗产量" id="15" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GZCL" caption="甘蔗产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GZCLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="1"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="9" name="tabpanel">
+									<tabpanel>
+										<component caption="甘蔗播种面积" id="16" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GZBZMJ" caption="播种面积(万公顷)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GZMJTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="2"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="13" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="14" name="tabpanel">
+									<tabpanel>
+										<component caption="甜菜产量" id="19" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TCCL" caption="甜菜产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TCCLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="1"></datasource>
+											</chartctrl>
+										</component>
+									  </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="甜菜播种面积" id="20" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TCBZMJ" caption="播种面积(万公顷)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TCMJTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="2"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			    <component caption="白糖供需分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="成品糖产量" id="11" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="DYCL" caption="当月产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+                                                <prop index="2" name="TBZZ" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop> 
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="3"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="糖料播种面积" id="12" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TLBZMJ" caption="播种面积(万公顷)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TLMJTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="2"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="9" name="tabpanel">
+									<tabpanel>	
+										<component caption="白糖期货仓单" id="27" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="KYKRL" caption="可用库容量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="301,SR"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="13" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="14" name="tabpanel">
+									<tabpanel>
+									    <component caption="食糖进口数量" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JKSL" caption="月进口总量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JKSLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="4"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="食糖进口金额" id="6" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JKJE" caption="月进口金额(万美元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JKJETB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="4"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="食糖出口数量" id="7" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKSL" caption="月出口总量(吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKSLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="5"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="食糖出口金额" id="8" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKJE" caption="月出口金额(万美元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKJETB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="5"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="白糖价格分析" id="21" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="22" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="23" name="tabpanel">
+									<tabpanel>
+										<component caption="郑州白糖期货价格" id="24" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="白糖期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,SR"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="26" name="tabpanel">
+									<tabpanel>
+										<component caption="国内市场白砂糖现货价" id="25" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="WLMQBT" caption="乌鲁木齐现货价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="HEBBT" caption="哈尔滨现货价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="ZJBT" caption="湛江现货价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="LZBT" caption="柳州现货价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="9"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="国内市场白砂糖零售价" id="25" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="BTLSJ" caption="零售价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="7"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="28" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="29" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场白糖期货价格" id="30" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T009" caption="NYMEX糖期货价格(美元/磅)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="32" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场原糖现货价格" id="31" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YTJG" caption="原糖(美分/磅)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="8"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="下游分析" id="34" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="35" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="36" name="tabpanel">
+									<tabpanel>
+										<component caption="软饮料产量" id="37" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="DYCL" caption="当月产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+                                                <prop index="3" name="TBZZ" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="10"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="38" name="tabpanel">
+									<tabpanel>
+                                        <component caption="软饮料销量" id="39" name="chartctrl" >
+                                            <chartctrl>
+                                                <properties >
+                                                <prop index="1" name="LJXL" caption="累计销量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+                                                <prop index="2" name="CXL" caption="产销率(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="12"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="40" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="41" name="tabpanel">
+									<tabpanel>
+										<component caption="乳制品产量" id="42" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYCL" caption="当月产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TBZZ" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="43" name="tabpanel">
+									<tabpanel>
+										<component caption="乳制品销量" id="44" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="LJXL" caption="累计销量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CXL" caption="产销率(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_sr" body="13"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>

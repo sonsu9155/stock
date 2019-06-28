@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="2" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="开采难度" fldname="T开采难度" titleclr="245,147,0"/>
+					<textcol title="全球开采现状" fldname="T全球开采现状" titleclr="245,147,0"/>
+					<textcol title="可燃冰储量" fldname="T可燃冰储量" titleclr="245,147,0"/>
+					<textcol title="可燃冰商业化" fldname="T可燃冰商业化" titleclr="245,147,0"/>
+					<textcol title="可燃冰投资逻辑" fldname="T可燃冰投资逻辑" titleclr="245,147,0"/>
+					<textcol title="投资风险" fldname="T投资风险" titleclr="245,147,0"/>					
+															
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="76"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

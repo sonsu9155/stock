@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel>
+				<table X="0" Y="0" width="1" height="0.6" isleaf="true" hdirection="true" id="2" name="branchpanel">
+					<branchpanel hdirection="true">			
+						<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="6" name="splitpanel">
+							<splitpanel hdirection="true">						
+								<table X="0" Y="0" width="1" height="0.9" isleaf="true" hdirection="true" id="3" name="gridctrl" >
+									<gridctrl>
+										<gridcols fixednum="3" rowchgmsg="true" postslave="true" forbidmenu="1" cachefile="true" glincode="true" defsort="AVGZF">
+											<gridcol  name="Pldm" caption="代码"  visible="false" align="L" width="60" datatype="S" ></gridcol>
+											<gridcol  name="PLMC" caption="品类名称"  visible="true" align="L" headalign="L" width="140" datatype="S" ></gridcol>
+											<gridcol  name="GPJH" caption="股票集合"  syscol="$S_ZQDM" visible="false" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+											<gridcol  name="AVGZF" caption="均涨幅" syscol="$S_AVGZF" visible="true" align="R" width="70" datatype="F" digital="2" clrtype="Z" ></gridcol>
+											<gridcol  name="JQZF" caption="加权涨幅" syscol="$S_JQZF" visible="true" align="R" width="70" datatype="F" digital="2" ></gridcol>
+											<gridcol  name="LTG" caption="龙头股" syscol="$S_LTG" visible="true" headalign="L" align="L" width="70" datatype="S" ></gridcol>
+											<gridcol  name="MAXZF" caption="最大涨幅" syscol="$S_MAXZF" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="szbl" caption="上涨比例" syscol="$S_UPRATE" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="gpsl" caption="成分股数" syscol="$S_NUM" visible="true"  align="R" headalign="L" width="70" datatype="I"  ></gridcol>
+											<gridcol  name="plms" caption="描述" visible="false"  align="L" headalign="L" width="40" datatype="M"  ></gridcol>
+										</gridcols>
+										<datasource  reqformat="0" switchid="4" name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</gridctrl>
+								</table>
+								<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="7" name="textpanel" >
+									<textpanel>
+										<properties>
+											<textcol title="品类描述" fldname="plms" titleclr="245,147,0"/>	
+										</properties>
+										<datasource   masterid="3" reqformat="12"   name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</textpanel>
+								</table>
+							</splitpanel>
+						</table>
+					
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="4" name="switchcond" >
+							<switchcond>
+								<switchitems swgroup="14">
+									<switchitem itemid="H14" caption="信息产业(全)" topnode="true"  />
+										<switchitem itemid="H1401" caption="电脑设备" topnode="true"  />
+										<switchitem itemid="H1402" caption="通信设备" topnode="true"  />
+										<!--
+										<switchitem itemid="H140201" caption="传输设备"  />
+										<switchitem itemid="H140202" caption="终端设备"  />
+										<switchitem itemid="H140203" caption="通信配件"  />
+										<switchitem itemid="H140204" caption="通信产品"  />
+										<switchitem itemid="H140205" caption="行业应用"  />
+										-->
+										<switchitem itemid="H1403" caption="半导体" topnode="true"  />								
+										<switchitem itemid="H1404" caption="元器件" topnode="true"  />								
+										<switchitem itemid="H1405" caption="软件服务" topnode="true"  />
+										<switchitem itemid="H140501" caption="系统软件"  />
+										<switchitem itemid="H140502" caption="行业软件"  />	
+										<switchitem itemid="H1406" caption="互联网" topnode="true"  />
+										<!--<switchitem itemid="H140601" caption="基础服务"  />
+										<switchitem itemid="H140602" caption="游戏"  />
+										<switchitem itemid="H140603" caption="社交娱乐"  />
+										<switchitem itemid="H140604" caption="电子商务"  />
+										<switchitem itemid="H140605" caption="互联网媒体"  />
+										<switchitem itemid="H140604" caption="其他商务应用"  />
+										-->		
+						
+								</switchitems>
+							</switchcond>
+						</table>
+					</branchpanel>
+				</table>
+				<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="5" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="3" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF" >
+							<gridcol name="GPDM" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="gpname" caption="名称" syscol="$ZQJC" visible="true"  headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R"  width="60" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="ZD" caption="涨跌" syscol="$QRSD"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="CJL" caption="总量" syscol="$CJL"  visible="true" headalign="R" align="R" width="70" datatype="I" ></gridcol>							
+							<gridcol name="HSL" caption="换手%" syscol="$HSL"  visible="true" headalign="R" align="R" width="60" datatype="F"></gridcol>							
+							<gridcol name="ZCJJE" caption="总金额" syscol="$ZCJJE"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>								
+							<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" headalign="R" align="R" width="80" datatype="F" ></gridcol>						
+						</gridcols>
+						<datasource  masterid="3" reqformat="0"   name="cfg_bk_dghypl" body="2,$INBLOCK$,$$Pldm$$"></datasource>
+					</gridctrl>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

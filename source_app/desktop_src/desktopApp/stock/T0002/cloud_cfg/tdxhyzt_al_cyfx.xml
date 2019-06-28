@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="上游分析" id="2" name="splitpanel" >	
+					<splitpanel hdirection="true">
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="4" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="-1" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="5" name="tabpanel">
+									<tabpanel>
+										<component caption="国内铝土矿分布" id="6" name="splitpanel" >
+											<splitpanel hdirection="false" >
+												<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="7" name="gridctrl">	
+													<gridctrl>
+														<gridcols fixednum="1" rowchgmsg="false" postslave="true" ingcode="true" >
+															<gridcol name="DQ" caption="地区"  visible="true"   headalign="L" align="L" width="130" datatype="S"  ></gridcol>											
+															<gridcol name="CUL" caption="储量(万吨)"  visible="true" align="R" width="80" datatype="F" digital="0"></gridcol>
+															<gridcol name="CULZB" caption="占比(%)"  visible="true" align="R" width="80" datatype="F" digital="2"></gridcol>
+														</gridcols>
+														<datasource   reqformat="0"  name="cfg_hycyl_al" body="1"></datasource>
+													</gridctrl>
+												</table>
+												<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="31" name="branchpanel">
+													<branchpanel>
+														<table X="0" Y="0" width="1" height="20" isleaf="true" hdirection="true" id="1" name="notepanel">
+															<notepanel>
+																<properties hoffset="10" voffset="10" frameline="0" >
+																	<prop rowhead="true" note="2015年中国铝土矿储量分布图" clrtype=""/>
+																</properties>
+															</notepanel>
+														</table>
+														<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="2" name="piepanel">
+															<piepanel>
+																<properties top="10" othercol="true" textcol="DQ" datacol="CUL" >
+																</properties>
+																<datasource  masterid="" reqformat="0" name="cfg_hycyl_al" body="2"></datasource>
+															</piepanel>
+														</table>
+													</branchpanel>	
+												</table>
+											</splitpanel>
+										</component>	
+									</tabpanel>									
+								</table> 
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="9" name="tabpanel">
+									<tabpanel>
+										<component caption="国内铝土矿储量走势" id="10" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CUL" caption="铝土矿储量(亿吨)-左" style="3" defsel="1" baseline="0.0"></prop>	
+												<prop index="2" name="CULZZ" caption="储量增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<xaxis name="DATE" caption="年份"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="3"></datasource>
+											</chartctrl>									
+										</component>		
+									</tabpanel>									
+								</table> 
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="11" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="-1" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="12" name="tabpanel">
+									<tabpanel>	
+										<component caption="氧化铝进口分析" id="14" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YHLJKSL" caption="氧化铝进口数量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="YHLJKJJ" caption="氧化铝进口均价(美元/吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="5"></datasource>
+											</chartctrl>									
+										</component>	
+									</tabpanel>									
+								</table> 		
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="15" name="tabpanel">
+									<tabpanel>
+										<component caption="氧化铝产销量分析" id="16" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YHLCL" caption="氧化铝产量累计(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="YHLXL" caption="氧化铝销量累计(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="YHLCXL" caption="产销率(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="4"></datasource>
+											</chartctrl>									
+										</component>	
+									</tabpanel>									
+								</table> 	
+							</splitpanel>
+						</table> 	
+					</splitpanel>	
+				</component>
+				<component caption="中游分析" id="18" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="19" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="铝材价格" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SHALQJ" caption="沪铝期价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ADCLHJDJJ" caption="ADC12铝合金均价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="ZLLHJDJJ" caption="ZL102铸造铝合金锭均价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="8"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>
+										<component caption="铝材产量" id="28" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="LCCL" caption="铝材产量当月(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="LCCLTB" caption="产量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="9"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+									<tabpanel>
+										<component caption="废铝进口分析" id="21" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="FLJKSL" caption="进口数量(吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FLJKJJ" caption="进口均价(美元/吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="6"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="22" name="tabpanel">
+									<tabpanel>
+										<component caption="原铝产销量分析" id="23" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YLCL" caption="原铝产量累计(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="YLXL" caption="原铝销量累计(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="YLCXL" caption="产销率(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="7"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>				
+				<component caption="下游产量分析" id="30" name="splitpanel" >
+					<splitpanel hdirection="true">							
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="31" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="32" name="tabpanel">
+									<tabpanel>
+										<component caption="电气设备产量" id="33" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DQCL" caption="电气设备产量(万千瓦)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DQTB" caption="产量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="14"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="34" name="tabpanel">
+									<tabpanel>
+										<component caption="家电产量" id="35" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="KTCL" caption="空调产量(万台)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="KTTB" caption="空调产量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<prop index="3" name="BXCL" caption="冰箱产量(万台)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BXTB" caption="冰箱产量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="14"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="36" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="37" name="tabpanel">
+									<tabpanel>
+										<component caption="汽车产量" id="38" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QCCL" caption="汽车产量(万辆)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="QCTB" caption="产量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="14"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="39" name="tabpanel">
+									<tabpanel>
+										<component caption="房地产新开工面积" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="XKGMJ" caption="房地产新开工面积累计(万平方米)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="XKGTB" caption="累计同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="15"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>	
+					</splitpanel>
+				</component>
+				<component caption="下游投资分析" id="29" name="splitpanel" >
+					<splitpanel hdirection="true">							
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="30" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="31" name="tabpanel">
+									<tabpanel>
+										<component caption="电气机械制造业投资额" id="32" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DQTZE" caption="电气机械制造业投资额(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DQTZTB" caption="投资额同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="16"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="33" name="tabpanel">
+									<tabpanel>
+										<component caption="电子设备制造业投资额" id="34" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DZTZE" caption="电子设备制造业投资额(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DZTZTB" caption="投资额同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="16"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="35" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="36" name="tabpanel">
+									<tabpanel>
+										<component caption="交运设备投资额" id="37" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JYTZE" caption="交运设备投资额(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JYTZTB" caption="投资额同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="16"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="38" name="tabpanel">
+									<tabpanel>
+										<component caption="建筑业投资额" id="39" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JZTZE" caption="建筑业投资额(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JZTZTB" caption="投资额同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="16"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>	
+					</splitpanel>
+				</component>				
+			</tabpanel>
+		</table>
+	</table>
+</root>

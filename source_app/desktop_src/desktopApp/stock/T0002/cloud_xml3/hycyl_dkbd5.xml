@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="HER2靶点" fldname="THER2靶点" titleclr="245,147,0"/>
+					<textcol title="曲妥珠单抗（Trastuzumab）" fldname="T曲妥珠单抗（Trastuzumab）" titleclr="245,147,0"/>
+					<textcol title="帕妥珠单抗（Pertuzumab）" fldname="T帕妥珠单抗（Pertuzumab）" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="124"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

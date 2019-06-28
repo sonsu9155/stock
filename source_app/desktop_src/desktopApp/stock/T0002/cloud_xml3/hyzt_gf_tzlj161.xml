@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="上半年光伏新增装机超预期" fldname="T上半年光伏新增装机超预期" titleclr="245,147,0"/>
+					<textcol title="市场格局逐步完善" fldname="T市场格局逐步完善" titleclr="245,147,0"/>
+					<textcol title="分布式装机占比提升" fldname="T分布式装机占比提升" titleclr="245,147,0"/>
+					<textcol title="单晶渗透率逐步提高" fldname="T单晶渗透率逐步提高" titleclr="245,147,0"/>
+					<textcol title="技术进步带动成本下降" fldname="T技术进步带动成本下降" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="161"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

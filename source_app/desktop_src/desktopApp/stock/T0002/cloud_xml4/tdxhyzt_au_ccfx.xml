@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="交易所库存分析" id="16" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="上期所黄金库存" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HJKC" caption="库存量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="5"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+									<tabpanel>
+										<component caption="COMEX黄金库存" id="15" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AUZKC" caption="库存量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AUZCCD" caption="注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AUWZCCD" caption="未注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="12"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="上期所白银库存" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="BYCD" caption="白银仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="BYKY" caption="白银可用库容量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>	
+										<component caption="COMEX白银库存" id="15" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AGZKC" caption="库存量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AGZCCD" caption="注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AGWZCCD" caption="未注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="12"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="ETF和CFTC持仓分析" id="16" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="黄金ETF持仓" id="19" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CCL" caption="黄金持仓量(万盎司)-左" style="1" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="CYJZ" caption="黄金持有价值(亿美元)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="9"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+									<tabpanel>
+										<component caption="黄金CFTC持仓" id="21" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZCC" caption="CFTC黄金总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FSYCC" caption="CFTC黄金非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="13"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="白银CFTC管理基金持仓" id="23" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JJDT" caption="管理基金多头持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JJKT" caption="管理基金空头持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JJTL" caption="管理基金套利持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="15"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>	
+										<component caption="白银CFTC总持仓" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZCC" caption="CFTC白银总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FSYCC" caption="CFTC白银非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="14"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>
+  

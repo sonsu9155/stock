@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="商品价格分析" id="75" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="76" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="77" name="tabpanel">
+									<tabpanel>
+										<component caption="铜期货价格" id="78" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="COMCUQ" caption="COMEX铜期价(美元/吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="LMECUQ" caption="LME铜期价(美元/吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="SHCU" caption="沪铜期价(元/吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="10"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="79" name="tabpanel">
+									<tabpanel>
+										<component caption="沪铜升贴水" id="80" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HTSTS" caption="沪铜升贴水(元/吨)" style="3" defsel="1" baseline="0.0"></prop>									
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="17"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="LME铜升贴水" id="1" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="LMESTS" caption="LME铜升贴水(美元/吨)" style="3" defsel="1" baseline="0.0" ></prop>											
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="17"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="1" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="2" name="tabpanel">
+									<tabpanel>
+										<component caption="交易所持仓" id="3" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HTKC" caption="沪铜库存(吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="COMTKC" caption="COMEX铜库存(吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="LMETKC" caption="LME铜库存(吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="18"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="CTFC持仓变化" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JJDD" caption="基金多单(张)" style="1" defsel="1" baseline="0.0"></prop>	
+												<prop index="2" name="JJKD" caption="基金空单(张)" style="1" defsel="1" baseline="0.0"></prop>	
+												<prop index="3" name="JJJDD" caption="基金净多单(张)" style="1" defsel="1" baseline="0.0"></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="19"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>						
+					</splitpanel>	
+				</component>
+				<component caption="替代商品分析" id="58" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="59" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="60" name="branchpanel">
+									<branchpanel hdirection="true">
+										<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="60" name="tabpanel">
+											<tabpanel>
+												<component caption="替代关系分析" id="61" name="chartctrl" >	
+													<chartctrl>
+														<properties >
+														<prop index="1" name="SHCUQJ" caption="沪铜期价(元/吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="2" name="SHALQJ" caption="沪铝期价(元/吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="3" name="TLBJ" caption="铜铝比价-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+														<xaxis name="DATE" caption="日期"></xaxis>
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_al" body="13"></datasource>
+													</chartctrl>
+												</component>		
+											</tabpanel>
+										</table>
+										<table X="0" Y="0" width="1" height="20" isleaf="true" hdirection="true" id="1" name="notepanel">
+											<notepanel>
+												<properties hoffset="10" voffset="5" frameline="0" >
+													<prop rowhead="true" note="有研究表明，当铜价在高于75000元/吨以上运行时，铜替代品的市场需求旺盛；当铜价回落至65000元/吨时，铜替代品的竞争力大幅降低。" clrtype=""/>
+												</properties>
+											</notepanel>
+										</table>
+									</branchpanel>
+								</table>	
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="62" name="tabpanel">
+									<tabpanel>
+										<component caption="铝材价格" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SHALQJ" caption="沪铝期价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ADCLHJDJJ" caption="ADC12铝合金锭均价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="ZLLHJDJJ" caption="ZL102铝合金锭均价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="8"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="65" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="66" name="tabpanel">
+									<tabpanel>
+										<component caption="沪铝升贴水" id="53" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HLSTS" caption="沪铝升贴水(元/吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="11"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="LME铝升贴水" id="54" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="LMELSTS" caption="LME铝升贴水(美元/吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="11"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="68" name="tabpanel">
+									<tabpanel>
+										<component caption="交易所持仓" id="56" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="LMELKC" caption="LME铝库存(吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="HLKC" caption="沪铝库存(吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="HLCDSL" caption="沪铝仓单数量(吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_al" body="12"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>

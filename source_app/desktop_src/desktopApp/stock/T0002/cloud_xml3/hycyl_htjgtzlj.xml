@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="航空发动机" fldname="T航空发动机" titleclr="245,147,0"/>
+					<textcol title="军用大飞机" fldname="T军用大飞机" titleclr="245,147,0"/>
+					<textcol title="直升机" fldname="T直升机" titleclr="245,147,0"/>
+					<textcol title="导弹" fldname="T导弹" titleclr="245,147,0"/>
+					<textcol title="航母" fldname="T航母" titleclr="245,147,0"/>
+					<textcol title="卫星" fldname="T卫星" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="1"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

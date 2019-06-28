@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="splitpanel">
+			<splitpanel hdirection="false">
+				<table X="0" Y="0" width="0.65" height="1" isleaf="true" hdirection="true" id="2" name="gridctrl" >
+					<gridctrl>
+						<gridcols fixednum="4" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF" >
+							<gridcol  name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" align="L" width="60" datatype="S" clrtype="S"></gridcol>
+							<gridcol  name="gpname" caption="名称" syscol="$ZQJC" visible="true"  align="L" width="70" datatype="S" clrtype="S"></gridcol>
+							<gridcol  name="ZAF" caption="涨幅%" syscol="$ZAF" visible="true" align="R" width="55" datatype="F" digital="2" clrtype="Z"></gridcol>
+							<gridcol  name="NOW" caption="现价" syscol="$NOW" visible="true" align="R" width="55" datatype="F" digital="2" ></gridcol>							
+							<gridcol name="J_ZSZ" caption="总市值" syscol="$J_ZSZ"  visible="true" align="R" width="80" datatype="F" ></gridcol>	
+							<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" align="R" width="80" datatype="F" ></gridcol>
+							<gridcol  name="BGQ" caption="报告期" visible="true" align="C" width="75" datatype="S"></gridcol>						
+							<gridcol  name="ZZC" caption="总资产" visible="true"  align="R" width="75" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+							<gridcol  name="JZC" caption="净资产" visible="true"  align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+							<gridcol  name="YYSR" caption="营业收入" visible="true"  align="R" width="75" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+							<gridcol  name="YSZZ" caption="营收同比%" visible="true"  align="R" width="83" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+							<gridcol  name="JLR" caption="归母净利" visible="true"  align="R" width="75" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+							<gridcol  name="JLRZZ" caption="净利同比%" visible="true"  align="R" width="83" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>	
+							<gridcol  name="MLL" caption="毛利率%" visible="true"  align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+							<gridcol  name="ROE" caption="ROE%" visible="true"  align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+						</gridcols>
+						<datasource  reqformat="1"  name="cfg_bk_hycfg" body="4,,$INGCODE$"></datasource>
+					</gridctrl>
+				</table>
+				<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="3" name="chartctrl">
+					<chartctrl>
+						<properties >						
+						<prop index="1" name="YYSR" caption="营业收入(亿)" style="3" defsel="1" baseline="0.0"></prop>
+						<prop index="2" name="YSZZ" caption="营收同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+						<prop index="3" name="JLR" caption="归母净利润(亿)" style="3" defsel="1" baseline="0.0"></prop>
+						<prop index="4" name="JLRZZ" caption="净利润同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>								
+						<xaxis name="BGQ" caption="报告期"></xaxis>
+						</properties>
+						<datasource masterid="2"  reqformat="0" name="cfg_bk_hycfg" body="41,,$$Gpdm$$"></datasource>
+					</chartctrl>
+				</table>									
+			</splitpanel>		
+		</table>
+	</table>
+</root>

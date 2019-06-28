@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="textpanel">
+			<textpanel>
+				<properties>
+					<textcol title="投资逻辑" fldname="TZLJ" titleclr="245,147,0"/>	
+				</properties>
+				<datasource   reqformat="0"  name="cfg_bk_hycfg" body="71,,$EXTCODE$"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

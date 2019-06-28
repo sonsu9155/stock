@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="智能手环类" fldname="T智能手环类" titleclr="245,147,0"/>
+					<textcol title="智能手表类" fldname="T智能手表类" titleclr="245,147,0"/>
+					<textcol title="智能衣着类" fldname="T智能衣着类" titleclr="245,147,0"/>
+					<textcol title="智能眼镜类" fldname="T智能眼镜类" titleclr="245,147,0"/>
+					<textcol title="军用穿戴设备" fldname="T军用穿戴设备" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="194"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

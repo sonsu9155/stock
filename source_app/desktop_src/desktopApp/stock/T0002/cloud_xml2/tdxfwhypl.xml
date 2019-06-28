@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel>
+				<table X="0" Y="0" width="1" height="0.6" isleaf="true" hdirection="true" id="2" name="branchpanel">
+					<branchpanel hdirection="true">			
+						<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="6" name="splitpanel">
+							<splitpanel hdirection="true">						
+								<table X="0" Y="0" width="1" height="0.9" isleaf="true" hdirection="true" id="3" name="gridctrl" >
+									<gridctrl>
+										<gridcols fixednum="3" rowchgmsg="true" postslave="true" forbidmenu="1" cachefile="true" glincode="true" defsort="AVGZF">
+											<gridcol  name="Pldm" caption="代码"  visible="false" align="L" width="60" datatype="S" ></gridcol>
+											<gridcol  name="PLMC" caption="品类名称"  visible="true" align="L" headalign="L" width="140" datatype="S" ></gridcol>
+											<gridcol  name="GPJH" caption="股票集合"  syscol="$S_ZQDM" visible="false" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+											<gridcol  name="AVGZF" caption="均涨幅" syscol="$S_AVGZF" visible="true" align="R" width="70" datatype="F" digital="2" clrtype="Z" ></gridcol>
+											<gridcol  name="JQZF" caption="加权涨幅" syscol="$S_JQZF" visible="true" align="R" width="70" datatype="F" digital="2" ></gridcol>
+											<gridcol  name="LTG" caption="龙头股" syscol="$S_LTG" visible="true" headalign="L" align="L" width="70" datatype="S" ></gridcol>
+											<gridcol  name="MAXZF" caption="最大涨幅" syscol="$S_MAXZF" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="szbl" caption="上涨比例" syscol="$S_UPRATE" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="gpsl" caption="成分股数" syscol="$S_NUM" visible="true"  align="R" headalign="L" width="70" datatype="I"  ></gridcol>
+											<gridcol  name="plms" caption="描述" visible="false"  align="L" headalign="L" width="40" datatype="M"  ></gridcol>
+										</gridcols>
+										<datasource  reqformat="0" switchid="4" name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</gridctrl>
+								</table>
+								<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="7" name="textpanel" >
+									<textpanel>
+										<properties>
+											<textcol title="品类描述" fldname="plms" titleclr="245,147,0"/>	
+										</properties>
+										<datasource   masterid="3" reqformat="12"   name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</textpanel>
+								</table>
+							</splitpanel>
+						</table>	
+					
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="4" name="switchcond" >
+							<switchcond>
+								<switchitems swgroup="8">
+									<switchitem itemid="H08" caption="社会服务(全)" topnode="true" />
+									<switchitem itemid="H0801" caption="传媒娱乐" topnode="true" />
+									<!--<switchitem itemid="H080101" caption="出版业"  />
+									<switchitem itemid="H080102" caption="影视制作"  />
+									<switchitem itemid="H080103" caption="广电传输"  />
+									<switchitem itemid="H080104" caption="发行院线"  />-->
+									<switchitem itemid="H0802" caption="广告包装" topnode="true" />
+									<switchitem itemid="H080201" caption="广告营销"  />
+									<switchitem itemid="H080202" caption="包装印刷"  />
+									<switchitem itemid="H0803" caption="文教休闲"  topnode="true"/>
+									<!--<switchitem itemid="H080301" caption="文具用品"  />
+									<switchitem itemid="H080302" caption="教育服务"  />
+									<switchitem itemid="H080303" caption="休闲娱乐"  />
+									<switchitem itemid="H080304" caption="玩具"  />
+									<switchitem itemid="H080305" caption="乐器"  />
+									<switchitem itemid="H080306" caption="体育"  />-->
+									<switchitem itemid="H0804" caption="酒店餐饮" topnode="true" />
+									<switchitem itemid="H0805" caption="旅游" topnode="true" />
+									<!--<switchitem itemid="H080501" caption="旅游服务"  />
+									<switchitem itemid="H080502" caption="旅游景点"  />-->
+									<switchitem itemid="H0806" caption="租赁商务" topnode="true" />
+									<switchitem itemid="H0807" caption="居民服务" topnode="true" />
+									<!--<switchitem itemid="H0808" caption="科研技术服务" topnode="true" />-->
+								</switchitems>
+							</switchcond>
+						</table>
+					</branchpanel>
+				</table>
+				<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="5" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="3" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF">
+							<gridcol name="GPDM" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="gpname" caption="名称" syscol="$ZQJC" visible="true"  headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R"  width="60" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="ZD" caption="涨跌" syscol="$QRSD"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="CJL" caption="总量" syscol="$CJL"  visible="true" headalign="R" align="R" width="70" datatype="I" ></gridcol>							
+							<gridcol name="HSL" caption="换手%" syscol="$HSL"  visible="true" headalign="R" align="R" width="60" datatype="F"></gridcol>							
+							<gridcol name="ZCJJE" caption="总金额" syscol="$ZCJJE"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>								
+							<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" headalign="R" align="R" width="80" datatype="F" ></gridcol>						
+						</gridcols>
+						<datasource  masterid="3" reqformat="0"   name="cfg_bk_dghypl" body="2,$INBLOCK$,$$Pldm$$"></datasource>
+					</gridctrl>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

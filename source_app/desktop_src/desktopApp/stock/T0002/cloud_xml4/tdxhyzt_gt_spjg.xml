@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="47" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="48" name="tabpanel">
+							<tabpanel>
+								<component caption="国际钢铁价格指数(CRU)" id="49" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="CRUQQ" caption="CRU:全球" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="CRUYZ" caption="CRU:亚洲" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="CRUBPC" caption="CRU:扁平材" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="CRUCC" caption="CRU:长材" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_gt" body="12"></datasource>
+									</chartctrl>
+								</component>			
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="50" name="tabpanel">
+							<tabpanel>
+								<component caption="上期所钢材期价" id="51" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="RBSPJ" caption="螺纹钢(RB)收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="HCSPJ" caption="热轧卷板(HC)收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="SFSPJ" caption="硅铁(SF)收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="SMSPJ" caption="锰硅(SM)收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="WRSPJ" caption="线材(WR)收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_gt" body="13"></datasource>
+									</chartctrl>
+								</component>	
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="52" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="53" name="tabpanel">
+							<tabpanel>
+								<component caption="建材现价" id="54" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="GXXJ" caption="高线Φ6.5含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="LWGXJ" caption="螺纹钢Φ16含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_gt" body="14"></datasource>
+									</chartctrl>
+								</component>		
+								<component caption="型材现价" id="55" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="JGXJ" caption="角钢5#含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="GZGXJ" caption="沪工字钢25#现价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="CGXJ" caption="沪槽钢16#现价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_gt" body="15"></datasource>
+									</chartctrl>
+								</component>	
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="56" name="tabpanel">
+							<tabpanel>
+								<component caption="板材现价" id="57" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="ZHBXJ" caption="中厚板20mm含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="RZJBXJ" caption="热轧卷板3mm含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="LZBBXJ" caption="冷轧薄板1mm含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="DXBXJ" caption="镀锌板0.5mm含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_gt" body="16"></datasource>
+									</chartctrl>
+								</component>		
+								<component caption="管材现价" id="58" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="WFGXJ" caption="无缝管219*10含税价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="HWFGXJ" caption="沪无缝管108*4.5现价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_gt" body="17"></datasource>
+									</chartctrl>
+								</component>	
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>
+		</table>
+	</table>
+</root>
+  

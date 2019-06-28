@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="量子密钥分发" fldname="T量子密钥分发" titleclr="245,147,0"/>
+					<textcol title="量子隐形传态" fldname="T量子隐形传态" titleclr="245,147,0"/>
+					<textcol title="量子安全直接通信" fldname="T量子安全直接通信" titleclr="245,147,0"/>
+					<textcol title="量子机密共享" fldname="T量子机密共享" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="20"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

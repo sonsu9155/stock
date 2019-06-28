@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="流式细胞术" fldname="T流式细胞术" titleclr="245,147,0"/>
+					<textcol title="免疫荧光法" fldname="T免疫荧光法" titleclr="245,147,0"/>
+					<textcol title="荧光原位杂交术" fldname="T荧光原位杂交" titleclr="245,147,0"/>
+					<textcol title="PCR" fldname="TPCR" titleclr="245,147,0"/>
+					<textcol title="二代测序" fldname="T二代测序" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="141"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

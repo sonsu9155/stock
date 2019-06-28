@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+							<tabpanel>
+								<component caption="郑期所棉花期货价格" id="19" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="SPJ" caption="棉花期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,CF"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+							<tabpanel>
+								<component caption="国际市场棉花期货价格" id="21" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="T010" caption="NYMEX棉花期货价格(美元/磅)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="T001" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_mh" body="3"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="国际市场棉花现货价格" id="21" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="MFSMHXH" caption="孟菲斯棉花现货价格(美分/磅)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_mh" body="4"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="22" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="23" name="tabpanel">
+							<tabpanel>
+								<component caption="郑期所棉花期货仓单" id="91" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="KYKRL" caption="可用库容量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_spqh" body="301,CF"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+							<tabpanel>
+								<component caption="中国棉花价格指数" id="19" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="BM2J" caption="CCIndex2129B白棉2级(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="BM3J" caption="CCIndex3128B白棉3级(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="WM2J" caption="CCIndex2227B淡点污棉2级(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_mh" body="5"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="考特鲁克棉花价格指数" id="19" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="CTMH" caption="Cotlook A(FE)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_mh" body="6"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>
+		</table>
+	</table>
+</root>

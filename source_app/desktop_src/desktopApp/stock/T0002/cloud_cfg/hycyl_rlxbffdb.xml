@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="手术切除" fldname="T手术切除" titleclr="245,147,0"/>
+					<textcol title="放射疗法" fldname="T放射疗法" titleclr="245,147,0"/>
+					<textcol title="化疗" fldname="T化疗" titleclr="245,147,0"/>
+					<textcol title="单抗药物" fldname="T单抗药物" titleclr="245,147,0"/>
+					<textcol title="CART" fldname="TCART" titleclr="245,147,0"/>
+					<textcol title="溶瘤病毒" fldname="T溶瘤病毒" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="126"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+
