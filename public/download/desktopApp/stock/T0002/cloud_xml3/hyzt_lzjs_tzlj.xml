@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="技术趋势" fldname="T技术趋势" titleclr="245,147,0"/>
+					<textcol title="核心竞争力" fldname="T核心竞争力" titleclr="245,147,0"/>
+					<textcol title="投资爆发点" fldname="T投资爆发点" titleclr="245,147,0"/>
+					<textcol title="市场规模" fldname="T市场规模" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="43"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+			    <component caption="下游棉纱分析" id="27" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="28" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="29" name="tabpanel">
+									<tabpanel>
+										<component caption="棉纱期货价格" id="30" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="棉纱期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,CY"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="31" name="tabpanel">
+									<tabpanel>
+                                        <component caption="棉纱线价格指数" id="32" name="chartctrl" >
+                                            <chartctrl>
+                                                <properties >
+                                                <prop index="1" name="CMQLS" caption="10支纯棉气流纱(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+                                                <prop index="2" name="CMPLS" caption="32支纯棉普梳纱(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="CMJLS" caption="40支纯棉精梳纱(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="7"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="33" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="34" name="tabpanel">
+									<tabpanel>
+										<component caption="我国棉纱线进口数量" id="35" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYZL" caption="月进口总量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ZLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="8"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国棉纱线进口金额" id="36" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYZZ" caption="月进口总值(千美元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ZZTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="8"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="37" name="tabpanel">
+									<tabpanel>
+										<component caption="我国棉纱线出口数量" id="38" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												  <prop index="1" name="DYZL" caption="月出口总量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												  <prop index="2" name="ZLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												  <xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="9"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="我国棉纱线出口金额" id="39" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYZZ" caption="月出口总值(千美元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ZZTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="9"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="下游纺织服饰分析" id="40" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="41" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="42" name="tabpanel">
+									<tabpanel>
+										<component caption="柯桥纺织价格指数" id="43" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JGZSZ" caption="柯桥纺织总类价格指数" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JGZSM" caption="柯桥纺织棉麻类价格指数" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="JGZSC" caption="柯桥纺织纯棉面料类价格指数" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="10"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="46" name="tabpanel">
+									<tabpanel>
+										<component caption="柯桥纺织景气指数" id="47" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JQZSZ" caption="柯桥纺织总景气指数" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JQZSM" caption="柯桥纺织棉麻类景气指数" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="JQZSC" caption="柯桥纺织纯棉面料类景气指数" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+											    </properties>
+											    <datasource   reqformat="0" name="cfg_hycyl_mh" body="11"></datasource>
+										    </chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="50" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="51" name="tabpanel">
+									<tabpanel>
+										<component caption="布产量分析" id="52" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="BDYCL" caption="当月产量(亿米)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="BDYTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="12"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="纱产量分析" id="52" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SDYCL" caption="当月产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="SDYTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="12"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="53" name="tabpanel">
+									<tabpanel>
+										<component caption="服装类零售额" id="54" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYLSE" caption="当月零售额(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="LSETB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="13"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="服装类出口交货值" id="55" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKJHZ" caption="当月出口交货值(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKJHZTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="14"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>

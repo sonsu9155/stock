@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="适应症局限于血液肿瘤" fldname="T适应症局限于血液肿瘤" titleclr="245,147,0"/>
+					<textcol title="脱靶效应" fldname="T脱靶效应" titleclr="245,147,0"/>
+					<textcol title="细胞因子释放综合征" fldname="T细胞因子释放综合征" titleclr="245,147,0"/>
+					<textcol title="治疗价格" fldname="T治疗价格" titleclr="245,147,0"/>
+					<textcol title="治疗效果具有不确定性" fldname="T治疗效果具有不确定性" titleclr="245,147,0"/>
+					<textcol title="筛选更加高效的靶点尚有难度" fldname="T筛选更加高效的靶点尚有难度" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="67"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="上游核燃料和燃料组件" fldname="T上游核燃料和燃料组件" titleclr="245,147,0"/>
+					<textcol title="中游核设备" fldname="T中游核设备" titleclr="245,147,0"/>
+					<textcol title="下游核电投资运营" fldname="T下游核电投资运营" titleclr="245,147,0"/>
+					<textcol title="核废料处理" fldname="T核废料处理" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="86"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

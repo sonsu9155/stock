@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel>
+				<table X="0" Y="0" width="1" height="0.6" isleaf="true" hdirection="true" id="2" name="branchpanel">
+					<branchpanel hdirection="true">			
+						<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="6" name="splitpanel">
+							<splitpanel hdirection="true">						
+								<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="3" name="gridctrl" >
+									<gridctrl>
+										<gridcols fixednum="3" rowchgmsg="true" postslave="true" forbidmenu="1" cachefile="true" ingcode="true" defsort="AVGZF">
+											<gridcol  name="ZTID" caption="主题ID"  visible="false" syscol="$ZQDM" align="L" width="60" datatype="S" ></gridcol>
+											<gridcol  name="ZTMC" caption="主题名称"  visible="true" align="L" headalign="L" autosize="1" width="140" datatype="S" ></gridcol>
+											<gridcol  name="GPJH" caption="股票集合"  syscol="$S_ZQDM" visible="false" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+											<gridcol  name="AVGZF" caption="均涨幅" syscol="$S_AVGZF" visible="true" align="R" width="70" datatype="F" digital="2" clrtype="Z" ></gridcol>
+											<gridcol  name="JQZF" caption="加权涨幅" syscol="$S_JQZF" visible="true" align="R" width="75" datatype="F" digital="2" ></gridcol>
+											<gridcol  name="LTG" caption="龙头股" syscol="$S_LTG" visible="true" headalign="L" align="L" width="75" datatype="S" ></gridcol>
+											<gridcol  name="MAXZF" caption="最大涨幅" syscol="$S_MAXZF" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="szbl" caption="上涨比例" syscol="$S_UPRATE" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="gpsl" caption="股数" syscol="$S_NUM" visible="true"  align="R" headalign="L" width="40" datatype="I"  ></gridcol>
+											<gridcol  name="LX" caption="类型" visible="true"  align="L" headalign="L" width="75" datatype="S"  ></gridcol>
+											<gridcol  name="CJRQ" caption="创建日期" visible="true"  align="L" headalign="L" width="75" datatype="S"  ></gridcol>
+											<gridcol  name="ZJZF" caption="至今涨幅%" visible="true"  align="R" width="80" datatype="F" digital="2" clrtype="Z" ></gridcol>
+											<gridcol  name="MS" caption="描述" visible="false"  align="L" headalign="L" width="40" datatype="S"  ></gridcol>
+										</gridcols>
+										<datasource  reqformat="1" switchid="4" name="cfg_bk_rdztgn" body="1,$INBLOCK$,"></datasource>
+									</gridctrl>
+								</table>
+								<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="7" name="textpanel" >
+									<textpanel>
+										<properties>
+											<textcol title="主题描述" fldname="MS" titleclr="245,147,0"/>	
+										</properties>
+										<datasource   masterid="3" reqformat="12"   name="cfg_bk_rdztgn" body="1,$INBLOCK$,"></datasource>
+									</textpanel>
+								</table>
+							</splitpanel>
+						</table>	
+						<table X="0" Y="-1" width="1" height="0" isleaf="true" hdirection="true" id="4" name="switchcond" >
+							<switchcond>
+								<switchitems swgroup="2">
+									<switchitem itemid="0" caption="主题(全)" topnode="true" />
+									<switchitem itemid="101" caption="化工" topnode="true" />
+									<switchitem itemid="102" caption="化纤" topnode="true" />
+									<switchitem itemid="105" caption="金属" topnode="true" />
+									<switchitem itemid="106" caption="非金属" topnode="true" />
+									<switchitem itemid="407" caption="新材料" topnode="true" />
+									<switchitem itemid="404|405" caption="新能源" topnode="true" />
+									<switchitem itemid="103" caption="食品" topnode="true" />
+									<switchitem itemid="107" caption="农产品"  topnode="true"/>
+									<switchitem itemid="301|403|408|409" caption="医疗健康" topnode="true" />	
+									<switchitem itemid="104" caption="药品" topnode="true" />									
+									<switchitem itemid="40101|40102|40103" caption="节能环保" topnode="true" />
+									<switchitem itemid="406" caption="高端装备" topnode="true" />							
+									<switchitem itemid="402" caption="信息技术" topnode="true" />
+									<switchitem itemid="3|6" caption="其他细分" topnode="true" />
+								</switchitems>
+							</switchcond>
+						</table>
+					</branchpanel>
+				</table>
+				<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="5" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="3" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF" showtip="1" >
+							<gridcol name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="gpname" caption="名称" syscol="$ZQJC" visible="true" autosize="1" headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R"  width="60" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="GLCD" caption="关联程度"  visible="true" headalign="L" align="L" width="85" datatype="S"  ></gridcol>	
+							<gridcol name="LMNR" caption="描述" visible="true"  align="L" headalign="L" width="450" datatype="S"   ></gridcol>		
+						</gridcols>
+						<datasource  masterid="3" reqformat="0"   name="cfg_bk_rdztgn" body="2,,$$ZTID$$"></datasource>
+					</gridctrl>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

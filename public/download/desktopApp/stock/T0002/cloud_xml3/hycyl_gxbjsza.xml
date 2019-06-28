@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="试验重复性差" fldname="T试验重复性差" titleclr="245,147,0"/>
+					<textcol title="不可控因素较多" fldname="T不可控因素较多" titleclr="245,147,0"/>
+					<textcol title="无有效临床评价体系" fldname="T无有效临床评价体系" titleclr="245,147,0"/>
+					<textcol title="动物实验参考性差" fldname="T动物实验参考性差" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="104"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

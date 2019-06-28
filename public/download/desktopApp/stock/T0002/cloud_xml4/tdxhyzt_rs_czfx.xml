@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+							<tabpanel>
+								<component caption="郑州菜籽期货价格" id="18" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="JSJ" caption="菜籽期货结算价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,RS"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="7" name="tabpanel">
+							<tabpanel>
+								<component caption="国内市场油菜批发价" id="25" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="T014" caption="批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="T001" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_dd" body="15"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="10" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="11" name="tabpanel">
+							<tabpanel>
+								<component caption="我国菜籽产量" id="12" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="YCZCL" caption="油菜籽产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_jd" body="1"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="13" name="tabpanel">
+							<tabpanel>
+								<component caption="我国菜籽播种面积" id="14" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="YCZBZMJ" caption="播种面积(千公顷)" style="3" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_jd" body="2"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

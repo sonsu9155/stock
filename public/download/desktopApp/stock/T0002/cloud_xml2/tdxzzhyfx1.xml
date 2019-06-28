@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="splitpanel">		
+			<splitpanel hdirection="false">	
+				<table X="0" Y="0" width="0.65" height="1" isleaf="true" hdirection="true" id="2" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="5" rowchgmsg="true" postslave="true" forbidmenu="1" ingcode="true" >
+							<gridcol name="CODE" caption="行业代码" syscol="$ZQDM" visible="true"  align="L" width="70" datatype="S" clrtype="S" ></gridcol>
+							<gridcol name="T001" caption="行业名称" visible="true" align="L" width="120" datatype="S" clrtype="S"></gridcol>
+							<gridcol name="DATE" caption="交易日期"  visible="true" align="R" width="75" datatype="S" ></gridcol>
+							<gridcol name="ZAF" caption="涨幅%"  visible="true" align="R" width="55" datatype="F" digital="2" clrtype="Z"></gridcol>
+							<gridcol name="PRICE" caption="收盘价"   visible="true" align="R" width="65" datatype="F"  digital="2" clrtype="C"></gridcol>
+							<gridcol name="CJE" caption="成交额(亿)"  visible="true" align="R" width="75" datatype="F" digital="2"></gridcol>
+							<gridcol name="ZSZ" caption="总市值"  visible="true" align="R" width="72" datatype="F" digital="2"></gridcol>
+							<gridcol name="LTSZ" caption="流通市值"  visible="true" align="R" width="72" datatype="F" digital="2"></gridcol>
+							<gridcol name="PE_TTM" caption="PE(TTM)"  visible="true" align="R" width="70" datatype="F" digital="2"></gridcol>
+							<gridcol name="PE_NB" caption="PE(年报)"  visible="true" align="R" width="70" datatype="F" digital="2"></gridcol>		
+							<gridcol name="PB_MRQ" caption="PB(MRQ)"  visible="true" align="R" width="72" datatype="F" digital="2"></gridcol>
+							<gridcol name="PCF_TTM" caption="PCF(TTM)"  visible="true" align="R" width="75" datatype="F" digital="2"></gridcol>
+							<gridcol name="PS_TTM" caption="PS(TTM)"  visible="true" align="R" width="70" datatype="F" digital="2"></gridcol>
+							<gridcol name="SZJS" caption="上涨"  visible="true" align="R" width="50" datatype="I" ></gridcol>
+							<gridcol name="XDJS" caption="下跌"  visible="true" align="R" width="50" datatype="I" ></gridcol>
+							<gridcol name="HY" caption="行业"  visible="false" align="R" width="70" datatype="S" ></gridcol>
+						</gridcols>
+						<datasource   reqformat="0"  name="cfg_bk_hyfx" body="2,H09"></datasource>
+					</gridctrl>
+				</table>										
+				<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="false" id="3" name="tabpanel">											
+					<tabpanel>
+						<component caption="行业概况" id="4" name="textpanel" >							
+							<textpanel>
+								<properties>
+									<textcol title="行业简介" fldname="T101" titleclr="245,147,0"/>
+									<textcol title="行业规模" fldname="T102" titleclr="245,147,0"/>
+									<textcol title="发展速度" fldname="T103" titleclr="245,147,0"/>
+									<textcol title="利润水平" fldname="T104" titleclr="245,147,0"/>
+									<textcol title="主要厂商" fldname="T105" titleclr="245,147,0"/>
+									<textcol title="上游分析" fldname="T401" titleclr="245,147,0"/>
+									<textcol title="下游分析" fldname="T402" titleclr="245,147,0"/>
+									<textcol title="周期性" fldname="T403" titleclr="245,147,0"/>
+									<textcol title="区域性" fldname="T404" titleclr="245,147,0"/>	
+								</properties>
+								<datasource   masterid="2" reqformat="0"  name="cfg_bk_hyfx" body="1,$$HY$$"></datasource>
+							</textpanel>
+						</component>
+						<component caption="行业分析" id="5" name="textpanel" >									
+							<textpanel>
+								<properties>
+									<textcol title="投资逻辑" fldname="T106" titleclr="245,147,0"/>
+									<textcol title="宏观环境" fldname="T201" titleclr="245,147,0"/>
+									<textcol title="行业供给" fldname="T301" titleclr="245,147,0"/>
+									<textcol title="行业需求" fldname="T305" titleclr="245,147,0"/>
+									<textcol title="经营模式" fldname="T302" titleclr="245,147,0"/>
+									<textcol title="行业壁垒" fldname="T303" titleclr="245,147,0"/>
+									<textcol title="竞争态势" fldname="T304" titleclr="245,147,0"/>
+									<textcol title="政策法规" fldname="T202" titleclr="245,147,0"/>
+									<textcol title="技术趋势" fldname="T203" titleclr="245,147,0"/>	
+									<textcol title="影响因素" fldname="T107" titleclr="245,147,0"/>
+								</properties>
+								<datasource  masterid="2"  reqformat="0"   name="cfg_bk_hyfx"  body="1,$$HY$$"></datasource>
+							</textpanel>
+						</component>
+					</tabpanel>
+				</table>									
+			</splitpanel>								
+		</table>
+	</table>
+</root>

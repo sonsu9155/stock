@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="分级诊疗制度继续推进" fldname="T分级诊疗制度继续推进" titleclr="245,147,0"/>
+					<textcol title="医师多点执业政策" fldname="T医师多点执业政策" titleclr="245,147,0"/>
+					<textcol title="第三方网上售药许可证颁发" fldname="T第三方网上售药许可证颁发" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="189"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

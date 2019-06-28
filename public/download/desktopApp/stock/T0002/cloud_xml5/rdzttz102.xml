@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="chartctrl">
+			<chartctrl>
+				<properties >
+					<prop index="1" name="ZTSY" caption="主题收益走势图" style="1"  baseline="0.0" defsel="1" ></prop>	
+					<prop index="2" name="HSSY" caption="沪深300收益走势图" style="1"  baseline="0.0" defsel="1" ></prop>	
+					<xaxis name="DATE" caption="日期"></xaxis>
+				</properties>
+			<datasource  reqformat="0" name="cfg_bk_rdztgn" body="3,,$INGCODE$"></datasource>
+			</chartctrl>
+		</table>
+	</table>
+</root>

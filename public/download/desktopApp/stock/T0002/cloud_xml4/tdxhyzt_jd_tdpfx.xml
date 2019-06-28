@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="29" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="30" name="tabpanel">
+							<tabpanel>
+								<component caption="全国畜产品肉类产量" id="31" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="RLCL" caption="肉类(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="ZRCL" caption="猪肉(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="NRCL" caption="牛肉(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="YRCL" caption="羊肉(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_jd" body="5"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="32" name="tabpanel">
+							<tabpanel>
+								<component caption="各种肉类平均批发价" id="41" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="ZRPFJ" caption="猪肉平均批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="NRPFJ" caption="牛肉平均批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="YRPFJ" caption="羊肉平均批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_jd" body="6"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="37" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="38" name="tabpanel">
+							<tabpanel>
+								<component caption="全国水产品产量" id="39" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="SCPCL" caption="水产品产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="HSYLCL" caption="海水鱼类产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="DSYLCL" caption="淡水鱼类产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_jd" body="8"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="40" name="tabpanel">
+							<tabpanel>
+								<component caption="各种鱼类平均批发价" id="41" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="LYPFJ" caption="鲤鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="NYPFJ" caption="鲢鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="CYPFJ" caption="草鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="JYPFJ" caption="鲫鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_jd" body="9"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>
+		</table>
+	</table>
+</root>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="上游原材料分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="铁矿砂进口量" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TKSJKL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="JKLDYTB" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="1"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="铁矿砂进口金额" id="6" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TKSJKJE" caption="当月值(千美元)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="JEDYTB" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="1"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="铁矿砂进口单价" id="8" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JKJJ" caption="进口单价(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="1"></datasource>
+											</chartctrl>
+										</component>			
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="7" name="tabpanel">
+									<tabpanel>
+										<component caption="上期所铁矿期价" id="89" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SPJ" caption="铁矿期价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,I"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="9" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="10" name="tabpanel">
+									<tabpanel>
+										<component caption="铁矿石原矿产量" id="11" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TKSCL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DYTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="2"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="12" name="tabpanel">
+									<tabpanel>
+										<component caption="北方国际铁矿石运价指数" id="13" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TBMIBXTJ" caption="TBMI:巴西至天津" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TBMIAXTJ" caption="TBMI:澳西至天津" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="3"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="波罗的海运价指数" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="BDI" caption="波罗的海综合运费指数(BDI)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="BCI" caption="海岬型指数(BCI)" style="1" defsel="1" baseline="0.0" ></prop>
+												<prop index="3" name="BPI" caption="巴拿马型指数(BPI)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="BSI" caption="超灵便型指数(BSI)" style="1" defsel="1" baseline="0.0" ></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="6"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="中国沿海散货运价指数" id="15" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JSKS" caption="CFBI:金属矿石" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="QD" caption="青岛/日照-张家港" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="BL" caption="北仑-镇江" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="ZS" caption="舟山-张家港" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_ys" body="4"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="上游冶金能源分析" id="16" name="splitpanel">
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="全国发电量" id="19" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="FDL" caption="发电量(亿千瓦时)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="TBZZ" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_ys" body="1"></datasource>
+											</chartctrl>
+										</component>		
+										<component caption="全社会用电量" id="20" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SHYDL" caption="全社会用电量(亿千瓦时)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="DYTB" caption="全社会用电当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<prop index="3" name="GYYDL" caption="工业用电量(亿千瓦时)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="GYYDDYTB" caption="工业用电当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_ys" body="2"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="21" name="tabpanel">
+									<tabpanel>
+										<component caption="秦皇岛动力煤价格" id="22" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DTYH" caption="大同优混(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="SXYH" caption="山西优混(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="SXDH" caption="山西大混(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="TPHM" caption="普通混煤(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_zc" body="9"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="交易所焦炭价格" id="23" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SPJ" caption="焦炭期价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,J"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="国际原油价格" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="WTI" caption="WTI原油(美元/桶)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="Brent" caption="brent原油(美元/桶)" style="1" defsel="1" baseline="0.0" ></prop>
+												<prop index="3" name="OPEC" caption="OPEC一揽子原油(美元/桶)" style="1" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_ys" body="3"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>	
+										<component caption="纽约天然气期货价格" id="28" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="NG" caption="NYMEX天然气(美元/Mmbtu)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_ys" body="3"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="中游分析" id="29" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="30" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="31" name="tabpanel">
+									<tabpanel>
+										<component caption="生铁产量" id="32" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="STCL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="TBZZ" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="4"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="铁合金产量" id="33" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="THJCL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="TBZZ" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="5"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="34" name="tabpanel">
+									<tabpanel>
+										<component caption="粗钢产量" id="35" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CGCL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TBZZ" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="6"></datasource>
+											</chartctrl>
+										</component>		
+										<component caption="钢材产量" id="36" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GCCL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TBZZ" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="7"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="钢筋产量" id="37" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GJCL" caption="当月值(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TBZZ" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="8"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="38" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="39" name="tabpanel">
+									<tabpanel>
+										<component caption="螺纹钢仓单数" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CDSL" caption="仓单数量(吨)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="KYKRL" caption="可用库容量(万吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="9"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="43" name="tabpanel">
+									<tabpanel>
+										<component caption="钢材产销率" id="44" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GCCXL" caption="产销率(%)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TBZZ" caption="产销率同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="10"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="钢材订单与库存指数" id="45" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DDHB" caption="订单环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="KCHB" caption="库存环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="11"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="下游分析" id="59" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="60" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="61" name="tabpanel">
+									<tabpanel>
+										<component caption="房地产开发投资完成额" id="62" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="FDCTZE" caption="投资完成额累计(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FDCTZETB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_bu" body="16"></datasource>
+											</chartctrl>
+										</component>		
+										<component caption="房屋新开工面积" id="63" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="XKGMJ" caption="新开工面积累计(万平方米)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="XKGTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="15"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="64" name="tabpanel">
+									<tabpanel>
+										<component caption="汽车产量" id="65" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QCCL" caption="产量(万辆)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="18"></datasource>
+											</chartctrl>
+										</component>		
+										<component caption="汽车销量" id="66" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QCXL" caption="销量(万辆)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="XLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="18"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="67" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="68" name="tabpanel">
+									<tabpanel>
+										<component caption="铁路机车产量" id="69" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="TLJCCL" caption="产量-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DYTB" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="19"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="民用钢质船舶产量" id="70" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GZCBCL" caption="产量-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DYTB" caption="当月同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="20"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="71" name="tabpanel">
+									<tabpanel>
+										<component caption="不锈钢家用器具出口量" id="72" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QJCKL" caption="出口量(吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKLTBZZ" caption="出口量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="21"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="不锈钢家用器具出口金额" id="73" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QJCKE" caption="出口金额(千美元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKETBZZ" caption="出口金额同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_gt" body="21"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>
+  

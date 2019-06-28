@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="2" name="gridctrl" >
+			<gridctrl>
+				<gridcols fixednum="4" rowchgmsg="true" postslave="true" forbidmenu="1" ingcode="true">
+					<gridcol  name="CODE" caption="行业代码" syscol="$ZQDM" visible="true"  align="L" width="70" datatype="S" clrtype="S" ></gridcol>
+					<gridcol  name="HYMC" caption="行业名称" visible="true" align="L" width="90" datatype="S" clrtype="S"></gridcol>
+					<gridcol  name="DATE" caption="交易日期" visible="true" align="C" width="75" datatype="S"></gridcol>
+					<gridcol  name="ZAF" caption="涨幅%"  visible="true" align="R" width="55" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="PRICE" caption="收盘价" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="C"></gridcol>
+					<gridcol  name="T005" caption="总资金净流入(亿)|近1日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T006" caption="总资金净流入(亿)|近5日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T007" caption="总资金净流入(亿)|近10日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T008" caption="总资金净流入(亿)|近20日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T009" caption="总资金净流入(亿)|近30日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T010" caption="主力资金净流入(亿)|近1日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T011" caption="主力资金净流入(亿)|近5日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T012" caption="主力资金净流入(亿)|近10日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T013" caption="主力资金净流入(亿)|近20日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T014" caption="主力资金净流入(亿)|近30日" visible="true"  align="R" width="65" datatype="F" digital="2" clrtype="Z"></gridcol>
+				</gridcols>
+				<datasource reqformat="0"  name="cfg_bk_hyzjlx" body="1,H06,"></datasource>
+			</gridctrl>
+		</table>
+	</table>
+</root>

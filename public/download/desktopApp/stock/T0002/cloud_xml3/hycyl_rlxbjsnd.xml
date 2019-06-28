@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="靶向性" fldname="T靶向性" titleclr="245,147,0"/>
+					<textcol title="选择和优化载体细胞" fldname="T选择和优化载体细胞" titleclr="245,147,0"/>
+					<textcol title="安全性" fldname="T安全性" titleclr="245,147,0"/>
+					<textcol title="抗体的中和作用" fldname="T抗体的中和作用" titleclr="245,147,0"/>
+					<textcol title="病毒的扩散" fldname="T病毒的扩散" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="125"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

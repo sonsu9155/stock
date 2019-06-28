@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="模具清理和脱模剂涂抹" fldname="T模具清理和脱模剂涂抹" titleclr="245,147,0"/>
+					<textcol title="预浸料裁切与铺叠" fldname="T预浸料裁切与铺叠" titleclr="245,147,0"/>
+					<textcol title="真空袋组合系统制作和坯件装袋" fldname="T真空袋组合系统制作和坯件装袋" titleclr="245,147,0"/>
+					<textcol title="固化" fldname="T固化" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="23"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

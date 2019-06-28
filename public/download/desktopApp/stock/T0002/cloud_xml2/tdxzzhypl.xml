@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel>
+				<table X="0" Y="0" width="1" height="0.6" isleaf="true" hdirection="true" id="2" name="branchpanel">
+					<branchpanel hdirection="true">			
+						<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="6" name="splitpanel">
+							<splitpanel hdirection="true">						
+								<table X="0" Y="0" width="1" height="0.9" isleaf="true" hdirection="true" id="3" name="gridctrl" >
+									<gridctrl>
+										<gridcols fixednum="3" rowchgmsg="true" postslave="true" forbidmenu="1" cachefile="true" glincode="true" defsort="AVGZF">
+											<gridcol  name="Pldm" caption="代码"  visible="false" align="L" width="60" datatype="S" ></gridcol>
+											<gridcol  name="PLMC" caption="品类名称"  visible="true" align="L" headalign="L" width="140" datatype="S" ></gridcol>
+											<gridcol  name="GPJH" caption="股票集合"  syscol="$S_ZQDM" visible="false" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+											<gridcol  name="AVGZF" caption="均涨幅" syscol="$S_AVGZF" visible="true" align="R" width="70" datatype="F" digital="2" clrtype="Z" ></gridcol>
+											<gridcol  name="JQZF" caption="加权涨幅" syscol="$S_JQZF" visible="true" align="R" width="70" datatype="F" digital="2" ></gridcol>
+											<gridcol  name="LTG" caption="龙头股" syscol="$S_LTG" visible="true" headalign="L" align="L" width="70" datatype="S" ></gridcol>
+											<gridcol  name="MAXZF" caption="最大涨幅" syscol="$S_MAXZF" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="szbl" caption="上涨比例" syscol="$S_UPRATE" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+											<gridcol  name="gpsl" caption="成分股数" syscol="$S_NUM" visible="true"  align="R" headalign="L" width="70" datatype="I"  ></gridcol>
+											<gridcol  name="plms" caption="描述" visible="false"  align="L" headalign="L" width="40" datatype="M"  ></gridcol>
+										</gridcols>
+										<datasource  reqformat="0" switchid="4" name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</gridctrl>
+								</table>
+								<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="7" name="textpanel" >
+									<textpanel>
+										<properties>
+											<textcol title="品类描述" fldname="plms" titleclr="245,147,0"/>	
+										</properties>
+										<datasource   masterid="3" reqformat="12"   name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</textpanel>
+								</table>
+							</splitpanel>
+						</table>
+					
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="4" name="switchcond" >
+							<switchcond>
+								<switchitems swgroup="9">
+									<switchitem itemid="H09" caption="装备制造(全)" topnode="true"  />
+									<switchitem itemid="H0901" caption="航空" topnode="true" />
+									<switchitem itemid="H0902" caption="船舶"  topnode="true"/>
+									<switchitem itemid="H0903" caption="运输设备"  topnode="true"/>
+									<switchitem itemid="H0904" caption="通用机械" topnode="true" />
+									<!--
+									<switchitem itemid="H090401" caption="机床"  />
+									<switchitem itemid="H090402" caption="基件"  />
+									<switchitem itemid="H090403" caption="电机"  />
+									-->
+									<switchitem itemid="H0905" caption="工业机械"  topnode="true"/>
+									<!--
+									<switchitem itemid="H090501" caption="化工"  />
+									<switchitem itemid="H090502" caption="轻工"  />							
+									<switchitem itemid="H090503" caption="纺织"  />						
+									<switchitem itemid="H090504" caption="农用"  />							
+									<switchitem itemid="H090505" caption="专用"  />		
+									-->
+									<switchitem itemid="H0906" caption="电气设备"  topnode="true"/>
+									<!--
+									<switchitem itemid="H090601" caption="电池"  />							
+									<switchitem itemid="H090602" caption="电缆"  />							
+									<switchitem itemid="H090603" caption="电源"  />
+									<switchitem itemid="H090604" caption="输配电"  />						
+									<switchitem itemid="H090605" caption="输变电"  />
+									<switchitem itemid="H090606" caption="控制设备"  />							
+									<switchitem itemid="H090607" caption="发电设备"  />		
+									-->									
+									<switchitem itemid="H0907" caption="工程机械"  topnode="true"/>							
+									<switchitem itemid="H0908" caption="电器仪表" topnode="true" />													
+								</switchitems>
+							</switchcond>
+						</table>
+					</branchpanel>
+				</table>
+				<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="5" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="3" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF" >
+							<gridcol name="GPDM" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="gpname" caption="名称" syscol="$ZQJC" visible="true"  headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R"  width="60" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="ZD" caption="涨跌" syscol="$QRSD"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="CJL" caption="总量" syscol="$CJL"  visible="true" headalign="R" align="R" width="70" datatype="I" ></gridcol>							
+							<gridcol name="HSL" caption="换手%" syscol="$HSL"  visible="true" headalign="R" align="R" width="60" datatype="F"></gridcol>							
+							<gridcol name="ZCJJE" caption="总金额" syscol="$ZCJJE"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>								
+							<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" headalign="R" align="R" width="80" datatype="F" ></gridcol>						
+						</gridcols>
+						<datasource  masterid="3" reqformat="0"   name="cfg_bk_dghypl" body="2,$INBLOCK$,$$Pldm$$"></datasource>
+					</gridctrl>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

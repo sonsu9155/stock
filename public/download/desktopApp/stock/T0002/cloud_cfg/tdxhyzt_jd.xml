@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+			    <component caption="上游分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="畜产品市场雏鸡均价" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T009" caption="商品代蛋雏鸡均价(元/只)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T010" caption="商品代肉雏鸡均价(元/只)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="4"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="6" name="tabpanel">
+									<tabpanel>
+										<component caption="畜产品市场活鸡均价" id="10" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T007" caption="活鸡(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T008" caption="白条鸡(元/公斤)" style="1" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="4"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="8" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="9" name="tabpanel">
+									<tabpanel>
+									    <component caption="畜产品市场鸡饲料均价" id="7" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T024" caption="蛋鸡配合饲料(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T023" caption="肉鸡配合饲料(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="4"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="11" name="tabpanel">
+									<tabpanel>
+										<component caption="饲料产量及增速" id="10" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYCL" caption="当月产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="DYTB" caption="同比增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_ym" body="12"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="鸡蛋价格分析" id="14" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="15" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="16" name="tabpanel">
+									<tabpanel>
+										<component caption="鸡蛋期货价格" id="17" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="SPJ" caption="鸡蛋期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,JD"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="畜产品市场鸡蛋价格" id="24" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T005" caption="鸡蛋价格(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T006" caption="鸡蛋:主产区价格(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="4"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="20" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="21" name="tabpanel">
+									<tabpanel>
+										<component caption="国内市场鸡蛋批发价" id="23" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JDPFJ" caption="鸡蛋批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="国内市场鸡蛋零售价" id="22" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T011" caption="鸡蛋零售价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="15"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="鸡蛋供需分析" id="14" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="15" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="16" name="tabpanel">
+									<tabpanel>
+										<component caption="禽蛋年产量" id="12" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QDCL" caption="禽蛋年产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="5"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="鸡蛋期货仓单" id="19" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="301,JD"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="20" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="21" name="tabpanel">
+									<tabpanel>
+										<component caption="鲜蛋出口数量" id="13" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKSL" caption="出口数量(亿个)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CKSLTB" caption="出口数量同比(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="7"></datasource>
+											 </chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="鲜蛋出口金额" id="13" name="chartctrl" >
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CKJE" caption="出口金额(万美元)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="CKJETB" caption="出口金额同比(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="7"></datasource>
+											 </chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="替代品分析" id="28" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="29" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="30" name="tabpanel">
+									<tabpanel>
+										<component caption="全国畜产品肉类产量" id="31" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="RLCL" caption="肉类(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ZRCL" caption="猪肉(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="NRCL" caption="牛肉(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="YRCL" caption="羊肉(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="5"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="32" name="tabpanel">
+									<tabpanel>
+										<component caption="各种肉类平均批发价" id="41" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZRPFJ" caption="猪肉平均批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="NRPFJ" caption="牛肉平均批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="YRPFJ" caption="羊肉平均批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="37" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="38" name="tabpanel">
+									<tabpanel>
+										<component caption="全国水产品产量" id="39" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SCPCL" caption="水产品产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="HSYLCL" caption="海水鱼类产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="DSYLCL" caption="淡水鱼类产量(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="8"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="40" name="tabpanel">
+									<tabpanel>
+										<component caption="各种鱼类平均批发价" id="41" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="LYPFJ" caption="鲤鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="NYPFJ" caption="鲢鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="CYPFJ" caption="草鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="JYPFJ" caption="鲫鱼批发价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="9"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="宏观经济分析" id="42" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="43" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="44" name="tabpanel">
+									<tabpanel>
+										<component caption="国内生产总值" id="45" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GDP" caption="GDP(万亿)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GDPZZ" caption="累计增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="农林牧渔业总产值" id="69" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="NLMYCZ" caption="农林牧渔业总值累计(亿元)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="NLMYLJTB" caption="累计增长率(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_mh" body="19"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="46" name="tabpanel">
+									<tabpanel>
+										<component caption="居民消费价格指数" id="47" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="QGCPI" caption="全国CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CSCPI" caption="城市CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="NCCPI" caption="农村CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="16"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="48" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="49" name="tabpanel">
+									<tabpanel>
+										<component caption="食用农产品价格指数" id="72" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="NCPZSHB" caption="食用农产品价格指数环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="18"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="农副食品景气指数" id="77" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												  <prop index="1" name="NFSPJQZS" caption="农副食品加工业景气指数(%)" style="1" defsel="1" baseline="0.0"></prop>
+												  <prop index="2" name="SPZZJQZS" caption="食品制造业景气指数(%)" style="1" defsel="1" baseline="0.0"></prop>
+												  <xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="14"></datasource>
+											</chartctrl>
+										</component> 
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="52" name="tabpanel">
+									<tabpanel>
+										<component caption="全国农产品批发价格指数" id="72" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="NCPJGZS" caption="全国农产品批发价格指数" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CLZJGZS" caption="菜篮子产品批发价格指数" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_jd" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>	
+						</table>						
+					</splitpanel>	
+				</component>	
+			</tabpanel>
+		</table>
+	</table>
+</root>

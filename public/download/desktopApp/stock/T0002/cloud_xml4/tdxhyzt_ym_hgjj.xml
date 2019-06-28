@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="58" name="splitpanel">
+					<splitpanel hdirection="false">
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="59" name="tabpanel">
+							<tabpanel>
+								<component caption="国内生产总值" id="60" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="GDP" caption="GDP(万亿)-左" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="GDPZZ" caption="累计增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="农业总产值" id="69" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="NYCZ" caption="农业总值累计(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="NYLJTB" caption="累计增长率(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_mh" body="19"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="61" name="tabpanel">
+							<tabpanel>
+								<component caption="居民消费价格指数" id="62" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QGCPI" caption="全国CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="CSCPI" caption="城市CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="NCCPI" caption="农村CPI当月同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_dd" body="16"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="63" name="splitpanel">
+					<splitpanel hdirection="false">
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="64" name="tabpanel">
+							<tabpanel>
+								<component caption="联合国粮农组织谷物价格指数" id="73" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="T005" caption="谷物(名义)(%)" style="1" defsel="1" baseline="0.0"></prop>	
+										<prop index="2" name="T011" caption="谷物(实际)(%)" style="1" defsel="1" baseline="0.0"></prop>							
+										<xaxis name="T001" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_dd" body="17"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="食用农产品价格指数" id="72" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="NCPZSHB" caption="食用农产品价格指数环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_dd" body="18"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="67" name="tabpanel">
+							<tabpanel>
+								<component caption="农副食品景气指数" id="77" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										  <prop index="1" name="NFSPJQZS" caption="农副食品加工业景气指数(%)" style="1" defsel="1" baseline="0.0"></prop>
+										  <prop index="2" name="SPZZJQZS" caption="食品制造业景气指数(%)" style="1" defsel="1" baseline="0.0"></prop>
+										  <xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_dm" body="14"></datasource>
+									</chartctrl>
+								</component> 
+							</tabpanel>
+						</table>
+					</splitpanel>	
+				</table>						
+			</splitpanel>
+		</table>
+	</table>
+</root>

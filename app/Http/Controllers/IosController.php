@@ -686,7 +686,7 @@ class IosController extends Controller
         if (Input::has('recipients')) {
             $thread->addParticipant($input['recipients']);
         }
-        $res = array( 'status'=>'success', 'content'=>'message created');
+        $res = array( 'status'=>'success', 'content'=>'消息已创建');
         return json_encode($res);
     }
 }

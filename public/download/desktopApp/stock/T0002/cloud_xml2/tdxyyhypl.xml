@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel>
+				<table X="0" Y="0" width="1" height="0.6" isleaf="true" hdirection="true" id="2" name="branchpanel">
+					<branchpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="6" name="splitpanel">
+							<splitpanel hdirection="true">	
+								<table X="0" Y="0" width="1" height="0.9" isleaf="true" hdirection="true" id="3" name="unionpanel" >
+									<unionpanel>
+									<seltype defsel="7" masterid="4" vartype="switchcond" othersel="H06:7,H060203:8"/>	
+										<component id="7" name="gridctrl" >
+											<gridctrl>
+												<gridcols fixednum="3" rowchgmsg="true" postslave="true" forbidmenu="1" cachefile="true" glincode="true" defsort="AVGZF">
+													<gridcol  name="Pldm" caption="代码"  visible="false" align="L" width="60" datatype="S" ></gridcol>
+													<gridcol  name="PLMC" caption="品类名称"  visible="true" align="L" headalign="L" width="140" datatype="S" ></gridcol>
+													<gridcol  name="GPJH" caption="股票集合"  syscol="$S_ZQDM" visible="false" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+													<gridcol  name="AVGZF" caption="均涨幅" syscol="$S_AVGZF" visible="true" align="R" width="70" datatype="F" digital="2" clrtype="Z" ></gridcol>
+													<gridcol  name="JQZF" caption="加权涨幅" syscol="$S_JQZF" visible="true" align="R" width="70" datatype="F" digital="2" ></gridcol>
+													<gridcol  name="LTG" caption="龙头股" syscol="$S_LTG" visible="true" headalign="L" align="L" width="70" datatype="S" ></gridcol>
+													<gridcol  name="MAXZF" caption="最大涨幅" syscol="$S_MAXZF" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+													<gridcol  name="szbl" caption="上涨比例" syscol="$S_UPRATE" visible="true" align="R" headalign="L" width="70" digital="2" datatype="F" ></gridcol>
+													<gridcol  name="gpsl" caption="成分股数" syscol="$S_NUM" visible="true"  align="R" headalign="L" width="70" datatype="I"  ></gridcol>
+													<gridcol  name="plms" caption="描述" visible="false"  align="L" headalign="L" width="40" datatype="M"  ></gridcol>
+												</gridcols>
+												<datasource  reqformat="0" switchid="4" name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+											</gridctrl>
+
+										</component>
+										<component id="8" name="gridctrl" >
+											<gridctrl>
+												<gridcols fixednum="2" rowchgmsg="true" postslave="true" forbidmenu="1" >
+													<gridcol  name="Pldm" caption="代码"  visible="false" align="L" width="60" datatype="S" ></gridcol>
+													<gridcol  name="PLMC" caption="药品名称"  visible="true" align="L" headalign="L" width="140" datatype="S" ></gridcol>
+													<gridcol  name="pfjm" caption="配方机密"  visible="true" align="L" headalign="L" width="120" datatype="S" ></gridcol>
+													<gridcol  name="bhdj" caption="保护等级"  visible="true" align="L" headalign="L" width="70" datatype="S" ></gridcol>
+													<gridcol  name="bhrj" caption="保护截止期"  visible="true" align="L" headalign="L" width="90" datatype="S" ></gridcol>
+													<gridcol  name="hydj" caption="是否独家"  visible="true" align="L" headalign="L" width="70" datatype="S" ></gridcol>
+													<gridcol  name="gjjy" caption="是否基药"  visible="true" align="L" headalign="L" width="70" datatype="S" ></gridcol>
+													<gridcol  name="yblx" caption="医保类型"  visible="true" align="L" headalign="L" width="70" datatype="S" ></gridcol>
+													<gridcol  name="plms" caption="描述" visible="false"  align="L" headalign="L" width="40" datatype="M"  ></gridcol>										
+												</gridcols>
+												<datasource reqformat="0" switchid="4" name="cfg_bk_dghypl" body="3,$INBLOCK$,"></datasource>
+											</gridctrl>
+										</component>
+									</unionpanel>
+								</table>
+								<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="9" name="textpanel" >
+									<textpanel>
+										<properties>
+											<textcol title="品类描述" fldname="plms" titleclr="245,147,0"/>	
+										</properties>
+										<datasource   masterid="3" reqformat="12"   name="cfg_bk_dghypl" body="1,$INBLOCK$,"></datasource>
+									</textpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="4" name="switchcond" >
+							<switchcond>
+								<switchitems swgroup="6">
+									<switchitem itemid="H06" caption="医药行业(全)" topnode="true" />
+									<switchitem itemid="H0601" caption="医疗保健" topnode="true" />
+									<switchitem itemid="H060101" caption="医疗器械"  />						
+									<switchitem itemid="H060102" caption="保健品"  />
+									<switchitem itemid="H060103" caption="临床研究"  />
+									<switchitem itemid="H060104" caption="医疗服务"  />
+									<switchitem itemid="H0602" caption="医药" topnode="true" />
+									<switchitem itemid="H060201" caption="化学制药"  />
+									<switchitem itemid="H060202" caption="生物制药"  />
+									<switchitem itemid="H060203" caption="中成药"  />
+									<switchitem itemid="H060204" caption="药用辅料" />
+								</switchitems>
+							</switchcond>
+						</table>
+					</branchpanel>
+				</table>
+				<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="5" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="3" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF">
+							<gridcol name="GPDM" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="gpname" caption="名称" syscol="$ZQJC" visible="true"  headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R"  width="60" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="ZD" caption="涨跌" syscol="$QRSD"  visible="true" headalign="R" align="R" width="60" datatype="F"  ></gridcol>	
+							<gridcol name="CJL" caption="总量" syscol="$CJL"  visible="true" headalign="R" align="R" width="70" datatype="I" ></gridcol>							
+							<gridcol name="HSL" caption="换手%" syscol="$HSL"  visible="true" headalign="R" align="R" width="60" datatype="F"></gridcol>							
+							<gridcol name="ZCJJE" caption="总金额" syscol="$ZCJJE"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>								
+							<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" headalign="R" align="R" width="80" datatype="F" ></gridcol>						
+						</gridcols>
+						<datasource  masterid="3" reqformat="0"   name="cfg_bk_dghypl" body="2,$INBLOCK$,$$Pldm$$"></datasource>
+					</gridctrl>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

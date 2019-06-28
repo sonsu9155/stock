@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="水稻价格持仓分析" id="19" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="20" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="21" name="tabpanel">
+									<tabpanel>
+										<component caption="早籼稻期货价格" id="22" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="JSJ" caption="早籼稻期货结算价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,ER"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="晚籼稻期货价格" id="23" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="JSJ" caption="晚籼稻期货结算价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,LR"></datasource>
+											</chartctrl>
+										</component>
+                                        <component caption="粳稻期货价格" id="24" name="chartctrl" >
+                                            <chartctrl>
+                                                <properties >
+                                                <prop index="1" name="JSJ" caption="粳稻期货结算价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+                                                <xaxis name="DATE" caption="日期"></xaxis>
+                                                </properties>
+                                                <datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,JR"></datasource>
+                                            </chartctrl>
+                                        </component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="早籼稻批发均价" id="79" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												  <prop index="1" name="ZDPJJ" caption="平均价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												  <xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="6"></datasource>
+											</chartctrl>
+										</component>	
+										<component caption="晚籼稻批发均价" id="80" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="WDPJJ" caption="平均价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="6"></datasource>
+											</chartctrl>
+										</component>
+                                       <component caption="我国小包装大米零售价" id="53" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T002" caption="我国小包装大米零售价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="15"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="大米批发大宗价" id="59" name="chartctrl" >
+                                            <chartctrl>
+                                                <properties >
+                                                <prop index="1" name="DMPFJ" caption="大米批发大宗价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+                                                <xaxis name="DATE" caption="日期"></xaxis>
+                                                </properties>
+                                                <datasource   reqformat="0" name="cfg_hycyl_dm" body="5"></datasource>
+                                            </chartctrl>
+                                        </component>
+                                    </tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="28" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="29" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场大米期货价格" id="31" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T008" caption="CBOT糙米期货价格(美元/英担)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dd" body="4"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="国际市场大米现货价格" id="31" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="MGDMLM" caption="美国大米:南方碾磨长粒米(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="TGDMBJ" caption="泰国大米:100%B级(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="YNDM" caption="越南大米:5%破碎(美元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="8"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="33" name="tabpanel">
+									<tabpanel>
+										<component caption="大米CFTC持仓" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZCC" caption="CFTC大米总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FSYCC" caption="CFTC大米非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="FBGTC" caption="CFTC大米非报告头寸(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="7"></datasource>
+											</chartctrl>
+										</component>
+					 				</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="小麦价格持仓分析" id="37" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="38" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="39" name="tabpanel">
+									<tabpanel>
+										<component caption="强麦期货价格" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="JSJ" caption="强麦期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,WS"></datasource>
+											</chartctrl>
+										</component>
+                                        <component caption="普麦期货价格" id="41" name="chartctrl" >
+                                            <chartctrl>
+                                                <properties >
+                                                <prop index="1" name="JSJ" caption="普麦期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+                                                <xaxis name="DATE" caption="日期"></xaxis>
+                                                </properties>
+                                                <datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,PM"></datasource>
+                                            </chartctrl>
+                                        </component>
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="42" name="tabpanel">
+									<tabpanel>
+										<component caption="国际市场小麦现货价格" id="43" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="XMXJ" caption="小麦(美)(美元/蒲式耳)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="9"></datasource>
+											</chartctrl>
+										</component>
+                                       <component caption="农产品市场小麦批发价格" id="43" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="XMPFJ" caption="小麦批发均价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="10"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="面粉批发大宗价" id="64" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												  <prop index="1" name="MFPFJ" caption="面粉批发大宗价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+												  <xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="13"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="45" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="46" name="tabpanel">
+									<tabpanel>
+										<component caption="强麦库存量" id="47" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												  <prop index="1" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+                                                  <prop index="2" name="KYKRL" caption="可用库容量(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												  <xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="49" name="tabpanel">
+									<tabpanel>
+										<component caption="CFTC小麦持仓" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="SRZCC" caption="软红冬小麦总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="SRFSYCC" caption="软红冬小麦非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="HRZCC" caption="硬红冬小麦总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="HRFSYCC" caption="硬红冬小麦非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_dm" body="12"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>

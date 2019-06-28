@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="chartctrl">
+			<chartctrl>
+					<properties >
+					<prop index="0" name="TYSBJQZS" caption="行业景气指数:通用设备制造业" style="1"  baseline="0.0" defsel="1" ></prop>
+					<prop index="0" name="ZYSBJQZS" caption="行业景气指数:专用设备制造业" style="1"  baseline="0.0" defsel="1" ></prop>
+					<prop index="0" name="JYSBJQZS" caption="行业景气指数:交通运输设备制造业" style="1"  baseline="0.0" defsel="1" ></prop>
+					<xaxis name="date" caption="报告期"></xaxis>
+					</properties>
+				<datasource   reqformat="0" name="cfg_bk_hyzyzb" body="3,,"></datasource>
+			</chartctrl>
+		</table>	
+	</table>
+</root>

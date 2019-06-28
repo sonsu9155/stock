@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+							<tabpanel>
+								<component caption="大连玉米期货价格" id="19" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="SPJ" caption="玉米期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_spqh" body="3,C"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="玉米批发均价" id="28" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="YMPFJJ" caption="平均价(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="3"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+							<tabpanel>
+								<component caption="国际市场玉米期货价格" id="90" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="T002" caption="CBOT玉米期货价格(美元/磅)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="T001" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_dd" body="4"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="国际市场玉米现货价格" id="26" name="chartctrl" >
+								  <chartctrl>
+									<properties >
+									  <prop index="1" name="YMXHJ" caption="玉米(美元/蒲式耳)" style="1" defsel="1" baseline="0.0"></prop>
+									  <xaxis name="DATE" caption="日期"></xaxis>
+									</properties>
+									<datasource   reqformat="0" name="cfg_hycyl_ym" body="4"></datasource>
+								  </chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="23" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="24" name="tabpanel">
+							<tabpanel>
+								 <component caption="大连玉米期货仓单" id="91" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="2" name="CDSL" caption="仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_spqh" body="301,C"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+							<tabpanel>
+								<component caption="我国饲料集贸市场玉米均价" id="31" name="chartctrl" >
+									<chartctrl>
+										<properties >
+										<prop index="1" name="YMJG" caption="玉米价格(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="DSSYMJG" caption="主产区东三省玉米价格(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="GDYMJG" caption="主销区广东玉米价格(元/公斤)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="5"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>
+		</table>
+	</table>
+</root>

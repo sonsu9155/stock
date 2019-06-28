@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel>						
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="true" id="2" name="gridctrl" >
+					<gridctrl>
+						<gridcols fixednum="2" rowchgmsg="true" postslave="true" glincode="true">
+							<gridcol name="qhdm" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="qhmc" caption="名称" syscol="$ZQJC" visible="true" headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R" width="60" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="60" datatype="F" digital="0" ></gridcol>						
+							<gridcol name="BP1" caption="买价" syscol="$BP1" visible="true"  headalign="R" align="R" width="60" datatype="F" digital="0" ></gridcol>
+							<gridcol name="SP1" caption="卖价" syscol="$SP1" visible="true"  headalign="R" align="R" width="60" datatype="F" digital="0"></gridcol>
+							<gridcol name="NOWV" caption="现量" syscol="$NOWV"  visible="true" headalign="R" align="R" width="60" datatype="I"></gridcol>
+							<gridcol name="ZS" caption="涨速%" syscol="$ZS"  visible="true" headalign="R" align="R" width="60" datatype="F" ></gridcol>
+							<gridcol name="ZD" caption="涨跌" syscol="$QRSD"  visible="true" headalign="R" align="R" width="60" datatype="F" digital="0"></gridcol>
+							<gridcol name="CJL" caption="总量" syscol="$CJL"  visible="true" headalign="R" align="R" width="70" datatype="I" ></gridcol>
+							<gridcol name="ZCJJE" caption="总金额" syscol="$ZCJJE"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>
+							<gridcol name="ZEF" caption="振幅%" syscol="$ZEF"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>
+							<gridcol name="OPEN" caption="今开" syscol="$OPEN"  visible="true" headalign="R" align="R" width="60" datatype="F" digital="0"></gridcol>
+							<gridcol name="MAX" caption="最高" syscol="$MAX"  visible="true" headalign="R" align="R" width="60" datatype="F" digital="0" ></gridcol>
+							<gridcol name="MIN" caption="最低" syscol="$MIN"  visible="true" headalign="R" align="R" width="60" datatype="F" digital="0" ></gridcol>
+							<gridcol name="CLOSE" caption="昨收" syscol="$CLOSE"  visible="true" headalign="R" align="R" width="60" datatype="F" digital="0"></gridcol>	
+						</gridcols>
+						<datasource  reqformat="0"  name="cfg_hycyl_spqh" body="1,AL"></datasource>
+					</gridctrl>
+				</table>
+				<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="3" name="gridctrl">
+					<gridctrl>
+						<gridcols fixednum="2" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF" >
+							<gridcol name="gpdm" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+							<gridcol name="gpmc" caption="名称" syscol="$ZQJC" visible="true" headalign="L" align="L" width="70" datatype="S"></gridcol>
+							<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" headalign="R" align="R"  width="55" datatype="F" ></gridcol>
+							<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" headalign="R" align="R" width="55" datatype="F"  ></gridcol>
+							<gridcol name="ZD" caption="涨跌" syscol="$QRSD"  visible="true" headalign="R" align="R" width="55" datatype="F" ></gridcol>							
+							<gridcol name="BP1" caption="买价" syscol="$BP1" visible="true"  headalign="R" align="R" width="55" datatype="F"  ></gridcol>
+							<gridcol name="SP1" caption="卖价" syscol="$SP1" visible="true"  headalign="R" align="R" width="55" datatype="F" ></gridcol>
+							<gridcol name="NOWV" caption="现量" syscol="$NOWV"  visible="true" headalign="R" align="R" width="60" datatype="I"></gridcol>
+							<gridcol name="ZS" caption="涨速%" syscol="$ZS"  visible="true" headalign="R" align="R" width="55" datatype="F" ></gridcol>
+							<gridcol name="HSL" caption="换手%" syscol="$HSL"  visible="true" headalign="R" align="R" width="55" datatype="F"></gridcol>
+							<gridcol name="CJL" caption="总量" syscol="$CJL"  visible="true" headalign="R" align="R" width="70" datatype="I" ></gridcol>
+							<gridcol name="ZCJJE" caption="总金额" syscol="$ZCJJE"  visible="true" headalign="R" align="R" width="70" datatype="F" ></gridcol>
+							<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" headalign="R" align="R" width="80" datatype="F" ></gridcol>	
+							<gridcol name="OPEN" caption="今开" syscol="$OPEN"  visible="true" headalign="R" align="R" width="55" datatype="F" ></gridcol>
+							<gridcol name="MAX" caption="最高" syscol="$MAX"  visible="true" headalign="R" align="R" width="55" datatype="F"  ></gridcol>
+							<gridcol name="MIN" caption="最低" syscol="$MIN"  visible="true" headalign="R" align="R" width="55" datatype="F"  ></gridcol>
+							<gridcol name="CLOSE" caption="昨收" syscol="$CLOSE"  visible="true" headalign="R" align="R" width="55" datatype="F" ></gridcol>
+						</gridcols>
+						<datasource   reqformat="0"  name="cfg_hycyl_spqh" body="2,AL"></datasource>
+					</gridctrl>
+				</table>
+			</splitpanel>	
+		</table>
+	</table>
+</root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="动力配置" fldname="T动力配置" titleclr="245,147,0"/>
+					<textcol title="牵引系统" fldname="T牵引系统" titleclr="245,147,0"/>
+					<textcol title="制动系统" fldname="T制动系统" titleclr="245,147,0"/>
+					<textcol title="网络控制系统" fldname="T网络控制系统" titleclr="245,147,0"/>
+					<textcol title="转向架" fldname="T5.转向架" titleclr="245,147,0"/>
+					<textcol title="车体" fldname="T车体" titleclr="245,147,0"/>
+					<textcol title="辅助供电系统" fldname="T辅助供电系统" titleclr="245,147,0"/>
+					<textcol title="高压系统" fldname="T高压系统" titleclr="245,147,0"/>
+					<textcol title="旅客界面" fldname="T旅客界面" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="64"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

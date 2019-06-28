@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="工作波段" fldname="T工作波段" titleclr="245,147,0"/>
+					<textcol title="探测器类型" fldname="T探测器类型" titleclr="245,147,0"/>
+					<textcol title="f数" fldname="Tf数" titleclr="245,147,0"/>
+					<textcol title="视场" fldname="T视场" titleclr="245,147,0"/>
+					<textcol title="空间分辨率" fldname="T空间分辨率" titleclr="245,147,0"/>
+					<textcol title="温度分辨率" fldname="T温度分辨率" titleclr="245,147,0"/>
+					<textcol title="最小可分辨温差" fldname="T最小可分辨温差" titleclr="245,147,0"/>
+					<textcol title="帧频" fldname="T帧频" titleclr="245,147,0"/>
+					<textcol title="探测识别和辨认距离" fldname="T探测识别和辨认距离" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="179"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

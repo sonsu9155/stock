@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="产业链" fldname="T产业链" titleclr="245,147,0"/>
+					<textcol title="天线" fldname="T天线" titleclr="245,147,0"/>
+					<textcol title="芯片" fldname="T芯片" titleclr="245,147,0"/>
+					<textcol title="板卡" fldname="T板卡" titleclr="245,147,0"/>
+                    <textcol title="电子地图" fldname="T电子地图" titleclr="245,147,0"/>
+					<textcol title="终端" fldname="T终端" titleclr="245,147,0"/>
+					<textcol title="系统集成" fldname="T系统集成" titleclr="245,147,0"/>
+					<textcol title="运营服务" fldname="T运营服务" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="38"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

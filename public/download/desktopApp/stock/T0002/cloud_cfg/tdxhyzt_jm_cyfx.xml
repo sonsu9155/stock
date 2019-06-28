@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="上游分析" id="23" name="splitpanel" >	
+					<splitpanel hdirection="true">
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="全国煤炭储量分布" id="29" name="splitpanel" >
+											<splitpanel hdirection="false" >
+												<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="26" name="gridctrl">	
+													<gridctrl>
+														<gridcols fixednum="1" rowchgmsg="false" postslave="true" ingcode="true" >
+															<gridcol name="DQ" caption="地区"  visible="true"   headalign="L" align="L" width="130" datatype="S"  ></gridcol>											
+															<gridcol name="CUL" caption="储量(亿吨)"  visible="true" align="R" width="80" datatype="F" digital="0"></gridcol>
+															<gridcol name="CULZB" caption="占比(%)"  visible="true" align="R" width="80" datatype="F" digital="2"></gridcol>
+														</gridcols>
+														<datasource   reqformat="0"  name="cfg_hycyl_zc" body="3"></datasource>
+													</gridctrl>
+												</table>
+												<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="branchpanel">
+													<branchpanel>
+														<table X="0" Y="0" width="1" height="20" isleaf="true" hdirection="true" id="28" name="notepanel">
+															<notepanel>
+																<properties hoffset="10" voffset="10" frameline="0" >
+																	<prop rowhead="true" note="2015年中国煤炭储量分布图" clrtype=""/>
+																</properties>
+															</notepanel>
+														</table>
+														<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="39" name="piepanel">
+															<piepanel>
+																<properties top="10" othercol="true" textcol="DQ" datacol="CUL" >
+																</properties>
+																<datasource  masterid="" reqformat="0" name="cfg_hycyl_zc" body="4"></datasource>
+															</piepanel>
+														</table>
+													</branchpanel>	
+												</table>
+											</splitpanel>
+										</component>
+									</tabpanel>								
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="32" name="tabpanel">
+									<tabpanel>
+										<component caption="全国煤炭基础储量" id="33" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CUL" caption="煤炭储量(亿吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CULZZ" caption="储量增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_zc" body="5"></datasource>
+											</chartctrl>
+										</component>									
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="34" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="35" name="tabpanel">
+									<tabpanel>
+										<component caption="全国煤炭产量" id="36" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YMCL" caption="原煤产量(亿吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="YMCLTB" caption="产量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_zc" body="6"></datasource>
+											</chartctrl>
+										</component>									
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="37" name="tabpanel">
+									<tabpanel>
+										<component caption="中国CBFI煤炭运价指数" id="38" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CBFI" caption="CBFI：煤炭" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CBFIGZ" caption="CBFI：煤炭：秦皇岛-广州" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="CBFIFZ" caption="CBFI：煤炭：秦皇岛-福州" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="CBFINB" caption="CBFI：煤炭：秦皇岛-宁波" style="1" defsel="1" baseline="0.0"></prop>									
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_zc" body="10"></datasource>
+											</chartctrl>
+										</component>									
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="中游分析" id="42" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="43" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="44" name="tabpanel">
+									<tabpanel>
+										<component caption="焦煤期货价格" id="45" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="JMQJ" caption="焦煤期货收盘价（元/吨）" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="3"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="46" name="tabpanel">
+									<tabpanel>
+										<component caption="煤炭订单指数" id="52" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="MTDDZS" caption="煤炭订单指数环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="26"></datasource>
+											</chartctrl>
+										</component>			
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="48" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="49" name="tabpanel">
+									<tabpanel>
+										<component caption="秦皇岛港煤炭库存" id="50" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="MTKC" caption="秦皇岛港煤炭库存(万吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_zc" body="11"></datasource>
+											</chartctrl>
+										</component>	
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="51" name="tabpanel">
+									<tabpanel>
+										<component caption="煤炭库存指数" id="53" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="MTKCZS" caption="煤炭库存指数环比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="27"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="下游分析" id="64" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="65" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="66" name="tabpanel">
+									<tabpanel>
+										<component caption="焦炭期货价格" id="67" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+                                                <prop index="1" name="JQJ" caption="焦炭期货收盘价(元/吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="4"></datasource>
+											</chartctrl>
+										</component>
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="68" name="tabpanel">
+									<tabpanel>
+										<component caption="焦炭及半焦炭出口" id="70" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JTCKL" caption="焦炭及半焦炭出口量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JTCKJJ" caption="出口均价(美元/吨)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="6"></datasource>
+											</chartctrl>
+										</component>			
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="69" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="71" name="tabpanel">
+									<tabpanel>
+										<component caption="焦炭产量" id="72" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JTCL" caption="焦炭产量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JTCLTB" caption="同比增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="5"></datasource>
+											</chartctrl>
+										</component>	
+                                    </tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="73" name="tabpanel">
+									<tabpanel>
+										<component caption="焦炭消费量" id="74" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JTXFL" caption="焦炭消费总量(万吨)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JTXFLTB" caption="消费量同比(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_j" body="7"></datasource>
+											</chartctrl>
+										</component>									
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>

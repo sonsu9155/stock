@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="甲基化特异性PCR" fldname="T甲基化特异性PCR" titleclr="245,147,0"/>
+					<textcol title="亚硫酸氢盐处理测序" fldname="T亚硫酸氢盐处理测序" titleclr="245,147,0"/>
+					<textcol title="COBRA法" fldname="TCOBRA法" titleclr="245,147,0"/>
+					<textcol title="荧光定量法" fldname="T荧光定量法" titleclr="245,147,0"/>
+					<textcol title="敏感性高分辨率熔解曲线分析" fldname="T敏感性高分辨率熔解曲线分析" titleclr="245,147,0"/>
+					<textcol title="焦磷酸测序" fldname="T焦磷酸测序" titleclr="245,147,0"/>
+					<textcol title="基于芯片的甲基化图谱分析" fldname="T基于芯片的甲基化图谱分析" titleclr="245,147,0"/>
+					<textcol title="高通量测序" fldname="T高通量测序" titleclr="245,147,0"/>
+					<textcol title="飞行质谱" fldname="T飞行质谱" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="143"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

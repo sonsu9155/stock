@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="branchpanel">
+			<branchpanel hdirection="true">
+				<table X="0" Y="0" width="1" height="0" isleaf="true" hdirection="true" id="2" name="tabpanel">
+					<tabpanel>
+						<component caption="投资逻辑" id="5" name="gridctrl" >
+							<gridctrl>
+								<gridcols fixednum="4" rowchgmsg="true" postslave="true" glincode="true" >
+									<gridcol  name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" align="L" width="60" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="gpname" caption="名称" syscol="$ZQJC" visible="true"   align="L" width="70" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="ZAF" caption="涨幅%" syscol="$ZAF" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z"></gridcol>
+									<gridcol  name="NOW" caption="现价" syscol="$NOW" visible="true" align="R" width="60" datatype="F" digital="2" ></gridcol>
+									<gridcol  name="PE" caption="PE(TTM)" visible="true" align="R" width="70" datatype="F" digital="2"></gridcol>
+									<gridcol  name="PB" caption="PB(MRQ)" visible="true"  align="R" width="72" datatype="F" digital="2"></gridcol>
+									<gridcol  name="LTSZ" caption="流通市值" syscol="$J_LTSZ" visible="true" align="R" width="70" datatype="F" digital="2" ></gridcol>
+									<gridcol  name="HYFL" caption="行业细分" visible="true" align="L" headalign="L" width="110"  datatype="S" ></gridcol>
+									<gridcol  name="ZYGJZ" caption="主营关键字" visible="true" align="L" headalign="L" width="140"  datatype="S"  ></gridcol>
+									<gridcol  name="TZLJ" caption="行业地位" visible="true"  align="L" headalign="L" width="500"  datatype="S"  ></gridcol>
+								</gridcols>
+								<datasource  reqformat="0" switchid="4" name="cfg_bk_dgtzlj" body="$INBLOCK$"></datasource>
+							</gridctrl>
+						</component>
+						<component caption="主营构成" id="6" name="gridctrl" >
+							<gridctrl>
+								<gridcols fixednum="4" rowchgmsg="true" postslave="true" glincode="true">
+									<gridcol  name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" align="L" width="60" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="gpname" caption="名称" syscol="$ZQJC" visible="true" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="ZAF" caption="涨幅%" syscol="$ZAF" visible="true" align="R" width="55" datatype="F" digital="2" clrtype="Z"></gridcol>
+									<gridcol  name="NOW" caption="现价" syscol="$NOW" visible="true" align="R" width="55" datatype="F" digital="2" ></gridcol>
+									<gridcol  name="T005" caption="报告期" visible="true" align="C" width="70" datatype="S"></gridcol>
+									<gridcol  name="T006" caption="第一大主营业务(亿)|经营项目名称" visible="true" align="L" width="115" datatype="S" fmtinvalid="1"></gridcol>
+									<gridcol  name="T007" caption="第一大主营业务(亿)|收入" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T008" caption="第一大主营业务(亿)|占比%" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T009" caption="第一大主营业务(亿)|成本" visible="false" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T010" caption="第一大主营业务(亿)|利润" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T011" caption="第一大主营业务(亿)|毛利%" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T012" caption="第二大主营业务(亿)|经营项目名称" visible="true" align="L" width="115" datatype="S" fmtinvalid="1"></gridcol>
+									<gridcol  name="T013" caption="第二大主营业务(亿)|收入" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T014" caption="第二大主营业务(亿)|占比%" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T015" caption="第二大主营业务(亿)|成本" visible="false" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T016" caption="第二大主营业务(亿)|利润" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T017" caption="第二大主营业务(亿)|毛利%" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T018" caption="第三大主营业务(亿)|经营项目名称" visible="true" align="L" width="115" datatype="S" fmtinvalid="1"></gridcol>
+									<gridcol  name="T019" caption="第三大主营业务(亿)|收入" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T020" caption="第三大主营业务(亿)|占比%" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T021" caption="第三大主营业务(亿)|成本" visible="false" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T022" caption="第三大主营业务(亿)|利润" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T023" caption="第三大主营业务(亿)|毛利%" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+								</gridcols>
+								<datasource  reqformat="1" switchid="4" name="cfg_bk_dgzygc" body="$INBLOCK$"></datasource>
+							</gridctrl>
+						</component>
+						<component caption="财务指标" id="7" name="gridctrl" >
+							<gridctrl>
+								<gridcols fixednum="4" rowchgmsg="true" postslave="true" glincode="true" >
+									<gridcol  name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" align="L" width="60" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="gpname" caption="名称" syscol="$ZQJC" visible="true" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="ZAF" caption="涨幅%" syscol="$ZAF" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z"></gridcol>
+									<gridcol  name="NOW" caption="现价" syscol="$NOW" visible="true" align="R" width="60" datatype="F" digital="2" ></gridcol>
+									<gridcol  name="T005" caption="报告期" visible="true" align="C" width="70" datatype="S"></gridcol>
+									<gridcol  name="T006" caption="营业收入(亿)|本期" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T007" caption="营业收入(亿)|上期" visible="true" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T008" caption="营业收入(亿)|同比%" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T009" caption="营业利润(亿)|本期" visible="false"  align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T010" caption="营业利润(亿)|上期" visible="false" align="R" width="60" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T011" caption="营业利润(亿)|同比%" visible="false" align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T012" caption="归母净利润(亿)|本期" visible="true"  align="R" width="60" datatype="F" digital="2"  fmtinvalid="1"></gridcol>
+									<gridcol  name="T013" caption="归母净利润(亿)|上期" visible="true"  align="R" width="60" datatype="F" digital="2"  fmtinvalid="1"></gridcol>
+									<gridcol  name="T014" caption="归母净利润(亿)|同比%" visible="true"  align="R" width="60" datatype="F" digital="2"  clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T015" caption="经营现金流量净额(亿)|本期" visible="true"  align="R" width="60" datatype="F" digital="2" fmtinvalid="1" ></gridcol>
+									<gridcol  name="T016" caption="经营现金流量净额(亿)|上期" visible="true"  align="R" width="60" datatype="F" digital="2"  fmtinvalid="1"></gridcol>
+									<gridcol  name="T017" caption="经营现金流量净额(亿)|同比%" visible="true"  align="R" width="60" datatype="F" digital="2"  clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T018" caption="资产总计(亿)|本期" visible="true"  align="R" width="65" datatype="F" digital="2" fmtinvalid="1" ></gridcol>
+									<gridcol  name="T019" caption="资产总计(亿)|上期" visible="true"  align="R" width="65" datatype="F" digital="2" fmtinvalid="1" ></gridcol>
+									<gridcol  name="T020" caption="资产总计(亿)|同比%" visible="true"  align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T021" caption="负债总计(亿)|本期" visible="true"  align="R" width="65" datatype="F" digital="2"  fmtinvalid="1"></gridcol>
+									<gridcol  name="T022" caption="负债总计(亿)|上期" visible="true"  align="R" width="65" datatype="F" digital="2" fmtinvalid="1" ></gridcol>
+									<gridcol  name="T023" caption="负债总计(亿)|同比%" visible="true"  align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+									<gridcol  name="T024" caption="母公司所有者权益(亿)|本期" visible="true"  align="R" width="60" datatype="F" digital="2"  fmtinvalid="1"></gridcol>
+									<gridcol  name="T025" caption="母公司所有者权益(亿)|上期" visible="true"  align="R" width="60" datatype="F" digital="2"  fmtinvalid="1"></gridcol>
+									<gridcol  name="T026" caption="母公司所有者权益(亿)|同比%" visible="true"  align="R" width="60" datatype="F" digital="2" clrtype="Z" fmtinvalid="1"></gridcol>
+								</gridcols>
+								<datasource  reqformat="1" switchid="4" name="cfg_bk_dgcwzb" body="$INBLOCK$"></datasource>
+							</gridctrl>
+						</component>
+						<component caption="估值比较" id="8" name="gridctrl" >
+							<gridctrl>
+								<gridcols fixednum="4" rowchgmsg="true" postslave="true" glincode="true" >
+									<gridcol  name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" align="L" width="60" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="gpname" caption="名称" syscol="$ZQJC" visible="true" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="ZAF" caption="涨幅%" syscol="$ZAF" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z"></gridcol>
+									<gridcol  name="NOW" caption="现价" syscol="$NOW" visible="true" align="R" width="60" datatype="F" digital="2" ></gridcol>
+									<gridcol  name="T004" caption="交易日期" visible="true" align="C" width="80" datatype="S" ></gridcol>
+									<gridcol  name="T005" caption="PE(TTM)" visible="true" align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T006" caption="PB(MRQ)" visible="true"  align="R" width="73" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T007" caption="PS(TTM)" visible="true"  align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T008" caption="PCF(TTM)" visible="true"  align="R" width="80" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T009" caption="历史PEG" visible="true"  align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T010" caption="总市值(亿)" visible="true"  align="R" width="80" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T011" caption="流通市值(亿)" visible="true"  align="R" width="100" datatype="F" digital="2" fmtinvalid="1"></gridcol>	
+									<gridcol  name="T012" caption="股权价值(亿)" visible="true"  align="R" width="100" datatype="F" digital="2" fmtinvalid="1"></gridcol>	
+									<gridcol  name="T013" caption="企业价值(亿)|EV1-含货币资金" visible="true"  align="R" width="120" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T014" caption="企业价值(亿)|EV2-剔除货币资金" visible="true"  align="R" width="135" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T015" caption="企业倍数|EV2/EBITDA" visible="true"  align="R" width="95" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+								</gridcols>
+								<datasource  reqformat="1" switchid="4" name="cfg_bk_dggzbj" body="$INBLOCK$"></datasource>
+							</gridctrl>
+						</component>
+						<component caption="一致预期" id="9" name="gridctrl" >
+							<gridctrl>
+								<gridcols fixednum="4" rowchgmsg="true" postslave="true" glincode="true" >
+									<gridcol  name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" align="L" width="60" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="gpname" caption="名称" syscol="$ZQJC" visible="true" align="L" width="70" datatype="S" clrtype="S"></gridcol>
+									<gridcol  name="ZAF" caption="涨幅%" syscol="$ZAF" visible="true" align="R" width="60" datatype="F" digital="2" clrtype="Z"></gridcol>
+									<gridcol  name="NOW" caption="现价" syscol="$NOW" visible="true" align="R" width="60" datatype="F" digital="2" ></gridcol>
+									<gridcol  name="T005" caption="评级日期" visible="true" align="C" width="80" datatype="S" fmtinvalid="1"></gridcol>
+									<gridcol  name="T006" caption="机构数" visible="true" align="R" width="60" datatype="I" fmtinvalid="1"></gridcol>
+									<gridcol  name="T007" caption="综合评级" visible="true" align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T008" caption="目标价" visible="true" align="R" width="60" datatype="F"  digital="2" fmtinvalid="1"></gridcol>
+									<gridcol  name="T009" caption="目标涨幅%" visible="true" align="R" width="80" datatype="F"  digital="2" fmtinvalid="1" clrtype="Z" formula="(T008/NOW-1)*100" calccol="T008,NOW"></gridcol>
+									<gridcol  name="T010" caption="T年度" visible="true" align="R" width="50" datatype="I" fmtinvalid="1"></gridcol>
+									<gridcol  name="T011" caption="预测市盈率|T年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T012" caption="预测市盈率|T+1年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T013" caption="预测市盈率|T+2年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T014" caption="预测每股收益(元)|T年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T015" caption="预测每股收益(元)|T+1年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T016" caption="预测每股收益(元)|T+2年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T017" caption="预测营业收入(亿)|T年" visible="true" align="R" width="70" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T018" caption="预测营业收入(亿)|T+1年" visible="true" align="R" width="70" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T019" caption="预测营业收入(亿)|T+2年" visible="true" align="R" width="70" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T020" caption="预测净利润(亿)|T年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T021" caption="预测净利润(亿)|T+1年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+									<gridcol  name="T022" caption="预测净利润(亿)|T+2年" visible="true" align="R" width="60" datatype="F" fmtinvalid="1" digital="2"></gridcol>
+								</gridcols>
+								<datasource  reqformat="1" switchid="4" name="cfg_bk_dgyzyq" body="$INBLOCK$"></datasource>
+							</gridctrl>
+						</component>
+					</tabpanel>
+				</table>					
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="4" name="switchcond" >
+					<switchcond>
+						<switchitems swgroup="6">
+							<switchitem itemid="H06" caption="医药行业(全)" topnode="true" />
+							<switchitem itemid="H0601" caption="医疗保健" topnode="true" />
+							<switchitem itemid="H060101" caption="医疗器械"  />						
+							<switchitem itemid="H060102" caption="保健品"  />
+							<switchitem itemid="H060103" caption="临床研究"  />
+							<switchitem itemid="H060104" caption="医疗服务"  />
+							<switchitem itemid="H0602" caption="医药" topnode="true" />
+							<switchitem itemid="H060201" caption="化学制药"  />
+							<switchitem itemid="H060202" caption="生物制药"  />
+							<switchitem itemid="H060203" caption="中成药"  />
+							<switchitem itemid="H060204" caption="药用辅料" />
+						</switchitems>
+					</switchcond>
+				</table>
+			</branchpanel>
+		</table>
+	</table>
+</root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="2" name="tabpanel">
+			<tabpanel>
+				<component caption="新能源汽车产量" id="3" name="chartctrl" >
+					<chartctrl>
+						<properties >
+						<prop index="1" name="XNYCCL" caption="新能源汽车产量(万辆)" style="3" defsel="1" baseline="0.0"></prop>
+						<prop index="2" name="CDDCL" caption="纯电动车产量(万辆)" style="3" defsel="1" baseline="0.0"></prop>
+						<prop index="3" name="CDHHCL" caption="插电混动车产量(万辆)" style="3" defsel="1" baseline="0.0"></prop>
+						<xaxis name="DATE" caption="日期"></xaxis>
+						</properties>
+						<datasource   reqformat="0" name="cfg_hycyl_gdzb" body="6,"></datasource>
+					</chartctrl>
+				</component>
+				<component caption="新能源汽车销量" id="4" name="chartctrl" >
+					<chartctrl>
+						<properties >
+						<prop index="1" name="XNYCXL" caption="新能源汽车销量(万辆)" style="3" defsel="1" baseline="0.0"></prop>
+						<prop index="2" name="CDDXL" caption="纯电动车销量(万辆)" style="3" defsel="1" baseline="0.0"></prop>
+						<prop index="3" name="CDHHXL" caption="插电混动车销量(万辆)" style="3" defsel="1" baseline="0.0"></prop>
+						<xaxis name="DATE" caption="日期"></xaxis>
+						</properties>
+						<datasource   reqformat="0" name="cfg_hycyl_gdzb" body="6,"></datasource>
+					</chartctrl>
+				</component>
+			</tabpanel>
+		</table>
+	</table>
+</root>

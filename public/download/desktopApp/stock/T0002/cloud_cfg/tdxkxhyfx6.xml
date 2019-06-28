@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">			
+			<splitpanel hdirection="true">
+				<table X="0" Y="0" width="1" height="0.45" isleaf="true" hdirection="true" id="2" name="gridctrl" >
+					<gridctrl>
+						<gridcols fixednum="2" rowchgmsg="true" forbidmenu="1" showtip="1" postslave="true" ingcode="true">
+							<gridcol  name="T001" caption="更新日期" visible="true" align="C" width="80" datatype="S" ></gridcol>
+							<gridcol  name="T002" caption="指标名称" visible="true" align="L" width="400" datatype="S"></gridcol>
+							<gridcol  name="T003" caption="指标类型" visible="true"  headalign="L" align="L" width="80" datatype="S" ></gridcol>
+							<gridcol  name="T004" caption="当期值" visible="true" headalign="R" align="R" width="100" datatype="F" digital="2"></gridcol>
+							<gridcol  name="T005" caption="单位" visible="true" headalign="R" align="R" width="100" datatype="S" ></gridcol>
+							<gridcol  name="T006" caption="环比(%)" visible="true" headalign="R" align="R" width="70" datatype="F" digital="2" clrtype="Z"></gridcol>
+							<gridcol  name="T007" caption="更新频率" visible="true" headalign="R" align="R" width="80" datatype="S" ></gridcol>	
+							<gridcol  name="T008" caption="相关行业" visible="false"  align="R" width="80" datatype="S" ></gridcol>
+							<gridcol  name="CODE" caption="行业代码" syscol="$ZQDM" visible="false"  align="L" width="70" datatype="S" clrtype="S" ></gridcol>
+							<gridcol  name="T009" caption="指标ID" visible="false"  align="R" width="100" datatype="S" ></gridcol>
+						</gridcols>
+						<datasource  reqformat="0" name="cfg_bk_hyzyzb" body="1,H05,"></datasource>
+					</gridctrl>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="3" name="chartctrl">
+					<chartctrl>
+							<properties >
+							<prop index="0" name="data" caption="指标值" style="1"  baseline="0.0" defsel="1" ></prop>
+							<xaxis name="date" caption="报告期"></xaxis>
+							</properties>
+						<datasource masterid="2"  reqformat="0" name="cfg_bk_hyzyzb" body="2,H05,$$T009$$"></datasource>
+					</chartctrl>
+				</table>									
+			</splitpanel>			
+		</table>
+	</table>
+</root>
+
+

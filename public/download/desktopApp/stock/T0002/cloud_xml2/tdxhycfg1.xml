@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">			
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="12" name="gridctrl" >
+			<gridctrl>
+				<gridcols fixednum="2" rowchgmsg="true" postslave="true" firstswitchzst="true" defsort="ZAF" >
+					<gridcol name="Gpdm" caption="代码" syscol="$ZQDM" visible="true" headalign="L" align="L" width="60" datatype="S"></gridcol>
+					<gridcol name="gpname" caption="名称" syscol="$ZQJC" visible="true"  headalign="L" align="L" width="70" datatype="S"></gridcol>
+					<gridcol name="ZAF" caption="涨幅%" syscol="$ZAF"  visible="true" align="R" width="55" datatype="F" ></gridcol>
+					<gridcol name="NOW" caption="现价" syscol="$NOW"  visible="true" align="R" width="55" datatype="F"  ></gridcol>
+					<gridcol name="ZS" caption="涨速%" syscol="$ZS"  visible="true" align="R" width="55" datatype="F" ></gridcol>
+					<gridcol name="HSL" caption="换手%" syscol="$HSL"  visible="true" align="R" width="55" datatype="F"></gridcol>
+					<gridcol name="ZCJJE" caption="成交额" syscol="$ZCJJE"  visible="true" align="R" width="70" datatype="F" ></gridcol>
+					<gridcol name="J_ZSZ" caption="总市值" syscol="$J_ZSZ"  visible="true" align="R" width="80" datatype="F" ></gridcol>	
+					<gridcol name="J_LTSZ" caption="流通市值" syscol="$J_LTSZ"  visible="true" align="R" width="80" datatype="F" ></gridcol>
+					<gridcol name="PE_TTM" caption="PE(TTM)"  visible="true" align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+					<gridcol name="PE_NB" caption="PE(年报)"  visible="true" align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>		
+					<gridcol name="PB_MRQ" caption="PB(MRQ)"  visible="true" align="R" width="72" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+					<gridcol name="PCF_TTM" caption="PCF(TTM)"  visible="true" align="R" width="75" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+					<gridcol name="PS_TTM" caption="PS(TTM)"  visible="true" align="R" width="70" datatype="F" digital="2" fmtinvalid="1"></gridcol>
+					<gridcol name="ZEF" caption="振幅%" syscol="$ZEF"  visible="true" align="R" width="50" datatype="F" ></gridcol>
+					<gridcol name="CJJJ" caption="均价" syscol="$CJJJ"  visible="true" align="R" width="50" datatype="F"></gridcol>			
+				</gridcols>
+				<datasource reqformat="0"  name="cfg_bk_hycfg" body="2,,$INGCODE$"></datasource>
+			</gridctrl>	
+		</table>
+	</table>
+</root>

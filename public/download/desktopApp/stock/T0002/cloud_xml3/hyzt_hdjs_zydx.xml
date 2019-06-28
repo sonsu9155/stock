@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="CPR1000" fldname="TCPR1000" titleclr="245,147,0"/>
+					<textcol title="AP1000" fldname="TAP1000" titleclr="245,147,0"/>
+					<textcol title="EPR" fldname="TEPR" titleclr="245,147,0"/>
+					<textcol title="VVER1000" fldname="TVVER1000" titleclr="245,147,0"/>
+					<textcol title="华龙一号" fldname="T华龙一号" titleclr="245,147,0"/>
+					<textcol title="CAP1400和CAP1000" fldname="TCAP1400和CAP1000" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="85"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

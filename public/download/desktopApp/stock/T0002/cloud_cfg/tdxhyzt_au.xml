@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">
+			<tabpanel>
+				<component caption="行业规模分析" id="2" name="splitpanel" >	
+					<splitpanel hdirection="true">
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="4" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="5" name="tabpanel">
+									<tabpanel>
+										<component caption="资产规模" id="6" name="splitpanel" >	
+											<splitpanel hdirection="true">	
+												<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="7" name="chartctrl">									
+													<chartctrl>
+														<properties >
+														<prop index="1" name="ZZC" caption="总资产(亿元)" style="3" defsel="1" baseline="0.0"></prop>
+														<prop index="2" name="JZC" caption="净资产(亿元)" style="3" defsel="1" baseline="0.0"></prop>
+														<prop index="3" name="ZZCYOY" caption="总资产增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+														<prop index="4" name="JZCYOY" caption="净资产增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+														<xaxis name="DATE" caption="日期"></xaxis>
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885028"></datasource>
+													</chartctrl>	
+												</table>
+												<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="8" name="textpanel" >
+													<textpanel>
+														<properties>
+															<textcol title="" fldname="ZZGMMS" titleclr="245,147,0"/>	
+														</properties>
+														<datasource  reqformat="0"   name="cfg_hycyl_spqh" body="5,885028"></datasource>
+													</textpanel>
+												</table>
+											</splitpanel>
+										</component>														
+												
+									</tabpanel>		
+								</table>							
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">							
+									<tabpanel>
+										<component caption="利润规模" id="9" name="splitpanel" >
+											<splitpanel hdirection="true">	
+												<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="10" name="chartctrl">									
+													<chartctrl>
+														<properties >
+														<prop index="1" name="ZYSR" caption="主营业务收入" style="3" defsel="1" baseline="0.0"></prop>
+														<prop index="2" name="ZYLR" caption="主营业务利润" style="3" defsel="1" baseline="0.0"></prop>
+														<prop index="3" name="ZYSRYOY" caption="收入增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+														<prop index="4" name="ZYLRYOY" caption="利润增长(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+														<xaxis name="DATE" caption="日期"></xaxis>
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885028"></datasource>
+													</chartctrl>													
+												</table>
+												<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="11" name="textpanel" >
+													<textpanel>
+														<properties>
+															<textcol title="" fldname="LRGMMS" titleclr="245,147,0"/>	
+														</properties>
+														<datasource  reqformat="0"   name="cfg_hycyl_spqh" body="5,885028"></datasource>
+													</textpanel>
+												</table>
+											</splitpanel>
+										</component>
+												
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="1" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="12" name="tabpanel">
+									<tabpanel>
+										<component caption="三费概况" id="13" name="splitpanel" >
+											<splitpanel hdirection="true">	
+												<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="14" name="chartctrl">	
+													<chartctrl>
+														<properties >
+														<prop index="1" name="YYFY" caption="营业费用(亿元)" style="3" defsel="1" baseline="0.0"></prop>
+														<prop index="2" name="GLFY" caption="管理费用(亿元)" style="3" defsel="1" baseline="0.0" ></prop>
+														<prop index="2" name="CWFY" caption="财务费用(亿元)" style="3" defsel="1" baseline="0.0" ></prop>											
+														<xaxis name="DATE" caption="日期"></xaxis>
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885028"></datasource>
+													</chartctrl>
+												</table>
+												<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="15" name="textpanel" >
+													<textpanel>
+														<properties>
+															<textcol title="" fldname="SFGKMS" titleclr="245,147,0"/>	
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="5,885028"></datasource>
+													</textpanel>
+												</table>
+											</splitpanel>
+										</component>
+										<component caption="三费占比" id="16" name="splitpanel" >
+											<splitpanel hdirection="true">	
+												<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="17" name="chartctrl">	
+													<chartctrl>
+														<properties >
+														<prop index="1" name="YYFYZB" caption="营业费用占比(%)" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="2" name="GLFYZB" caption="管理费用占比(%)" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="3" name="CWFYZB" caption="财务费用占比(%)" style="1" defsel="1" baseline="0.0"></prop>
+														<xaxis name="DATE" caption="日期"></xaxis>
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885028"></datasource>
+													</chartctrl>
+												</table>
+												<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="18" name="textpanel" >
+													<textpanel>
+														<properties>
+															<textcol title="" fldname="SFZBMS" titleclr="245,147,0"/>	
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="5,885028"></datasource>
+													</textpanel>
+												</table>
+											</splitpanel>	
+										</component>
+									</tabpanel>
+								</table>										
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="19" name="tabpanel">
+									<tabpanel>
+										<component caption="效益概况" id="20" name="splitpanel" >
+											<splitpanel hdirection="true">	
+												<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="21" name="chartctrl">
+													<chartctrl>
+														<properties >
+														<prop index="1" name="XSMLL" caption="销售毛利率(%)" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="2" name="XSJLL" caption="销售净利率(%)" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="3" name="ROE" caption="净资产收益率(%)" style="1" defsel="1" baseline="0.0"></prop>
+														<prop index="4" name="ZCFZL" caption="资产负债率(%)" style="1" defsel="0" baseline="0.0"></prop>
+														<prop index="5" name="ZZCZZL" caption="总资产周转率" style="1" defsel="0" baseline="0.0"></prop>
+														<prop index="6" name="YSZKZZL" caption="应收账款周转率" style="1" defsel="0" baseline="0.0"></prop>									
+														<xaxis name="DATE" caption="年份"></xaxis>
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885028"></datasource>
+													</chartctrl>
+												</table>
+												<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="22" name="textpanel" >
+													<textpanel>
+														<properties>
+															<textcol title="" fldname="XYGKMS" titleclr="245,147,0"/>	
+														</properties>
+														<datasource   reqformat="0" name="cfg_hycyl_spqh" body="5,885028"></datasource>
+													</textpanel>
+												</table>
+											</splitpanel>	
+										</component>		
+									</tabpanel>									
+								</table> 	
+							</splitpanel>
+						</table> 
+					</splitpanel>	
+				</component>
+				<component caption="供给分析" id="2" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金储量分布" id="26" name="splitpanel" >
+											<splitpanel hdirection="false" >
+												<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="27" name="gridctrl">	
+													<gridctrl>
+														<gridcols fixednum="1" rowchgmsg="false" postslave="true" ingcode="true" >
+															<gridcol name="DQ" caption="地区"  visible="true"   headalign="L" align="L" width="115" datatype="S"  ></gridcol>
+															<gridcol name="CAL" caption="产量(吨)" visible="true" align="R" width="62" datatype="F" digital="0"></gridcol>
+															<gridcol name="CUL" caption="储量(吨)"  visible="true" align="R" width="62" datatype="F" digital="0"></gridcol>
+															<gridcol name="KCNX" caption="可开采年限"  visible="true" align="R" width="90" datatype="F" digital="2"></gridcol>
+														</gridcols>
+														<datasource   reqformat="0"  name="cfg_hycyl_au" body="1"></datasource>
+													</gridctrl>
+												</table>
+												<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="28" name="branchpanel">
+													<branchpanel>
+														<table X="0" Y="0" width="1" height="20" isleaf="true" hdirection="true" id="1" name="notepanel">
+															<notepanel>
+																<properties hoffset="10" voffset="10" frameline="0" >
+																	<prop rowhead="true" note="2016年全球黄金储量分布图" clrtype=""/>
+																</properties>
+																<datasource   reqformat="0" name="cfg_hycyl_au" body="1"></datasource>
+															</notepanel>
+														</table>
+														<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="2" name="piepanel">
+															<piepanel>
+																<properties top="" othercol="false" textcol="DQ" datacol="CUL" >
+																</properties>
+																<datasource  masterid="" reqformat="0" name="cfg_hycyl_au" body="2"></datasource>
+															</piepanel>
+														</table>
+													</branchpanel>	
+												</table>		
+											</splitpanel>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="7" name="tabpanel">
+									<tabpanel>
+										<component caption="中国黄金产量走势" id="5" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CAL" caption="我国黄金产量(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="CUL" caption="我国黄金储量(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="3"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="9" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="10" name="tabpanel">
+									<tabpanel>
+										<component caption="中国黄金储备" id="13" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HJCB" caption="黄金储备数值(万盎司)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="CBTB" caption="黄金储备同比(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="4"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="12" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金供给分析" id="16" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T015" caption="黄金供应总量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T016" caption="金矿产量(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="3" name="T020" caption="黄金回收(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="4" name="T017" caption="生产商对冲(吨)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="交易所库存分析" id="16" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="上期所黄金库存" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HJKC" caption="库存量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="5"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+									<tabpanel>
+										<component caption="COMEX黄金库存" id="15" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AUZKC" caption="库存量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AUZCCD" caption="注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AUWZCCD" caption="未注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="12"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="上期所白银库存" id="14" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="BYCD" caption="白银仓单数量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="BYKY" caption="白银可用库容量(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="11"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>	
+										<component caption="COMEX白银库存" id="15" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AGZKC" caption="库存量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AGZCCD" caption="注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="1" name="AGWZCCD" caption="未注册仓单量(万盎司)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="12"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="商品价格分析" id="16" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="上期所贵金属期价" id="21" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AUSPJ" caption="黄金期价(元/克)-左" style="1" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="AGSPJ" caption="白银期价(元/千克)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="16"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="上期所金银期货比价" id="29" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JYBJ" caption="金银期货比价" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="16"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="21" name="tabpanel">
+									<tabpanel>
+										<component caption="COMEX贵金属期价" id="23" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AUSPJ" caption="COMEX黄金期价(美元/盎司)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="AGSPJ" caption="COMEX白银期价(美元/盎司)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="7"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="COMEX金银期货比价" id="29" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JYBJ" caption="金银期货比价" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="7"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="上海黄金交易所现货价格" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HJTD" caption="黄金T+D价格(元/克)-左" style="1" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="BYTD" caption="白银T+D价格(元/千克)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="8"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="伦敦贵金属现货价格" id="29" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="AUXHJ" caption="黄金价格(美元/盎司)-左" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="AGXHJ" caption="白银价格(美元/盎司)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="17"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>
+										<component caption="纽交所黄金ETF收盘价" id="29" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HJETF" caption="纽交所黄金ETF收盘价(美元)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="9"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="ETF和CFTC持仓分析" id="16" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="17" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="18" name="tabpanel">
+									<tabpanel>
+										<component caption="黄金ETF持仓" id="19" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="CCL" caption="黄金持仓量(万盎司)" style="1" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="CYJZ" caption="黄金持有价值(亿美元)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="9"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="20" name="tabpanel">
+									<tabpanel>
+										<component caption="黄金CFTC持仓" id="21" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZCC" caption="CFTC黄金总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FSYCC" caption="CFTC黄金非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="13"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="24" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="25" name="tabpanel">
+									<tabpanel>
+										<component caption="白银CFTC管理基金持仓" id="23" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="JJDT" caption="管理基金多头持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JJKT" caption="管理基金空头持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JJTL" caption="管理基金套利持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="15"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="27" name="tabpanel">
+									<tabpanel>	
+										<component caption="白银CFTC总持仓" id="26" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZCC" caption="CFTC白银总持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="FSYCC" caption="CFTC白银非商业持仓(张)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="14"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="需求分析" id="29" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="30" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="39" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金需求量" id="38" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T002" caption="需求合计(吨)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="43" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金需求量(分行业)" id="40" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T003" caption="金饰(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="T004" caption="科技(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="T008" caption="投资(吨)" style="3" defsel="1" baseline="0.0"></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="38" name="splitpanel">
+							<splitpanel hdirection="false">	
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="31" name="tabpanel">
+									<tabpanel>
+										<component caption="金银珠宝类零售额" id="33" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="DYLSE" caption="当月值(亿元)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="DYTB" caption="当月同比(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="10"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="34" name="tabpanel">
+									<tabpanel>
+										<component caption="全球黄金投资需求" id="35" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="T008" caption="投资需求合计(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="T009" caption="金条金币需求(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="3" name="T013" caption="ETF及类似产品需求(吨)" style="3" defsel="1" baseline="0.0" ></prop>
+												<xaxis name="T001" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_au" body="6"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+					</splitpanel>	
+				</component>
+				<component caption="宏观经济分析" id="74" name="splitpanel" >
+					<splitpanel hdirection="true">	
+						<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="75" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="76" name="tabpanel">
+									<tabpanel>
+										<component caption="国内生产总值" id="77" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GDP" caption="国内生产总值GDP累计(万亿)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GDPZZ" caption="GDP累计增长率(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="工业增加值" id="78" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="GYZJZ" caption="工业增加值累计(万亿)" style="3" defsel="1" baseline="0.0" ></prop>	
+												<prop index="2" name="GYZJZZB" caption="占GDP比重(%)" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+											</chartctrl>
+										</component>		
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="80" name="tabpanel">
+									<tabpanel>
+										<component caption="货币供应" id="81" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="M2TB" caption="M2同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="M1TB" caption="M1同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="M0TB" caption="M0同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="22"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>
+						</table>
+						<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="82" name="splitpanel">
+							<splitpanel hdirection="false">
+								<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="83" name="tabpanel">
+									<tabpanel>
+										<component caption="中国官方PMI" id="84" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZZPMI" caption="制造业PMI" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="PMISC" caption="PMI-生产" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="PMIDD" caption="PMI-新订单" style="1" defsel="1" baseline="0.0"></prop>									
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="20"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="中国汇丰PMI" id="85" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="HFPMI" caption="汇丰中国制造业PMI" style="1" defsel="1" baseline="0.0"></prop>								
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="20"></datasource>
+											</chartctrl>
+										</component>
+										<component caption="美国ISM-PMI" id="86" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="PMI" caption="ISM-PMI" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="XDDPMI" caption="ISM-PMI-新订单" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="24"></datasource>
+											</chartctrl>
+										</component>	
+									</tabpanel>
+								</table>
+								<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="87" name="tabpanel">
+									<tabpanel>
+										<component caption="生产者物价指数" id="54" name="chartctrl" >	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YSCXPPITB" caption="有色采选PPI同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="YSYLPPITB" caption="有色冶炼及加工PPI同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_cu" body="23"></datasource>
+											</chartctrl>
+										</component>
+									</tabpanel>
+								</table>
+							</splitpanel>	
+						</table>						
+					</splitpanel>	
+				</component>	
+			
+			</tabpanel>
+		</table>
+	</table>
+</root>
+  

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="39" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="40" name="tabpanel">
+							<tabpanel>
+								<component caption="国内生产总值" id="84" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="GDP" caption="国内生产总值GDP累计(万亿)-左" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="GDPZZ" caption="GDP累计增长率(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="工业增加值" id="85" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="GYZJZ" caption="工业增加值累计(万亿)-左" style="3" defsel="1" baseline="0.0" ></prop>	
+										<prop index="2" name="GYZJZZB" caption="占GDP比重(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="21"></datasource>
+									</chartctrl>
+								</component>	
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="43" name="tabpanel">
+							<tabpanel>
+								<component caption="货币供应" id="87" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="M2TB" caption="M2同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="M1TB" caption="M1同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="M0TB" caption="M0同比(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="22"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="存款利率" id="87" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="YNDC" caption="一年定存(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="LNDC" caption="两年定存(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="SNDC" caption="三年定存(%)" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="25"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="46" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="47" name="tabpanel">
+							<tabpanel>
+							<component caption="中国官方PMI" id="90" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="ZZPMI" caption="制造业PMI" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="PMISC" caption="PMI-生产" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="PMIDD" caption="PMI-新订单" style="1" defsel="1" baseline="0.0"></prop>									
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="20"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="中国汇丰PMI" id="91" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="HFPMI" caption="汇丰中国制造业PMI" style="1" defsel="1" baseline="0.0"></prop>								
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="20"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="美国ISM-PMI" id="94" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="PMI" caption="ISM-PMI" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="XDDPMI" caption="ISM-PMI-新订单" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_cu" body="24"></datasource>
+									</chartctrl>
+								</component>			
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="49" name="tabpanel">
+							<tabpanel>
+								<component caption="生产者物价指数" id="50" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="HXYLPPI" caption="化学原料和化学制品PPI同比（%）" style="1" defsel="1" baseline="0.0"></prop>
+										<prop index="2" name="SLZPPPI" caption="橡胶和塑料制品PPI同比（%）" style="1" defsel="1" baseline="0.0"></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_pvc" body="12"></datasource>
+									</chartctrl>
+								</component>		
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>
+		</table>
+	</table>
+</root>

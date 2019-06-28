@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="gridctrl" >
+			<gridctrl>
+				<gridcols fixednum="2" rowchgmsg="true" postslave="true" forbidmenu="1" ingcode="true">
+					<gridcol  name="T013" caption="行业代码" syscol="$ZQDM" visible="true"  align="L" width="70" datatype="S" clrtype="S" ></gridcol>
+					<gridcol  name="T001" caption="行业名称" visible="true" align="L" width="90" datatype="S" clrtype="S"></gridcol>										
+					<gridcol  name="T002" caption="报告期" visible="true" align="C" width="75" datatype="S"></gridcol>
+					<gridcol  name="T015" caption="总市值(亿)" visible="true"  align="R" width="80" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T016" caption="流通市值" visible="true"  align="R" width="75" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T017" caption="均流通市值" visible="false"  align="R" width="110" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T018" caption="总股本" visible="true"  align="R" width="65" datatype="F" digital="2"></gridcol>									
+					<gridcol  name="T003" caption="EPS" visible="false"  align="R" width="40" datatype="F" digital="2"></gridcol>									
+					<gridcol  name="T004" caption="BVPS" visible="false"  align="R" width="40" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T005" caption="总资产" visible="true"  align="R" width="70" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T006" caption="净资产" visible="true"  align="R" width="70" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T007" caption="平均营收" visible="true"  align="R" width="75" datatype="F" digital="2" ></gridcol>
+					<gridcol  name="T008" caption="营收同比%" visible="true"  align="R" width="83" datatype="F" digital="2" clrtype="Z"></gridcol>
+					<gridcol  name="T009" caption="平均净利" visible="true"  align="R" width="75" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T010" caption="净利同比%" visible="true"  align="R" width="83" datatype="F" digital="2" clrtype="Z"></gridcol>	
+					<gridcol  name="T011" caption="毛利率%" visible="true"  align="R" width="70" datatype="F" digital="2"></gridcol>
+					<gridcol  name="T012" caption="ROE%" visible="true"  align="R" width="60" datatype="F" digital="2"></gridcol>
+				</gridcols>
+				<datasource reqformat="0"  name="cfg_bk_hycwfx" body="1,H01,"></datasource>
+			</gridctrl>
+		</table>
+	</table>
+</root>

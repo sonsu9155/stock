@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="4" name="splitpanel">
+					<splitpanel hdirection="false">
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="false" id="5" name="tabpanel">
+							<tabpanel>
+								<component caption="资产规模" id="6" name="splitpanel" >	
+									<splitpanel hdirection="true">	
+										<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="7" name="chartctrl">									
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZZC" caption="总资产(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="JZC" caption="净资产(亿元)-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="ZZCYOY" caption="总资产增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>	
+												<prop index="4" name="JZCYOY" caption="净资产增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885003"></datasource>
+											</chartctrl>	
+										</table>
+										<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="8" name="textpanel" >
+											<textpanel>
+												<properties>
+													<textcol title="" fldname="ZZGMMS" titleclr="245,147,0"/>	
+												</properties>
+												<datasource  reqformat="0"   name="cfg_hycyl_spqh" body="5,885003"></datasource>
+											</textpanel>
+										</table>
+									</splitpanel>
+								</component>														
+										
+							</tabpanel>		
+						</table>							
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="1" name="tabpanel">							
+							<tabpanel>
+								<component caption="利润规模" id="9" name="splitpanel" >
+									<splitpanel hdirection="true">	
+										<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="10" name="chartctrl">									
+											<chartctrl>
+												<properties >
+												<prop index="1" name="ZYSR" caption="主营业务收入-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="ZYLR" caption="主营业务利润-左" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="ZYSRYOY" caption="收入增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<prop index="4" name="ZYLRYOY" caption="利润增长(%)-右" style="1" defsel="1" baseline="0.0" rightaxis="1"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885003"></datasource>
+											</chartctrl>													
+										</table>
+										<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="11" name="textpanel" >
+											<textpanel>
+												<properties>
+													<textcol title="" fldname="LRGMMS" titleclr="245,147,0"/>	
+												</properties>
+												<datasource  reqformat="0"   name="cfg_hycyl_spqh" body="5,885003"></datasource>
+											</textpanel>
+										</table>
+									</splitpanel>
+								</component>
+										
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="1" name="splitpanel">
+					<splitpanel hdirection="false">
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="12" name="tabpanel">
+							<tabpanel>
+								<component caption="三费概况" id="13" name="splitpanel" >
+									<splitpanel hdirection="true">	
+										<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="14" name="chartctrl">	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YYFY" caption="营业费用(亿元)" style="3" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GLFY" caption="管理费用(亿元)" style="3" defsel="1" baseline="0.0" ></prop>
+												<prop index="2" name="CWFY" caption="财务费用(亿元)" style="3" defsel="1" baseline="0.0" ></prop>											
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885003"></datasource>
+											</chartctrl>
+										</table>
+										<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="15" name="textpanel" >
+											<textpanel>
+												<properties>
+													<textcol title="" fldname="SFGKMS" titleclr="245,147,0"/>	
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="5,885003"></datasource>
+											</textpanel>
+										</table>
+									</splitpanel>
+								</component>
+								<component caption="三费占比" id="16" name="splitpanel" >
+									<splitpanel hdirection="true">	
+										<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="17" name="chartctrl">	
+											<chartctrl>
+												<properties >
+												<prop index="1" name="YYFYZB" caption="营业费用占比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="GLFYZB" caption="管理费用占比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="CWFYZB" caption="财务费用占比(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<xaxis name="DATE" caption="日期"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885003"></datasource>
+											</chartctrl>
+										</table>
+										<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="18" name="textpanel" >
+											<textpanel>
+												<properties>
+													<textcol title="" fldname="SFZBMS" titleclr="245,147,0"/>	
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="5,885003"></datasource>
+											</textpanel>
+										</table>
+									</splitpanel>	
+								</component>
+							</tabpanel>
+						</table>										
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="19" name="tabpanel">
+							<tabpanel>
+								<component caption="效益概况" id="20" name="splitpanel" >
+									<splitpanel hdirection="true">	
+										<table X="0" Y="0" width="1" height="0.85" isleaf="true" hdirection="true" id="21" name="chartctrl">
+											<chartctrl>
+												<properties >
+												<prop index="1" name="XSMLL" caption="销售毛利率(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="2" name="XSJLL" caption="销售净利率(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="3" name="ROE" caption="净资产收益率(%)" style="1" defsel="1" baseline="0.0"></prop>
+												<prop index="4" name="ZCFZL" caption="资产负债率(%)" style="1" defsel="0" baseline="0.0"></prop>
+												<prop index="5" name="ZZCZZL" caption="总资产周转率" style="1" defsel="0" baseline="0.0"></prop>
+												<prop index="6" name="YSZKZZL" caption="应收账款周转率" style="1" defsel="0" baseline="0.0"></prop>									
+												<xaxis name="DATE" caption="年份"></xaxis>
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="4,885003"></datasource>
+											</chartctrl>
+										</table>
+										<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="true" id="22" name="textpanel" >
+											<textpanel>
+												<properties>
+													<textcol title="" fldname="XYGKMS" titleclr="245,147,0"/>	
+												</properties>
+												<datasource   reqformat="0" name="cfg_hycyl_spqh" body="5,885003"></datasource>
+											</textpanel>
+										</table>
+									</splitpanel>	
+								</component>		
+							</tabpanel>									
+						</table> 	
+					</splitpanel>
+				</table> 
+			</splitpanel>
+		</table>
+	</table>
+</root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="减速机" fldname="T减速机" titleclr="245,147,0"/>
+					<textcol title="伺服电机" fldname="T伺服电机" titleclr="245,147,0"/>
+					<textcol title="控制器" fldname="T控制器" titleclr="245,147,0"/>
+					<textcol title="机器人操作系统" fldname="T机器人操作系统" titleclr="245,147,0"/>
+					<textcol title="机器人运动规划" fldname="T机器人运动规划" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="11"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>

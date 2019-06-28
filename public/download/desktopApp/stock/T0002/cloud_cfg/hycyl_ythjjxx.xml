@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="中晚期癌症检测价格较高" fldname="T中晚期癌症检测价格较高" titleclr="245,147,0"/>
+					<textcol title="癌症早期筛查难度大" fldname="T癌症早期筛查难度大" titleclr="245,147,0"/>
+					<textcol title="ctDNA的产品相对比较单一" fldname="TctDNA的产品相对比较单一" titleclr="245,147,0"/>
+					<textcol title="部分肿瘤类型很难检测到" fldname="T部分肿瘤类型很难检测到" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="139"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
+

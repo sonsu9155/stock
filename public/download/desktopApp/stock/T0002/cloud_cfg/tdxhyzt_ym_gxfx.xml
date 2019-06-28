@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="true" id="1" name="splitpanel">
+			<splitpanel hdirection="true">	
+				<table X="0" Y="0" width="1" height="0.5" isleaf="true" hdirection="false" id="3" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="4" name="tabpanel">
+							<tabpanel>
+								<component caption="全球玉米库存分析" id="99" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QQQMKC" caption="全球期末库存(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+										<prop index="2" name="ZGQMKC" caption="中国期末库存" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="MGQMKC" caption="美国期末库存" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="BXQMKC" caption="巴西期末库存" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="MXGQMKC" caption="墨西哥期末库存" style="3" defsel="1" baseline="0.0" ></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="1"></datasource>
+									</chartctrl>
+								</component>
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="7" name="tabpanel">
+							<tabpanel>
+								<component caption="全球玉米进口分析" id="98" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QQJKL" caption="全球进口量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+										<prop index="2" name="ZGJKL" caption="中国进口量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="MGJKL" caption="美国进口量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="BXJKL" caption="巴西进口量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="MXGJKL" caption="墨西哥进口量" style="3" defsel="1" baseline="0.0" ></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="1"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="全球玉米出口分析" id="97" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QQCKL" caption="全球出口量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+										<prop index="2" name="ZGCKL" caption="中国出口量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="MGCKL" caption="美国出口量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="BXCKL" caption="巴西出口量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="MXGCKL" caption="墨西哥出口量" style="3" defsel="1" baseline="0.0" ></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="1"></datasource>
+									</chartctrl>
+								</component>		
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+				<table X="0" Y="-1" width="1" height="-1" isleaf="true" hdirection="false" id="10" name="splitpanel">
+					<splitpanel hdirection="false">	
+						<table X="0" Y="0" width="0.5" height="1" isleaf="true" hdirection="true" id="11" name="tabpanel">
+							<tabpanel>
+								<component caption="全球玉米播种面积分析" id="95" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QQBZMJ" caption="全球播种面积" style="3" defsel="1" baseline="0.0" ></prop>
+										<prop index="2" name="ZGBZMJ" caption="中国播种面积" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="MGBZMJ" caption="美国播种面积" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="BXBZMJ" caption="巴西播种面积" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="MXGBZMJ" caption="墨西哥播种面积" style="3" defsel="1" baseline="0.0" ></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="2"></datasource>
+									</chartctrl>
+								</component>		
+							</tabpanel>
+						</table>
+						<table X="-1" Y="0" width="-1" height="1" isleaf="true" hdirection="true" id="14" name="tabpanel">
+							<tabpanel>
+								<component caption="全球玉米产量分析" id="96" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QQCL" caption="全球产量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+										<prop index="2" name="ZGCL" caption="中国产量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="MGCL" caption="美国产量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="BXCL" caption="巴西产量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="MXGCL" caption="墨西哥产量" style="3" defsel="1" baseline="0.0" ></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="1"></datasource>
+									</chartctrl>
+								</component>
+								<component caption="全球玉米消费量分析" id="94" name="chartctrl" >	
+									<chartctrl>
+										<properties >
+										<prop index="1" name="QQXFL" caption="全球消费量(百万吨)" style="3" defsel="1" baseline="0.0" ></prop>
+										<prop index="2" name="ZGXFL" caption="中国消费量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="3" name="MGXFL" caption="美国消费量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="4" name="BXXFL" caption="巴西消费量" style="3" defsel="1" baseline="0.0"></prop>
+										<prop index="5" name="MXGXFL" caption="墨西哥消费量" style="3" defsel="1" baseline="0.0" ></prop>
+										<xaxis name="DATE" caption="日期"></xaxis>
+										</properties>
+										<datasource   reqformat="0" name="cfg_hycyl_ym" body="1"></datasource>
+									</chartctrl>	
+								</component>
+							</tabpanel>
+						</table>
+					</splitpanel>
+				</table>
+			</splitpanel>
+		</table>
+	</table>
+</root>

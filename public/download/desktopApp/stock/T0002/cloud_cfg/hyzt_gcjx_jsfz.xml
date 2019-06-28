@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gbk" ?>
+<root	width="832"	height="226" >
+	<table X="0" Y="0" width="1" height="1" isleaf="false" hdirection="true">
+		<table X="0" Y="0" width="1" height="1" isleaf="true" hdirection="false" id="1" name="textpanel">																							
+			<textpanel>
+				<properties>
+					<textcol title="液压挖掘机" fldname="T液压挖掘机" titleclr="245,147,0"/>
+					<textcol title="液压装载机" fldname="T液压装载机" titleclr="245,147,0"/>
+					<textcol title="塔式起重机" fldname="T塔式起重机" titleclr="245,147,0"/>
+					<textcol title="施工升降机" fldname="T施工升降机" titleclr="245,147,0"/>
+					<textcol title="专用起重机械" fldname="T专用起重机械" titleclr="245,147,0"/>
+					<textcol title="砼搅拌机械" fldname="T砼搅拌机械" titleclr="245,147,0"/>
+					<textcol title="砼输送泵与砼布料机械" fldname="T砼输送泵与砼布料机械" titleclr="245,147,0"/>
+					<textcol title="砼抹光机械" fldname="T砼抹光机械" titleclr="245,147,0"/>
+					<textcol title="螺旋钻孔机" fldname="T螺旋钻孔机" titleclr="245,147,0"/>
+					<textcol title="反循环钻孔机" fldname="T反循环钻孔机" titleclr="245,147,0"/>
+					<textcol title="全套管钻孔机" fldname="T全套管钻孔机" titleclr="245,147,0"/>
+					<textcol title="回转斗钻孔机" fldname="T回转斗钻孔机" titleclr="245,147,0"/>
+					<textcol title="潜孔冲击锤" fldname="T潜孔冲击锤" titleclr="245,147,0"/>
+					<textcol title="深基础施工系统" fldname="T深基础施工系统" titleclr="245,147,0"/>
+					<textcol title="附着升降脚手架" fldname="T附着升降脚手架" titleclr="245,147,0"/>
+					<textcol title="电动吊篮与擦窗机" fldname="T电动吊篮与擦窗机" titleclr="245,147,0"/>
+					<textcol title="全天候施工技术" fldname="T全天候施工技术" titleclr="245,147,0"/>
+				</properties>
+				<datasource   reqformat="0"  name="cfg_hycyl_hyzt" body="17"></datasource>
+			</textpanel>
+		</table>
+	</table>
+</root>
