@@ -469,9 +469,11 @@ class SiteController extends Controller
         $user_id = Auth::user()->id;
         $buyhistories = BuyHistory::where('user_id', '=', $user_id)->get();
        // var_dump($buyhistories);exit();
+        $saveday = 0;
         if (count($buyhistories)){
             $save_date = BuyHistory::where('user_id','=',$user_id)->first()->created_at;
             $diff  	= date_diff( date_create($save_date) , date_create());
+
             if ($diff->d == 0 | $diff->h >8){
                 $saveday=1;
             }else{
