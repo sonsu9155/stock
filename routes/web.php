@@ -138,44 +138,51 @@ Route::group(
     Route::group(['middleware' => 'auth'],function(){
         Route::group(
             ['prefix' => 'site'], function () {
-            Route::get('/', 'Home\IndexController@index');          
-            Route::get('wapindex2', 'Home\SiteController@index');
-            Route::get('wapindex', 'Home\SiteController@wapindex');
-            Route::get('wapnew', 'Home\SiteController@wapnew');
-            Route::get('wapzhifu', 'Home\SiteController@wapzhifu');
-            Route::get('waporder', 'Home\SiteController@waporder');
-            Route::get('wapatm', 'Home\SiteController@wapatm');
-            Route::get('waptrade', 'Home\SiteController@waptrade');
-            Route::get('wapmingxi', 'Home\SiteController@wapmingxi');
-            Route::get('getstock', 'Home\SiteController@getstock');
-            Route::get('getdeal', 'Home\SiteController@getdeal');
-            Route::get('buytime', 'Home\SiteController@buytime');
-            Route::get('sale_buy', 'Home\SiteController@sale_buy');
-            Route::post('buystock', 'Home\SiteController@buystock');     
-            Route::post('sell_act', 'Home\SiteController@sell_act');
-            Route::get('wapxiaoxi', 'Home\SiteController@wapxiaoxi');          
-            Route::get('wapinfo', 'Home\SiteController@wapinfo'); 
-            Route::post('fund', 'Home\SiteController@fund'); 
+            $agent = new Agent();
+            if($agent->isPhone()) {
+                Route::get('/', 'Home\IndexController@index');          
+                Route::get('wapindex2', 'Home\SiteController@index');
+                Route::get('wapindex', 'Home\SiteController@wapindex');
+                Route::get('wapnew', 'Home\SiteController@wapnew');
+                Route::get('wapzhifu', 'Home\SiteController@wapzhifu');
+                Route::get('waporder', 'Home\SiteController@waporder');
+                Route::get('wapatm', 'Home\SiteController@wapatm');
+                Route::get('waptrade', 'Home\SiteController@waptrade');
+                Route::get('wapmingxi', 'Home\SiteController@wapmingxi');
+                Route::get('getstock', 'Home\SiteController@getstock');
+                Route::get('getdeal', 'Home\SiteController@getdeal');
+                Route::get('buytime', 'Home\SiteController@buytime');
+                Route::get('sale_buy', 'Home\SiteController@sale_buy');
+                Route::post('buystock', 'Home\SiteController@buystock');     
+                Route::post('sell_act', 'Home\SiteController@sell_act');
+                Route::get('wapxiaoxi', 'Home\SiteController@wapxiaoxi');          
+                Route::get('wapinfo', 'Home\SiteController@wapinfo'); 
+                Route::post('fund', 'Home\SiteController@fund'); 
+            } 
+            
         });
     });
     
     Route::group(['middleware' => 'auth'],function(){
         Route::group(
-            ['prefix' => 'pc'], function () {   
-            Route::get('wclient', 'Home\PcController@wclient');
-            Route::get('w2user', 'Home\PcController@w2user');
-            Route::get('wmain', 'Home\PcController@wclient');
-            Route::get('w2fav', 'Home\PcController@w2fav');
-            Route::get('w2trade', 'Home\PcController@w2trade');
-            Route::get('w2pay', 'Home\PcController@w2pay');
-            Route::get('w2paylog', 'Home\PcController@w2paylog');
-            Route::get('w2atm', 'Home\PcController@w2atm');
-            Route::get('w2atmlog', 'Home\PcController@w2atmlog');
-            Route::get('w2pwd', 'Home\PcController@w2pwd');
-            Route::get('w2message', 'Home\PcController@w2message'); 
-            Route::post('buystock', 'Home\PcController@buystock');            
-            Route::get('sale_buy', 'Home\PcController@sale_buy');
-            Route::post('sell_act', 'Home\PcController@sell_act');
+            ['prefix' => 'pc'], function () { 
+                $agent = new Agent();
+                if($agent->isDesktop()) {  
+                Route::get('wclient', 'Home\PcController@wclient');
+                Route::get('w2user', 'Home\PcController@w2user');
+                Route::get('wmain', 'Home\PcController@wclient');
+                Route::get('w2fav', 'Home\PcController@w2fav');
+                Route::get('w2trade', 'Home\PcController@w2trade');
+                Route::get('w2pay', 'Home\PcController@w2pay');
+                Route::get('w2paylog', 'Home\PcController@w2paylog');
+                Route::get('w2atm', 'Home\PcController@w2atm');
+                Route::get('w2atmlog', 'Home\PcController@w2atmlog');
+                Route::get('w2pwd', 'Home\PcController@w2pwd');
+                Route::get('w2message', 'Home\PcController@w2message'); 
+                Route::post('buystock', 'Home\PcController@buystock');            
+                Route::get('sale_buy', 'Home\PcController@sale_buy');
+                Route::post('sell_act', 'Home\PcController@sell_act');
+                }
         });
     });
 
@@ -204,7 +211,6 @@ Route::group(
             Route::get('rules','WebController@rules');
             Route::get('news','WebController@news');
             Route::get('deal','WebController@deal');
-
         });
     });
 
