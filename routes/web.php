@@ -10,6 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
  */
+use Jenssegers\Agent\Agent;
 
 Route::get('/super', 'Home\LoginController@super');
 
@@ -139,7 +140,7 @@ Route::group(
         Route::group(
             ['prefix' => 'site'], function () {
             $agent = new Agent();
-            if($agent->isPhone()) {
+            if($agent->isAndroidOS()) {
                 Route::get('/', 'Home\IndexController@index');          
                 Route::get('wapindex2', 'Home\SiteController@index');
                 Route::get('wapindex', 'Home\SiteController@wapindex');
@@ -188,29 +189,32 @@ Route::group(
 
     Route::group(['middleware' => 'auth'], function(){
         Route::group(['prefix' => 'web'], function(){
-            Route::get('index', 'WebController@index');
-            Route::get('operate', 'WebController@operate');
-            Route::get('stockdata','WebController@stockdata');
-            Route::get('stock_detail','WebController@stock_detail');
-            Route::get('payment','WebController@payment');
-            Route::get('payment_log','WebController@payment_log');
-            Route::post('pay_page','WebController@pay_page');
-            Route::get('selforder','WebController@selforder');
-            Route::get('user','WebController@user');
-            Route::get('atm','WebController@atm');
-            Route::post('add_atm','WebController@add_atm');
-            Route::get('atm_log','WebController@atm_log');
-            Route::get('report_day','WebController@report_day');
-            Route::get('report_week','WebController@report_week');
-            Route::get('trade_detail','WebController@trade_detail');
-            Route::get('cancash','WebController@cancash');
-            Route::get('atmpwd','WebController@atmpwd');
-            Route::post('save_atmpwd','WebController@save_atmpwd');
-            Route::get('pwd','WebController@pwd');
-            Route::post('save_pwd','WebController@save_pwd');
-            Route::get('rules','WebController@rules');
-            Route::get('news','WebController@news');
-            Route::get('deal','WebController@deal');
+            $agent = new Agent();
+            if($agent->isDesktop()) { 
+                Route::get('index', 'WebController@index');
+                Route::get('operate', 'WebController@operate');
+                Route::get('stockdata','WebController@stockdata');
+                Route::get('stock_detail','WebController@stock_detail');
+                Route::get('payment','WebController@payment');
+                Route::get('payment_log','WebController@payment_log');
+                Route::post('pay_page','WebController@pay_page');
+                Route::get('selforder','WebController@selforder');
+                Route::get('user','WebController@user');
+                Route::get('atm','WebController@atm');
+                Route::post('add_atm','WebController@add_atm');
+                Route::get('atm_log','WebController@atm_log');
+                Route::get('report_day','WebController@report_day');
+                Route::get('report_week','WebController@report_week');
+                Route::get('trade_detail','WebController@trade_detail');
+                Route::get('cancash','WebController@cancash');
+                Route::get('atmpwd','WebController@atmpwd');
+                Route::post('save_atmpwd','WebController@save_atmpwd');
+                Route::get('pwd','WebController@pwd');
+                Route::post('save_pwd','WebController@save_pwd');
+                Route::get('rules','WebController@rules');
+                Route::get('news','WebController@news');
+                Route::get('deal','WebController@deal');
+            }
         });
     });
 
