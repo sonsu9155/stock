@@ -1,0 +1,66 @@
+﻿1. User
+    1) Function
+        (1) Video upload function (video upload)
+        (2) Video viewing function (general video, live video)
+        (3) Notification message transmission, message function (message)
+        (4) Family (video play room) Creation (family)
+        (5) black list
+        (6) shopping for goods (shopping)
+            10 per diamond
+            - Gift type
+               Table (table, contribution +1, experience +1),
+               Flowers (flower, contribution +1, experience +1),
+               Cucumber (contribution +1, experience +1),
+               Rose (rose, contribution +10, experience +10),
+               Kiss (contribution +33, experience +33),
+               Pink drill (pink drill, contribution +199, experience +88),
+               Lamborghini (lamborghini, contribution +1200, experience +1200),
+               Banana (contribution + 1, experience +1),
+               Leather whip (leader whip, contribution +3, experience +3),
+               Fireworks (fireworks, contribution +100, experience +100),
+               Diamond ring, contribution +199, experience +199)
+               Tobacco (bomber, contribution +3000, experience +3000),
+               Passenger aircraft (contribution +5000, experience +5000),
+               Ferrari (ferrari, contribution +6666, experience +6666)
+    2) Profile
+        - Account picture
+            Oliver function
+        - Account name
+        - account number
+        - Account resources
+            Jewelery, table
+        - Account security
+            Phone verification
+        - Account proof
+            Identification
+            Photo of the back of the ID card
+2. live broadcasr
+    New live broadcast, regular live broadcast, popular live broadcast, live live
+    - Gifts can be provided
+    - Reply to comments
+    - Shareable
+    - Reportable
+    (Submitter's name, picture, number of times of reading)
+3. Play video
+    (1) Popular Playback
+        Current popularity list, previous popular list
+    (2) Normal playback
+        - List of videos
+            Relative
+            Heat popularity
+            Nearby
+            Community association, union
+            户外 outdoor activities
+            Man god male
+            Travel guide
+            Goddess
+        - Gift cycle
+        - Reply to this comment
+        - Video sharing (qq, ...)
+        - Submit a video (reactionary, pull people, yellow)
+    (3) Publish account rank by section
+        Rich (Funding), Attractive (Comments) Daily, Weekly, Monthly
+    (3) Viewing power
+4. Download the app
+    Android, iPhone, obs player (QR code identification)
+5. Company disclosure function

@@ -1,0 +1,95 @@
+1. 리용자
+    1)기능
+        (1) 비데오 올리적제기능(video upload)
+            폰, 웹에서 가능
+        (2) 비데오 열람기능(일반동영상, live동영상)
+            폰, 웹에서 가능
+        (3) 통보문 전송, 열람기능 (message)
+            주소록에 있는 사용자들에게
+        (4) 가족(동영상재생 방) 창조 (family)
+            임의로 창조(이름, 내용, 그림)
+        (5) 차단목록(black list)
+            주소록에 있는 사용자들에게
+        (6) 물건사기 기능( shopping )
+            보석(diamond) 1웬 당 10개
+            - 선물 종류
+               표(table, contribution +1, experience +1),
+               꽃(flower, contribution +1, experience +1),
+               오이(cucumber, contribution +1, experience +1 ),
+               장미(rose, contribution +10, experience +10),
+               키스(kiss, contribution +33, experience +33),
+               분홍색송곳(pink drill, contribution +199, experience +88),
+               람보르기니(lamborghini, contribution +1200, experience +1200),
+               바나나(banana, contribution +1, experience +1),
+               가죽채찍(leader whip, contribution +3, experience +3),
+               불꽃(fireworks, contribution +100, experience +100),
+               보석고리(diamond ring, contribution +199, experience +199),
+               담배(bomber, contribution +3000, experience +3000 ),
+               려객기(passenger aircraft, contribution +5000, experience +5000  ),
+               페라리(ferrari, contribution +6666, experience +6666)
+            - 지불방식
+                alipay, 신용카드, ....
+    2)프로파일
+        - 계정그림
+            올리적제 기능
+        - 계정이름
+            임의로 지적
+        - 계정번호
+            체계 자동생성하여 제공
+        - 계정자원
+            보석, 표(지불한 량에 따라 개수 현시)
+        - 계정보안
+            폰인증
+        - 계정증명
+            신분증인증
+            신분증 앞면 뒤면사진 올리적제
+2. 생방송(live broadcasr)
+    새로운 생방송, 일반 생방송 , 인기생방송, 가족생방송
+    - 선물제공가능
+        리용자가 가능한 선물제공, 선물구입가능
+    - 댓글달기가능
+    - 공유가능
+        주소록에 있는 사용자들에게 공유가능(공유수단 QQ, weixin,..)
+    - 보고가능
+        불법적인 행동보여주는 동영상일때 내용(화면캡쳐, 댓글)을 보고
+    (제출자이름, 그림, 열람회수)
+3. 동영상재생
+    (1) 인기재생
+        현재인기목록, 이전인기목록
+        날자별로, 시간별로, 사용자별로 현시 가능
+    (2) 일반재생
+        - 비데오 목록
+            关注    주의
+            热门    인기
+            附近    주변
+            公会    동업, 조합
+            户外    야외활동
+            男神    남성
+            旅游    려행
+            女神    녀성
+        - 선물제공가능
+        - 댓글 달기가능
+        - 비데오 공유(qq, weixin... )
+        - 비데오 보고서(reactionary, pull people, yellow)제출
+    (3) 부분별 계정 순위게시
+        풍부한(자금), 매력적인(댓글수) 일별, 주별, 월별로 게시
+    (3) 리력보기
+4. 앱 다운로드
+    앤드로이드, 아이폰, obs player (QR코드 식별)
+5. 회사 공시기능
+6. 관리자패널
+    (1) 동영상검사기능
+    (2) 실시간방영제공
+    (3) 사용자관리
+        - 사용자추가, 삭제, 변경
+        - 사용자 인증
+        - 사용자 검사
+    (4) 첫화면 비데오현시 추가 삭제 변경 기능
+    (5) 비데오 통계 및 현시
+    (6) 자금관리
+        QR코드현시하여  계좌 관리(QQ, alipay)
+        사용자별 계좌관리
+    (7)공시관리
+    (8)앱관리
+
+

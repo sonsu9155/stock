@@ -61,6 +61,9 @@ class Kernel extends HttpKernel {
         'role' => \Laratrust\Middleware\LaratrustRole::class,
         'permission' => \Laratrust\Middleware\LaratrustPermission::class,
         'ability' => \Laratrust\Middleware\LaratrustAbility::class,
-        'clean.xss' => \App\Http\Middleware\CleanXss::class
+        'clean.xss' => \App\Http\Middleware\CleanXss::class,
+        'role' => \Laratrust\Middleware\LaratrustRole::class,
+        'permission' => \Laratrust\Middleware\LaratrustPermission::class,
+        'ability' => \Laratrust\Middleware\LaratrustAbility::class
     ];
 }
